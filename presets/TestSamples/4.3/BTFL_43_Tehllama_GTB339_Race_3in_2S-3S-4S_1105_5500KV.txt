@@ -1,0 +1,190 @@
+## Tehllama 3" GTB339 2/3S Tune
+#  FirmwareVersion BF4.3 (Also works on BF4.2)
+#  Author - Daniel "Tehllama" Appel
+
+## Disclaimer - Community Preset
+#   Extensive testing has been performed with
+#   multiple quadcopters, but with a finite set
+#   of electronics and only 3 builders
+
+## ESC Settings:  [ IMPORTANT ]
+# 48kHz PWM Frequency // 48kHz BLHeliS 
+# 25% Rampup Power // 0.25 Startup Power
+# 23° Timing // MedHigh Timing
+## VERIFY MOTOR RPM DATA IN Configurator Motors Tab
+
+## CLI Data follows
+# master
+set gyro_lowpass_hz = 275 ## Dual-PT1 Fixed Gyro Lowpass
+set gyro_lowpass2_hz = 425
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+set dyn_notch_min_hz = 115
+set dyn_notch_max_hz = 444
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 1000
+set rc_smoothing_auto_smoothness = 8
+set dshot_idle_value = 475
+set dshot_bidir = ON
+## IMPORTANT - Verify if using different motors
+set motor_poles = 12  # 12 Magnets
+set beeper_dshot_beacon_tone = 4
+# set yaw_motors_reversed = ON
+set small_angle = 180
+set thrust_linear = 22
+set debug_mode = GYRO_SCALED
+set gyro_rpm_notch_harmonics = 2
+set gyro_rpm_notch_q = 750
+
+profile 0
+# Auto-Applies for 3S - Best with 3S-450mAh to 650mAh batteries
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 333
+set dterm_lowpass2_hz = 225
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 8
+set p_pitch = 51
+set i_pitch = 72
+set d_pitch = 44
+set f_pitch = 238
+set p_roll = 47
+set i_roll = 68
+set d_roll = 40
+set f_roll = 222
+set p_yaw = 50
+set i_yaw = 72
+set f_yaw = 222
+set d_min_roll = 28
+set d_min_pitch = 30
+set d_min_boost_gain = 55
+set d_min_advance = 99
+set auto_profile_cell_count = 3
+set ff_interpolate_sp = OFF
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 20
+set dyn_idle_min_rpm = 16
+
+profile 1
+
+# Auto-Applies for 2S - Recommend 2S 650mAh packs
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 288
+set dterm_lowpass2_hz = 240
+set anti_gravity_gain = 4400
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 33
+set yaw_lowpass_hz = 115
+set throttle_boost = 10
+set p_pitch = 67
+set i_pitch = 81
+set d_pitch = 55
+set f_pitch = 238
+set p_roll = 60
+set i_roll = 77
+set d_roll = 50
+set f_roll = 222
+set p_yaw = 65
+set i_yaw = 81
+set f_yaw = 222
+set d_min_roll = 38
+set d_min_pitch = 35
+set d_min_boost_gain = 55
+set d_min_advance = 99
+set auto_profile_cell_count = 2
+set ff_interpolate_sp = OFF
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set ff_boost = 25
+set dyn_idle_min_rpm = 16
+
+profile 2
+
+## Auto-Applies if 4S battery plugged in.  Tested briefly on GF2540 Props
+## CAUTION - 4S on these motors causes extreme current draw on 3" propellers
+set dyn_lpf_dterm_min_hz = 98
+set dyn_lpf_dterm_max_hz = 333
+set dterm_lowpass2_hz = 210
+set vbat_sag_compensation = 70
+set anti_gravity_gain = 4400
+set feedforward_transition = 25
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 22
+set yaw_lowpass_hz = 115
+set throttle_boost = 3
+set p_pitch = 36
+set i_pitch = 63
+set d_pitch = 35
+set f_pitch = 238
+set p_roll = 32
+set i_roll = 59
+set d_roll = 32
+set f_roll = 222
+set p_yaw = 35
+set i_yaw = 63
+set f_yaw = 222
+set d_min_roll = 21
+set d_min_pitch = 23
+set d_min_boost_gain = 55
+set d_min_advance = 99
+set auto_profile_cell_count = 4
+
+set ff_interpolate_sp = OFF
+set ff_max_rate_limit = 102
+set ff_smooth_factor = 33
+set dyn_idle_min_rpm = 16
+
+# restore original profile selection
+profile 0
+
+## Llama Universal Rate Bank
+# rateprofile 0 (Tehllama Rates)
+rateprofile 0
+set roll_rc_rate = 72
+set pitch_rc_rate = 72
+set yaw_rc_rate = 54
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 60
+
+# rateprofile 1 (Beginner Race Rates)
+rateprofile 1
+set roll_rc_rate = 75
+set pitch_rc_rate = 75
+set yaw_rc_rate = 60
+
+# rateprofile 2 (Nytfury/Junebug Race Rates)
+rateprofile 2
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 62
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 2
+set roll_srate = 72
+set pitch_srate = 62
+set yaw_srate = 51
+
+# rateprofile 3 (533°/s RPY Race Rates)
+rateprofile 3
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 80
+
+rateprofile 4
+# Default Betaflight Rates
+
+rateprofile 5
+# Reserved
+
+# restore original rateprofile selection
+rateprofile 0
+
+save
