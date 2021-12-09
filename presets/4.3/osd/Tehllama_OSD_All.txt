@@ -4,7 +4,7 @@
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
-#$ STATUS: true
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: OSD, Llama, DJI, PAL, NTSC, Busy
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Installs the appropriate Busy-Llama OSD

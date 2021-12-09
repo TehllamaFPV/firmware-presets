@@ -1,7 +1,7 @@
 #$ TITLE: 5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 533, FreedomSpec, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Built for 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing

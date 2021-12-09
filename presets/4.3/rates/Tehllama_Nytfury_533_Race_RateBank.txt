@@ -3,7 +3,7 @@
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ STATUS: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Race, Rates, Racing, Bank, Nytfury, HeadsUp, 533, Limon, Beginner
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: These are some proven race rates for pilots to use
@@ -66,8 +66,6 @@ set yaw_srate = 51
 rateprofile 5
 # rateprofile 6 - Limon Legacy Rates
 set rates_type = BETAFLIGHT
-
-#$ OPTION END
 
 
 #$ OPTION BEGIN (UNCHECKED): Set Beginner Race Rates

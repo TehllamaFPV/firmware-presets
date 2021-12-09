@@ -1,7 +1,7 @@
 #$ TITLE: 3in Lightweight Race GTB339 3S/2S Tune
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: true
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 

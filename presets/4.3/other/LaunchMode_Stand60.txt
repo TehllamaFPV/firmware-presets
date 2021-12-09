@@ -1,8 +1,8 @@
 #$ TITLE: Tehllama Launch Stand Mode Enabled
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
+#$ STATUS: OFFICIAL
 #$ CATEGORY: OTHER
-#$ STATUS: true
 #$ KEYWORDS: Race, Launch, LaunchMode, Mode
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This is a launch stand launch-mode option that enables first-takeoff only pitch-only launch behavior
