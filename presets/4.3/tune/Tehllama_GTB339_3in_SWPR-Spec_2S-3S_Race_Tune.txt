@@ -10,6 +10,7 @@
 #$ WARNING: Requires 12-Pole Motors!!! Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.  13A ESCs may experience more failures on 3S batteries.
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
+#$ INCLUDE: presets/4.3/tune/defaults.txt
 
 # master
 set gyro_lpf1_static_hz = 400

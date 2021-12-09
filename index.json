@@ -2881,7 +2881,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
-      "hash": "cb9056b0cb70ea1b09af5c0f8e14be37acd5b578715384d36df9f2b0fa46dffc",
+      "hash": "8f5a5df0cc79654b07f82829f12bef1be6e154e47ffa65cc3abe0f07299ace9f",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -2928,11 +2928,14 @@
       ],
       "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 4S, 5S, and 6S packs.",
       "warning": "Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
-      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/"
+      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2150KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
-      "hash": "3f6e3209f305aa01f5e742c83d5fdc5d9bfa94159a91e4e88e8ac26f137e1037",
+      "hash": "c1408790aa886cfff876c2c84c4fc24e339bb57eea476cb8089d2af2f15214bd",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -2980,11 +2983,14 @@
       ],
       "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.",
       "warning": "Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
-      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/"
+      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_2400-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
-      "hash": "678928200e02902dfbb3bc5cf267712d944c9b9e35cbaeee1b39940138c59b17",
+      "hash": "5b6639024d20eaab6f566c3d22c725a6d12975e82ff3a658b5e31f6c9b47d214",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -3041,11 +3047,14 @@
       ],
       "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. No 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S currently active will likely cause damage.",
       "warning": "Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
-      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/"
+      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_Tune.txt",
-      "hash": "f37ced596b79e0bde745e133722ca89d3f61ededf2588b4211f275b76214cfa9",
+      "hash": "866b5237f38f060a8af4dc8084dc2d4381a270fd964f6a6148c2a849964b26b5",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)",
@@ -3078,7 +3087,10 @@
       ],
       "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs.",
       "warning": "Requires 12-Pole Motors!!! Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.  13A ESCs may experience more failures on 3S batteries.",
-      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/"
+      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
     },
     {
       "fullPath": "presets/4.3/tune/tiny_karate.txt",
