@@ -1,0 +1,91 @@
+#$ TITLE: Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama 
+#$ FIRMWARE_VERSION: 3.5
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RATES
+#$ STATUS: true
+#$ KEYWORDS: Race, Rates, Racing, Bank, Nytfury, HeadsUp, 533, Limon, Beginner
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: These are some proven race rates for pilots to use
+#$ DISCLAIMER: Use selected options if you want to preserve any existing RateProfile 1 values
+#$ WARNING: These rates are all Legacy Betaflight type rates.  
+#$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
+
+
+#$ OPTION BEGIN (UNCHECKED): Overwrite Rate Profile 1 with Tehllama Rates
+# Tehllama Rate Bank
+rateprofile 0
+# rateprofile 1 - Tehllama Rates
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 75
+set pitch_rc_rate = 72
+set yaw_rc_rate = 63
+set roll_srate = 70
+set pitch_srate = 68
+set yaw_srate = 64
+#$ OPTION END
+
+
+rateprofile 1
+# rateprofile 2 - Beginner Race Rates
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 72
+set pitch_rc_rate = 72
+set yaw_rc_rate = 54
+set roll_srate = 64
+set pitch_srate = 64
+set yaw_srate = 64
+
+rateprofile 2
+# rateprofile 3 - HeadsUp 533 Rates
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 80
+
+rateprofile 3
+# rateprofile 4 - Nytfury 2021 Rates
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 93
+set pitch_rc_rate = 93
+set yaw_rc_rate = 93
+
+rateprofile 4
+# rateprofile 5 - Nytfury 2017 Rates
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 80
+set pitch_rc_rate = 80
+set yaw_rc_rate = 62
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 2
+set roll_srate = 72
+set pitch_srate = 62
+set yaw_srate = 51
+
+rateprofile 5
+# rateprofile 6 - Limon Legacy Rates
+set rates_type = BETAFLIGHT
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED): Set Beginner Race Rates
+rateprofile 1
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Set HeadsUp 533 Race Rates
+rateprofile 2
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Set Nytfury 2021 Race Rates
+rateprofile 3
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Set Nytfury 2017 (JuneBug) Race Rates
+rateprofile 4
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Set Limon Legacy Race Rates
+rateprofile 5
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Use RateProfile 1
+rateprofile 0
+#$ OPTION END
