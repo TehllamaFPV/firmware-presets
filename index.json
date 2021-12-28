@@ -768,7 +768,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/Tehllama_OSD_All.txt",
-      "hash": "4821ee439944c5609e596b295cb2f80059eacc9308163781083a44004a4e5fff",
+      "hash": "610663f3cd34c88d4d72975905f4b4790af3334561b4b98064050c929bf95263",
       "options": [
         {
           "name": "PAL OSD",
@@ -784,6 +784,10 @@
         },
         {
           "name": "Display RSSI Upper Left (Only)",
+          "checked": false
+        },
+        {
+          "name": "Display LQ Upper Left (Only)",
           "checked": true
         },
         {
@@ -1854,23 +1858,23 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "2a56c315e939e63d4b3c98942e805446e26f7ad41c13b9bf3422ca6c0c706feb",
+      "hash": "ac141c7e99f5ad8fcbad1b9607eddfadcf3eef7e8d1e911c6c116b09c69af8d6",
       "options": [
         {
           "name": "ELRS Race",
-          "checked": false
+          "checked": true
         },
         {
           "name": "CRSF 6.7ms Race",
-          "checked": true
+          "checked": false
         },
         {
           "name": "CRSF 20ms Dual-Sport",
-          "checked": true
+          "checked": false
         },
         {
           "name": "FrSky SBUS D16-8Ch No-Telem (XM+)",
-          "checked": true
+          "checked": false
         },
         {
           "name": "FrSky SBUS D16-8Ch Telem Ch8 (XSR/R-XSR)",
@@ -1882,6 +1886,10 @@
         },
         {
           "name": "FlySky IBUS 20ms Race",
+          "checked": false
+        },
+        {
+          "name": "ELRS Race + Llama Modes (3 AUX)",
           "checked": false
         }
       ],
@@ -2881,7 +2889,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
-      "hash": "8f5a5df0cc79654b07f82829f12bef1be6e154e47ffa65cc3abe0f07299ace9f",
+      "hash": "2adea9f9e344dfe3247b9fc2678731a46fe092e216f422f75595ee7c69d3dccd",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -2935,7 +2943,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2150KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
-      "hash": "c1408790aa886cfff876c2c84c4fc24e339bb57eea476cb8089d2af2f15214bd",
+      "hash": "be2f2c6c7d99196f57365a33834508f94d1250858c7d411279b0554d67ecb1b5",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -2990,7 +2998,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_2400-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
-      "hash": "5b6639024d20eaab6f566c3d22c725a6d12975e82ff3a658b5e31f6c9b47d214",
+      "hash": "473969d8e3fed66f944444babb1c99523327a0818bdc4fd4f1732cf104574971",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
