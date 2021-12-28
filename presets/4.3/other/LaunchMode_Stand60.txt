@@ -10,24 +10,24 @@
 #$ WARNING: Accelerometer Integration Feature requires enabling accelerometer in the Configuration tab.
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
-#$ OPTION BEGIN (CHECKED): Apply to current RateProfile Only
+#$ OPTION BEGIN (UNCHECKED): Apply to current RateProfile Only
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply to ALL RateProfiles (Sets RateProfile #1)
-rateprofile 0
+#$ OPTION BEGIN (CHECKED): Apply to ALL RateProfiles (Sets Profile #1)
+profile 0
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
-rateprofile 2
+profile 2
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
-rateprofile 1
+profile 1
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
-rateprofile 0
+profile 0
 #$ OPTION END

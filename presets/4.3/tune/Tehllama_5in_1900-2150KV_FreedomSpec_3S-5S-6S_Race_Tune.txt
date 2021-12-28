@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Built for 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune.  5S and 6S will run a very conservative open race tune.
 #$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.
-#$ WARNING: Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
+#$ WARNING: Use at your own risk.  This tune does not have a profile auto-select with 4S batteries, which may case issues if Profile 3 (3S) is selected. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
@@ -63,6 +63,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 5
 set throttle_boost = 2
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 65
 set simplified_i_gain = 85
 set simplified_pi_gain = 125
@@ -100,6 +103,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 12
 set throttle_boost = 7
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 80
 set simplified_i_gain = 85
 set simplified_pi_gain = 125
@@ -137,6 +143,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 18
 set throttle_boost = 12
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 135
 set simplified_i_gain = 85
 set simplified_d_gain = 110

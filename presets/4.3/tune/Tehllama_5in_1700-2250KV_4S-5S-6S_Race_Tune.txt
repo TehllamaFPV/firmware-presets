@@ -63,6 +63,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 8
 set throttle_boost = 2
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 70
 set simplified_i_gain = 85
 set simplified_d_gain = 95
@@ -103,6 +106,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 12
 set throttle_boost = 7
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 95
 set simplified_i_gain = 85
 set simplified_d_gain = 95
@@ -145,6 +151,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 18
 set throttle_boost = 12
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 125
 set simplified_i_gain = 85
 set simplified_d_gain = 95
@@ -192,21 +201,36 @@ set tpa_breakpoint = 1250
 #$ OPTION BEGIN (UNCHECKED):  2350KV 6S Motor Output Limit
 profile 0
 set motor_output_limit = 92
+profile 2
+set simplified_master_multiplier = 105
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2300KV 6S Motor Output Limit
 profile 0
 set motor_output_limit = 93
+profile 2
+set simplified_master_multiplier = 105
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2250KV 6S Motor Output Limit
 profile 0
 set motor_output_limit = 95
+profile 2
+set simplified_master_multiplier = 110
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2150KV 6S Motor Output Limit
 profile 0
 set motor_output_limit = 98
+profile 2
+set simplified_master_multiplier = 115
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  2050KV 6S Motor Output Limit
+profile 0
+set motor_output_limit = 98
+profile 2
+set simplified_master_multiplier = 120
 #$ OPTION END
 
 # save configuration

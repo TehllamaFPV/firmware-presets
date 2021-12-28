@@ -6,7 +6,7 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23°/MedHigh timing
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune.  4S and 5S will run a very conservative open race tune.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. No 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S currently active will likely cause damage.
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S currently active will likely cause damage.
 #$ WARNING: Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
@@ -62,6 +62,9 @@ set feedforward_jitter_factor = 12
 set feedforward_boost = 12
 set throttle_boost = 12
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 95
 set simplified_i_gain = 85
 set simplified_pi_gain = 115
@@ -105,6 +108,9 @@ set feedforward_boost = 8
 set throttle_boost = 5
 set feedforward_max_rate_limit = 103
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 65
 set simplified_i_gain = 85
 set simplified_d_gain = 110
@@ -148,6 +154,9 @@ set feedforward_boost = 18
 set throttle_boost = 18
 set feedforward_max_rate_limit = 103
 set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set simplified_master_multiplier = 105
 set simplified_i_gain = 85
 set simplified_d_gain = 105
@@ -207,6 +216,7 @@ profile 1
 set motor_output_limit = 98
 profile 2
 set motor_output_limit = 80
+set simplified_master_multiplier = 100
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2500KV Motor Output Limiting (3S and 5S)
@@ -214,6 +224,7 @@ profile 1
 set motor_output_limit = 96
 profile 2
 set motor_output_limit = 78
+set simplified_master_multiplier = 95
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2650KV Motor Output Limiting (3S and 5S)
@@ -221,6 +232,7 @@ profile 1
 set motor_output_limit = 94
 profile 2
 set motor_output_limit = 74
+set simplified_master_multiplier = 90
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2750KV Motor Output Limiting (3S and 5S)
@@ -228,4 +240,5 @@ profile 1
 set motor_output_limit = 90
 profile 2
 set motor_output_limit = 71
+set simplified_master_multiplier = 85
 #$ OPTION END
