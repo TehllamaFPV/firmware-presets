@@ -58,7 +58,7 @@ set iterm_windup = 85
 set iterm_rotation = OFF
 
 # -- Dmax (default) --
-set d_max_boost_gain = 37
+set d_max_gain = 37
 set d_max_advance = 20
 
 # -- TPA (default) --
