@@ -121,6 +121,7 @@
       "Alex Vanover",
       "Betaflight",
       "Daniel Appel / Tehllama",
+      "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
       "Directory",
       "Evan Turner (Headsup)",
       "Ivan Efimov (Limon)",
@@ -198,6 +199,7 @@
       "Supafly",
       "SupaflyFPV",
       "TBS",
+      "TinyTrainer",
       "Toothpick",
       "UAV Tech",
       "\\\\GAS",
@@ -281,7 +283,6 @@
       "texas",
       "tiny",
       "tiny tank",
-      "tinyTrainer",
       "tracer",
       "trainer",
       "tramp",
@@ -2201,7 +2202,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
-      "hash": "056919383166d33cba703ae3c43d96f1eb7ca8540c3066faed8f34e4344b2c8b",
+      "hash": "af5180e1233d47b90d0e9e739ab4f05c4e346873fc92b61ea1bff573e4124d27",
       "options": [],
       "title": "Tune defaults for Basic 4.3 TUNES",
       "firmware_version": [
@@ -2885,6 +2886,42 @@
       "include": [
         "presets/4.3/tune/defaults.txt",
         "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_Tune.txt",
+      "hash": "0934ef5e89af035eea8cebf973e4eb6845e0a4db29533ce8193576d25d9b053e",
+      "options": [
+        {
+          "name": "Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)",
+          "checked": false
+        },
+        {
+          "name": "Apply TPA Settings to current rateprofile only",
+          "checked": true
+        }
+      ],
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
+      "description": [
+        "This is an adaptation of the 533 TinyTrainer tune, and expects bidir DShot ESCs at 48kHz PWM with MedHigh timing.",
+        "These fly best on 3S batteries in the 450-550mAh capacity range."
+      ],
+      "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
+      "include": [
+        "presets/4.3/tune/defaults.txt"
       ]
     },
     {
