@@ -1,13 +1,13 @@
 #$ TITLE: 5in FreedomSpec Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: 533, HighKV, FreedomSpec, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23°/MedHigh timing
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune.  4S and 5S will run a very conservative open race tune.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S currently active will likely cause damage.
-#$ WARNING: Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.
+#$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause damage.  
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt

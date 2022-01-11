@@ -1,7 +1,7 @@
 #$ TITLE: 3in Lightweight Race GTB339 3S/2S Tune
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: OFFICIAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
@@ -110,7 +110,7 @@ set simplified_pitch_d_gain = 105
 set simplified_dterm_filter_multiplier = 160
 
 
-#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
+#$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
 rateprofile 0
 set tpa_rate = 72
 set tpa_breakpoint = 1350
@@ -138,7 +138,7 @@ set tpa_breakpoint = 1350
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply TPA Settings to current rateprofile only
+#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to current rateprofile only
 set tpa_rate = 72
 set tpa_breakpoint = 1350
 #$ OPTION END

@@ -6,7 +6,7 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Contains various radio link configurations for racing and dual-sport RC_Link setups
 
-#$ OPTION BEGIN (CHECKED):  ELRS Race
+#$ OPTION BEGIN (UNCHECKED):  ELRS Race
 feature RX_SERIAL
 set serialrx_provider = CRSF
 
@@ -14,6 +14,9 @@ set rc_smoothing = ON
 set feedforward_averaging = OFF
 set report_cell_voltage = ON
 set rc_smoothing_auto_factor = 30
+
+set rssi_channel = 0
+
 
 profile 0
 set feedforward_averaging = OFF
@@ -62,6 +65,8 @@ set serialrx_provider = CRSF
 
 set rc_smoothing = ON
 
+set rssi_channel = 0
+
 profile 0
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
@@ -82,6 +87,8 @@ set rc_smoothing_auto_factor = 60
 #$ OPTION BEGIN (UNCHECKED):  FrSky SBUS D16-8Ch No-Telem (XM+)
 feature RX_SERIAL
 set serialrx_provider = SBUS
+
+set rssi_channel = 16
 
 profile 0
 set feedforward_averaging = 2_POINT
@@ -109,6 +116,7 @@ set feedforward_averaging = OFF
 set feedforward_smoothing = 20
 set frsky_vfas_precision = 1
 set rc_smoothing_auto_factor = 30
+set rssi_channel = 8
 #$ OPTION END
 
 
@@ -118,6 +126,7 @@ feature TELEMETRY
 set serialrx_provider = FPORT
 set serialrx_halfduplex = ON
 set tlm_halfduplex = ON
+set rssi_channel = 8
 
 profile 0
 set feedforward_averaging = 2_POINT
@@ -168,28 +177,24 @@ set feedforward_averaging = OFF
 set report_cell_voltage = ON
 set rc_smoothing_auto_factor = 30
 
+set rssi_channel = 0
+
 profile 0
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 12
-set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
 set feedforward_max_rate_limit = 103
 profile 1
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 12
-set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
 set feedforward_max_rate_limit = 103
 profile 2
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 12
-set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
 set feedforward_max_rate_limit = 103
 
-# aux
-aux 0 0 0 1300 2100 0 0
-aux 1 13 1 1700 2100 0 0
-aux 2 26 0 1700 2100 0 0
-aux 3 35 2 1200 1350 0 0
-aux 4 36 1 900 1300 0 0
-aux 5 49 2 900 1200 0 0
+#$ INCLUDE: presets/4.3/modes/LlamaELRS.txt
 
 #$ OPTION END

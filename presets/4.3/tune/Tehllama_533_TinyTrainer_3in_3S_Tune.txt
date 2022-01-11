@@ -66,9 +66,9 @@ set d_min_pitch = 29
 set d_max_advance = 0
 set auto_profile_cell_count = 3
 set thrust_linear = 10
-set feedforward_averaging = 2_POINT
-set feedforward_jitter_factor = 12
-set feedforward_max_rate_limit = 97
+# set feedforward_averaging = 2_POINT
+# set feedforward_jitter_factor = 12
+# set feedforward_max_rate_limit = 97
 set dyn_idle_min_rpm = 27
 set simplified_i_gain = 65
 set simplified_d_gain = 95
@@ -80,7 +80,7 @@ set simplified_pitch_pi_gain = 105
 set simplified_dterm_filter_multiplier = 130
 
 
-#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
+#$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)
 rateprofile 0
 set tpa_rate = 60
 set tpa_breakpoint = 1200
@@ -108,7 +108,7 @@ set tpa_breakpoint = 1200
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply TPA Settings to current rateprofile only
+#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to current rateprofile only
 set tpa_rate = 60
 set tpa_breakpoint = 1200
 #$ OPTION END

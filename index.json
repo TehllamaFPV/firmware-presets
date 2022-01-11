@@ -120,6 +120,7 @@
       "Alex Campbell (Chief)",
       "Alex Vanover",
       "Betaflight",
+      "Daniel \"Tehllama\" Appel",
       "Daniel Appel / Tehllama",
       "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
       "Directory",
@@ -748,6 +749,28 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/modes/LlamaELRS.txt",
+      "hash": "d8cf575d00a8b7a4ac9471ebc335296914228ac9460526571b262d0d5cc9e6ab",
+      "options": [],
+      "title": "Tehllama ELRS Modes",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch"
+      ],
+      "author": "Daniel \"Tehllama\" Appel",
+      "description": [
+        "Sets modes and adjustment ranges to Llama ELRS Channels"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "678b47f6387b4728d81df47685778882f34bf1afa1b321ce7193e34d351d6927",
       "options": [],
@@ -769,7 +792,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/Tehllama_OSD_All.txt",
-      "hash": "610663f3cd34c88d4d72975905f4b4790af3334561b4b98064050c929bf95263",
+      "hash": "1b1415ef275696c159ca0d85a6813f175ba3f6cbe01df5e53d77e8489d0e710a",
       "options": [
         {
           "name": "PAL OSD",
@@ -828,7 +851,7 @@
     },
     {
       "fullPath": "presets/4.3/other/LaunchMode_Stand60.txt",
-      "hash": "aa08c1172300f59bedf292a98162642f156c713fd2be9c1530038ea89342bd10",
+      "hash": "4e768ba07e2200c60edee36443c0f670881a3e374bc597c3463843650ff567b6",
       "options": [
         {
           "name": "Apply to current RateProfile Only",
@@ -1377,7 +1400,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/Tehllama_Nytfury_533_Race_RateBank.txt",
-      "hash": "3cb699ca8e8850026af04b895ff61165a37f1c9c91791e42d1f1b2033b81560b",
+      "hash": "d9f505a4d2fc595845eea484692af93e80aa294881a89f593b8ac90759752c64",
       "options": [
         {
           "name": "Overwrite Rate Profile 1 with Tehllama Rates",
@@ -1859,11 +1882,11 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "ac141c7e99f5ad8fcbad1b9607eddfadcf3eef7e8d1e911c6c116b09c69af8d6",
+      "hash": "57e64e622d3c868f022587f972e705a6d397d0ce203f90f2fc1a400edf9ac710",
       "options": [
         {
           "name": "ELRS Race",
-          "checked": true
+          "checked": false
         },
         {
           "name": "CRSF 6.7ms Race",
@@ -1914,6 +1937,9 @@
       "author": "Daniel Appel / Tehllama",
       "description": [
         "Contains various radio link configurations for racing and dual-sport RC_Link setups"
+      ],
+      "include": [
+        "presets/4.3/modes/LlamaELRS.txt"
       ]
     },
     {
@@ -2890,15 +2916,15 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_Tune.txt",
-      "hash": "0934ef5e89af035eea8cebf973e4eb6845e0a4db29533ce8193576d25d9b053e",
+      "hash": "8b437be6edd07c08efa702a2afda7bd5988868465c63a898ee614df9ad6ef662",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)",
-          "checked": false
+          "checked": true
         },
         {
           "name": "Apply TPA Settings to current rateprofile only",
-          "checked": true
+          "checked": false
         }
       ],
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
@@ -2926,15 +2952,15 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1700-2250KV_4S-5S-6S_Race_Tune.txt",
-      "hash": "441710082c4358551a2d1fb630a30b17ebb45f8b62998fe6068148bb1eaaf038",
+      "hash": "7247c554ff9b4a6fa0e32f68a3f73fafa0a0726d9d7a38be81dc5d0c34b3703a",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
-          "checked": false
+          "checked": true
         },
         {
           "name": "Apply TPA Settings to current rateprofile only",
-          "checked": true
+          "checked": false
         },
         {
           "name": "2350KV 6S Motor Output Limit",
@@ -2983,23 +3009,19 @@
       ]
     },
     {
-      "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2150KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
-      "hash": "d8f0129df8bf740f03cdec9ba7890f0545cb6c38db10bf6cfec884b0372c4608",
+      "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
+      "hash": "ad32384e2e72d0cceda796723e8136b02bc4590ad891edde59c9e38f208ff5d4",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
-          "checked": false
-        },
-        {
-          "name": "Apply TPA Settings to current rateprofile only",
           "checked": true
         },
         {
-          "name": "2150KV Motor Output Limit",
+          "name": "Apply TPA Settings to current rateprofile only",
           "checked": false
         },
         {
-          "name": "2100KV Motor Output Limit",
+          "name": "2000KV Motor Output Limit",
           "checked": false
         },
         {
@@ -3007,7 +3029,15 @@
           "checked": false
         },
         {
-          "name": "2000KV Motor Output Limit",
+          "name": "2100KV Motor Output Limit",
+          "checked": false
+        },
+        {
+          "name": "2150KV Motor Output Limit",
+          "checked": false
+        },
+        {
+          "name": "2250KV Motor Output Limit",
           "checked": false
         }
       ],
@@ -3030,8 +3060,8 @@
         "Built for 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing",
         "3S (2200mAh) will run a spec tune.  5S and 6S will run a very conservative open race tune."
       ],
-      "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.",
-      "warning": "Use at your own risk.  This tune does not have a profile auto-select with 4S batteries, which may case issues if Profile 3 (3S) is selected. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
+      "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
+      "warning": "Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case issues if Profile 3 (3S) is selected.",
       "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
       "include": [
         "presets/4.3/tune/defaults.txt"
@@ -3039,7 +3069,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_2350-2750KV-Freedom_3S-4S-5S_Race_Tune.txt",
-      "hash": "c0d12627a941a49ec1029ef178b0825460bfb27e79d4ffc5adb1549002d5fe50",
+      "hash": "916daad428e84d08052aa9c3085f1a6dda7dd92392b8a349abaaa96d90dba4d7",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",
@@ -3079,7 +3109,7 @@
         "4.3"
       ],
       "category": "TUNE",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
         "533",
         "HighKV",
@@ -3094,8 +3124,8 @@
         "Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23°/MedHigh timing",
         "3S (2200mAh) will run a spec tune.  4S and 5S will run a very conservative open race tune."
       ],
-      "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S currently active will likely cause damage.",
-      "warning": "Use at your own risk.  Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
+      "disclaimer": "This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 4S and 5S packs. Extensive testing has been done across 54+ builds, however not every craft will run best on this tune.",
+      "warning": "Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause damage.",
       "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
       "include": [
         "presets/4.3/tune/defaults.txt"
@@ -3103,15 +3133,15 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_Tune.txt",
-      "hash": "bedc0d647eb8a27d58164bcf7b1593b6e72f094626d64d701bda63098bd0f420",
+      "hash": "6a010910b5f4d6ad10dbc79983cab84739eed5d9ebfeafb57cdc13ad5c990b69",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)",
-          "checked": false
+          "checked": true
         },
         {
           "name": "Apply TPA Settings to current rateprofile only",
-          "checked": true
+          "checked": false
         }
       ],
       "title": "3in Lightweight Race GTB339 3S/2S Tune",
@@ -3119,7 +3149,7 @@
         "4.3"
       ],
       "category": "TUNE",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
         "GTB339",
         "Toothpick",
