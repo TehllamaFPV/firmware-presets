@@ -27,7 +27,6 @@ set osd_warn_gps_rescue_disabled = ON
 set osd_warn_rssi = ON
 set osd_warn_link_quality = OFF
 set osd_link_quality_alarm = 80
-set osd_rssi_dbm_alarm = 60
 set osd_cap_alarm = 1200
 set osd_alt_alarm = 100
 set osd_esc_temp_alarm = -128
