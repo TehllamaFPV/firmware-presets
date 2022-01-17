@@ -1882,14 +1882,14 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "57e64e622d3c868f022587f972e705a6d397d0ce203f90f2fc1a400edf9ac710",
+      "hash": "d3728cae54063bf9d355b6142668ea9762d5cdd825f4c1a93637bf18d9fa3b7e",
       "options": [
         {
           "name": "ELRS Race",
           "checked": false
         },
         {
-          "name": "CRSF 6.7ms Race",
+          "name": "CRSF 150Hz Race",
           "checked": false
         },
         {
