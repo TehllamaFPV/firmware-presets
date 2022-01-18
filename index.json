@@ -750,7 +750,7 @@
     },
     {
       "fullPath": "presets/4.3/modes/LlamaELRS.txt",
-      "hash": "d8cf575d00a8b7a4ac9471ebc335296914228ac9460526571b262d0d5cc9e6ab",
+      "hash": "efd24fed63999012347bc138d6b1008b6b4655e82010c5893a90c7c364b25858",
       "options": [],
       "title": "Tehllama ELRS Modes",
       "firmware_version": [
@@ -792,7 +792,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/Tehllama_OSD_All.txt",
-      "hash": "1b1415ef275696c159ca0d85a6813f175ba3f6cbe01df5e53d77e8489d0e710a",
+      "hash": "9f591af253ae481e9de56f6ca548ef714f6d429cc84c635c001f6821370197d9",
       "options": [
         {
           "name": "PAL OSD",
@@ -3010,7 +3010,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_Tune.txt",
-      "hash": "ad32384e2e72d0cceda796723e8136b02bc4590ad891edde59c9e38f208ff5d4",
+      "hash": "408e4c4d104ce2c79858dc856c465ba6c6ec2ee545213dbf026c2acb9efcb840",
       "options": [
         {
           "name": "Apply TPA Settings to all rateprofiles",

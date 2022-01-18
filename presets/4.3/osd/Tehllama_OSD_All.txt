@@ -24,8 +24,8 @@ set osd_warn_fail_safe = ON
 set osd_warn_launch_control = ON
 set osd_warn_no_gps_rescue = ON
 set osd_warn_gps_rescue_disabled = ON
-set osd_warn_rssi = ON
-set osd_warn_link_quality = OFF
+set osd_warn_rssi = OFF
+set osd_warn_link_quality = ON
 set osd_link_quality_alarm = 80
 set osd_cap_alarm = 1200
 set osd_alt_alarm = 100
@@ -121,8 +121,9 @@ set osd_profile = 1
 
 #$ OPTION BEGIN (CHECKED):  NTSC OSD
 set osd_profile = 1
-set osd_warn_rssi = ON
-set osd_rssi_alarm = 40
+set osd_warn_rssi = OFF
+set osd_warn_link_quality = ON
+set osd_link_quality_alarm = 80
 set osd_cap_alarm = 1000
 set osd_vbat_pos = 2401
 set osd_tim_1_pos = 2455
