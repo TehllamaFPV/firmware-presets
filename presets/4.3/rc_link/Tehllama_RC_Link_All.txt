@@ -44,15 +44,15 @@ set rc_smoothing = ON
 
 profile 0
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 25
+set feedforward_smoothing = 45
 set feedforward_max_rate_limit = 97
 profile 1
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 25
+set feedforward_smoothing = 45
 set feedforward_max_rate_limit = 97
 profile 2
 set feedforward_averaging = 2_POINT
-set feedforward_smoothing = 25
+set feedforward_smoothing = 45
 set feedforward_max_rate_limit = 97
 
 set rc_smoothing_auto_factor = 30
