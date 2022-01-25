@@ -7,9 +7,11 @@
 #$ KEYWORDS: Race, Rates, Racing, Bank, Nytfury, HeadsUp, 533, Limon, Beginner
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: These are some proven race rates for pilots to use
-#$ DISCLAIMER: Use selected options if you want to preserve any existing RateProfile 1 values
-#$ WARNING: These rates are all Legacy Betaflight type rates.  
+#$ DESCRIPTION: Use selected options if you want to preserve any existing RateProfile 1 values
+#$ DISCLAIMER: These rates are all Legacy Betaflight type rates.  
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 
 #$ OPTION BEGIN (UNCHECKED): Overwrite Rate Profile 1 with Tehllama Rates
