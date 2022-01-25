@@ -1400,7 +1400,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/Tehllama_Nytfury_533_Race_RateBank.txt",
-      "hash": "d9f505a4d2fc595845eea484692af93e80aa294881a89f593b8ac90759752c64",
+      "hash": "94a042937381eb6c3298cc0968774de84a1ef98b4380b5a5298fcc6efec0ac10",
       "options": [
         {
           "name": "Overwrite Rate Profile 1 with Tehllama Rates",
@@ -1452,10 +1452,10 @@
       ],
       "author": "Daniel Appel / Tehllama",
       "description": [
-        "These are some proven race rates for pilots to use"
+        "These are some proven race rates for pilots to use",
+        "Use selected options if you want to preserve any existing RateProfile 1 values"
       ],
-      "disclaimer": "Use selected options if you want to preserve any existing RateProfile 1 values",
-      "warning": "These rates are all Legacy Betaflight type rates.",
+      "disclaimer": "These rates are all Legacy Betaflight type rates.",
       "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/"
     },
     {
@@ -1882,7 +1882,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "d3728cae54063bf9d355b6142668ea9762d5cdd825f4c1a93637bf18d9fa3b7e",
+      "hash": "a56e2f6580edf0c041f2eafaa43d60d2ac0866e4aed0781a8fef00ce62a82294",
       "options": [
         {
           "name": "ELRS Race",

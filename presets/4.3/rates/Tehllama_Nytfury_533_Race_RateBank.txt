@@ -11,7 +11,7 @@
 #$ DISCLAIMER: These rates are all Legacy Betaflight type rates.  
 #$ DISCUSSION: https://app.slack.com/client/T221J1F6J/C0228HK2MD4/
 
-#$ FORCE_OPTIONS_REVIEW: TRUE
+# FORCE_OPTIONS_REVIEW: TRUE
 
 
 #$ OPTION BEGIN (UNCHECKED): Overwrite Rate Profile 1 with Tehllama Rates
