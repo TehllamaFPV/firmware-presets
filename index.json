@@ -1882,22 +1882,26 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "a56e2f6580edf0c041f2eafaa43d60d2ac0866e4aed0781a8fef00ce62a82294",
+      "hash": "a31e8013d481cf1e52a73b0d95dd43a0d48e0f9a443ff8f6563aba32d5475d57",
       "options": [
         {
-          "name": "ELRS Race",
+          "name": "ELRS Race 250Hz - All Profiles",
           "checked": false
         },
         {
-          "name": "CRSF 150Hz Race",
+          "name": "ELRS Race 500Hz - All Profiles",
           "checked": false
         },
         {
-          "name": "CRSF 20ms Dual-Sport",
+          "name": "CRSF 150Hz Race - All Profiles",
           "checked": false
         },
         {
-          "name": "FrSky SBUS D16-8Ch No-Telem (XM+)",
+          "name": "CRSF 20ms Dual-Sport - All Profiles",
+          "checked": false
+        },
+        {
+          "name": "FrSky SBUS D16-8Ch No-Telem (XM+) - All Profiles",
           "checked": false
         },
         {
@@ -1909,7 +1913,7 @@
           "checked": false
         },
         {
-          "name": "FlySky IBUS 20ms Race",
+          "name": "FlySky IBUS 20ms Race - All Profiles",
           "checked": false
         },
         {
