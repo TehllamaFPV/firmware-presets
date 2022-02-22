@@ -41,7 +41,6 @@ feature RX_SERIAL
 set serialrx_provider = CRSF
 
 set rc_smoothing = ON
-set feedforward_averaging = OFF
 set report_cell_voltage = ON
 set rc_smoothing_auto_factor = 50
 
@@ -50,19 +49,16 @@ set rssi_channel = 0
 
 profile 0
 set feedforward_averaging = 2_POINT
-set feedforward_averaging = OFF
 set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 44
 set feedforward_max_rate_limit = 103
 profile 1
 set feedforward_averaging = 2_POINT
-set feedforward_averaging = OFF
 set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 44
 set feedforward_max_rate_limit = 103
 profile 2
 set feedforward_averaging = 2_POINT
-set feedforward_averaging = OFF
 set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 44
 set feedforward_max_rate_limit = 103
