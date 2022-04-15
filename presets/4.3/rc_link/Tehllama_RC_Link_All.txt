@@ -1,0 +1,229 @@
+#$ TITLE: Tehllama RC Link Settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RC_LINK
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: RC_LINK, Llama, CRSF, ELRS, FrSky, FPort, SBUS, FlySky, IBUS
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: Contains various radio link configurations for racing and dual-sport RC_Link setups
+
+#$ OPTION BEGIN (UNCHECKED):  ELRS Race 250Hz - All Profiles
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+set rc_smoothing = ON
+set feedforward_averaging = OFF
+set report_cell_voltage = ON
+set rc_smoothing_auto_factor = 30
+
+set rssi_channel = 0
+
+
+profile 0
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+profile 1
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+profile 2
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  ELRS Race 500Hz - All Profiles
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+set rc_smoothing = ON
+set report_cell_voltage = ON
+set rc_smoothing_auto_factor = 50
+
+set rssi_channel = 0
+
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 11
+set feedforward_smooth_factor = 44
+set feedforward_max_rate_limit = 103
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 11
+set feedforward_smooth_factor = 44
+set feedforward_max_rate_limit = 103
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 11
+set feedforward_smooth_factor = 44
+set feedforward_max_rate_limit = 103
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  CRSF 150Hz Race - All Profiles
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+set rc_smoothing = ON
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 45
+set feedforward_max_rate_limit = 97
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 45
+set feedforward_max_rate_limit = 97
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 45
+set feedforward_max_rate_limit = 97
+
+set rc_smoothing_auto_factor = 30
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED):  CRSF 20ms Dual-Sport - All Profiles
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+set rc_smoothing = ON
+
+set rssi_channel = 0
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 92
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 92
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 92
+
+set rc_smoothing_auto_factor = 60
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED):  FrSky SBUS D16-8Ch No-Telem (XM+) - All Profiles
+feature RX_SERIAL
+set serialrx_provider = SBUS
+
+set rssi_channel = 16
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+
+set frsky_vfas_precision = 1
+set rc_smoothing_auto_factor = 30
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED):  FrSky SBUS D16-8Ch Telem Ch8 (XSR/R-XSR)
+feature RX_SERIAL
+feature TELEMETRY
+set serialrx_provider = SBUS
+set feedforward_averaging = OFF
+set feedforward_smoothing = 20
+set frsky_vfas_precision = 1
+set rc_smoothing_auto_factor = 30
+set rssi_channel = 8
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED):  FrSky FPort D16-8Ch Telem Ch8 (XSR/R-XSR)
+feature RX_SERIAL
+feature TELEMETRY
+set serialrx_provider = FPORT
+set serialrx_halfduplex = ON
+set tlm_halfduplex = ON
+set rssi_channel = 8
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+
+set frsky_vfas_precision = 1
+set rc_smoothing_auto_factor = 30
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED):  FlySky IBUS 20ms Race - All Profiles
+feature RX_SERIAL
+set serialrx_provider = IBUS
+
+set rc_smoothing = ON
+
+profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 1
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+
+set rc_smoothing_auto_factor = 30
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  ELRS Race + Llama Modes (3 AUX)
+feature RX_SERIAL
+set serialrx_provider = CRSF
+
+set rc_smoothing = ON
+set feedforward_averaging = OFF
+set report_cell_voltage = ON
+set rc_smoothing_auto_factor = 30
+
+set rssi_channel = 0
+
+profile 0
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+profile 1
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+profile 2
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_smooth_factor = 35
+set feedforward_max_rate_limit = 103
+
+#$ INCLUDE: presets/4.3/modes/Llama_ELRS_Modes.txt
+
+#$ OPTION END
