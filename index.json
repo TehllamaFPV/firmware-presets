@@ -10,7 +10,6 @@
       "VTX": "VTX",
       "LEDS": "LEDS",
       "MODES": "MODES",
-      "RC_SMOOTHING": "RC_SMOOTHING",
       "FILTERS": "FILTERS",
       "RC_LINK": "RC_LINK",
       "BNF": "BNF",
@@ -134,6 +133,8 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "3.5",
+      "4.1",
       "4.2",
       "4.3"
     ],
@@ -145,7 +146,6 @@
       "OTHER",
       "RATES",
       "RC_LINK",
-      "RC_SMOOTHING",
       "TUNE",
       "VTX"
     ],
@@ -156,6 +156,9 @@
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
+      "Daniel \"Tehllama\" Appel",
+      "Daniel Appel / Tehllama",
+      "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
@@ -167,8 +170,8 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
-      "Mark Spatz (UAV Tech)",
       "MinChan Kim",
+      "MrAlucardDante",
       "NemesisXB",
       "Sjoer van der Ploeg",
       "sugarK",
@@ -184,8 +187,11 @@
       "1S",
       "20ms",
       "250Hz",
+      "2in",
       "2ms",
+      "2S",
       "3 inch",
+      "3.5in",
       "3\"",
       "3in",
       "4in",
@@ -202,32 +208,44 @@
       "6\"",
       "65mm",
       "666Hz",
+      "6in",
       "6S",
       "7 Inch",
       "7\"",
+      "7in",
+      "8\"",
+      "8in",
+      "8S",
+      "9\"",
+      "9in",
       "9ms",
       "acro",
       "Acrobaix",
       "actual",
       "adjustments",
-      "aggressive",
       "AlexFPV",
+      "analog",
       "aux",
       "AyyyKayyy",
       "bando",
+      "Bank",
       "bardwell",
       "basher",
       "basic",
+      "Beginner",
       "betaflight",
       "blackbox",
       "BMI270",
       "BMSThomas",
       "brushless",
+      "Busy",
       "camera",
       "camera_control",
       "Cgo",
       "Chief",
+      "cinelifter",
       "cinematic",
+      "cinewhoop",
       "clean",
       "clear",
       "control",
@@ -245,6 +263,7 @@
       "DShot telemetry",
       "dual",
       "E7082VM",
+      "eachine",
       "ELRS",
       "emax",
       "EVO",
@@ -255,39 +274,47 @@
       "filtering",
       "filters",
       "five33",
+      "FlySky",
+      "FPort",
       "fpvian",
       "freedom",
       "freedom spec",
+      "FreedomSpec",
       "freestyle",
-      "freestyle_HD",
       "freesytle",
+      "freetyle",
       "frsky",
       "Garban",
       "ghost",
       "GHST",
       "GPS",
+      "GTB339",
       "gyro",
+      "gyroflow",
       "gyros",
       "gyroscope",
       "HD",
-      "HD_freestyle",
       "HDzero",
       "Headsup",
+      "HighKV",
       "hot",
       "HV",
+      "IBUS",
       "IllusionFpv",
       "immersion",
       "immersionRC",
       "IRC",
-      "jitter",
+      "IRC Tramp",
       "justice",
       "karate",
       "KarateBrot",
-      "launch",
+      "Launch",
       "launch_mode",
+      "LaunchMode",
       "leds",
       "Limon",
       "link",
+      "Llama",
       "log",
       "logging",
       "Long Range",
@@ -297,18 +324,22 @@
       "mode",
       "modes",
       "MultiGP",
+      "MultiVoltage",
       "names",
       "nano",
       "nanohawk",
       "no rpm",
       "noisy",
       "normal",
+      "NTSC",
+      "Nytfury",
       "OP400",
       "OpenRacer",
       "OpenVTx",
       "OSD",
       "OVX300",
       "OVX303",
+      "PAL",
       "partial",
       "pid",
       "pro32",
@@ -324,7 +355,6 @@
       "rates",
       "RC",
       "rc link",
-      "rc smoothing",
       "rc_link",
       "rc_smoothing",
       "Redpine",
@@ -342,17 +372,17 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
+      "Safe",
       "sbus",
       "SBUS fast",
       "settings",
       "shames",
       "shark bite",
       "smartaudio",
-      "smooth",
       "smoothing",
       "Solid250",
       "some",
-      "spec",
+      "Spec",
       "speedybee",
       "stats",
       "suagrK",
@@ -360,23 +390,24 @@
       "Supafly",
       "SupaflyFPV",
       "switch",
+      "SWPR",
       "tank solo",
       "tank ultimate",
       "TBS",
       "Team Black Sheep",
-      "texas",
+      "Texas",
       "tiny",
       "tiny tank",
-      "tinyTrainer",
+      "TinyTrainer",
+      "toothpic",
+      "Toothpick",
       "Tracer",
       "trainer",
-      "TRAMP",
-      "transition",
+      "tramp",
       "transmitter",
-      "tune",
+      "Tune",
       "twig",
       "tx800",
-      "UAV Tech",
       "ultra",
       "ultra 1000",
       "unify",
@@ -395,51 +426,6 @@
     ]
   },
   "presets": [
-    {
-      "fullPath": "presets/4.3/filters/BMI270.txt",
-      "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
-      "title": "4.3 Filter settings for BMI270 gyroscope",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "BMI270",
-        "filter",
-        "filters",
-        "gyroscope",
-        "gyro",
-        "gyros",
-        "settings",
-        "RPM"
-      ],
-      "author": "DusKing1 (Hugo Chiang), Pitronic",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/BMI270_dual.txt",
-      "hash": "9a33f16483824bd26cabd1ffc2004f2fbf480cd981b4495340987c1a674e1e93",
-      "title": "4.3 Filter settings for dual BMI270 gyroscope",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "BMI270",
-        "filter",
-        "filters",
-        "dual",
-        "gyroscope",
-        "gyro",
-        "gyros",
-        "settings",
-        "RPM"
-      ],
-      "author": "DusKing1 (Hugo Chiang), Pitronic",
-      "priority": 100
-    },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
       "hash": "751a6f316eb81fd94215291eb35b719cc52d9ca66baa53668d495f8351e1156c",
@@ -461,7 +447,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/defaults.txt",
-      "hash": "cd9af0626bc1e8be0738e39995b8d77b0494ee78b83815d4dab261d66c5ae5fd",
+      "hash": "34a776bc7ab697a6f72f35fcfb77ab9764c0266186f8edd937f901587711e26f",
       "title": "Default 4.3 Filter settings",
       "firmware_version": [
         "4.3"
@@ -706,6 +692,51 @@
       "priority": 100
     },
     {
+      "fullPath": "presets/4.3/filters/dusking_BMI270.txt",
+      "hash": "0dd77e8e1baed07019f836352818d0b8eccb1125f5123511cc25cb0118591a8d",
+      "title": "DusKing's BMI270 filter settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.3/filters/dusking_BMI270_dual.txt",
+      "hash": "359a3d4d5391cb3c30bec79cc00db8dbb39de19c587bd8584930c1d21e06cb3e",
+      "title": "DusKing's dual BMI270 filter settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "dual",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.3/filters/karate_array.txt",
       "hash": "7d4913bf9839cc9bb055ab942a22c3c015a2f258e30633a07edcaaf98eb85df0",
       "title": "the Karate array",
@@ -726,6 +757,26 @@
         "5\""
       ],
       "author": "sugarK",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.3/filters/Tehllama_Filter_5in_LlamaFilterArray.txt",
+      "hash": "76af1d75c86d121c9af370283babcc326b711122a4cd6a3e9a8e6a273f4a1f18",
+      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
       "priority": 100
     },
     {
@@ -767,6 +818,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/modes/Llama_ELRS_Modes.txt",
+      "hash": "efd24fed63999012347bc138d6b1008b6b4655e82010c5893a90c7c364b25858",
+      "title": "Tehllama ELRS Modes",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch"
+      ],
+      "author": "Daniel \"Tehllama\" Appel",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/osd/defaults.txt",
       "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
       "title": "Default 4.3 OSD settings",
@@ -781,6 +851,75 @@
         "OSD"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/Tehllama_OSD_All.txt",
+      "hash": "9f591af253ae481e9de56f6ca548ef714f6d429cc84c635c001f6821370197d9",
+      "title": "Tehllama OSD Settings",
+      "firmware_version": [
+        "3.5",
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD",
+        "Llama",
+        "DJI",
+        "PAL",
+        "NTSC",
+        "Busy"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/UAV_tech_Analog.txt",
+      "hash": "b304bd4f3d0e6ab42840badced7e07847ca654c5fd048dba8c53b96128788763",
+      "title": "UAV Tech - Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "analog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/UAV_tech_DJI.txt",
+      "hash": "bc8e6e7c6811e7dc0c3dce503795e6ac263471b78de444c56c9bdb6dfc1c1821",
+      "title": "UAV Tech - DJI",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "DJI"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/osd/UAV_tech_DJI_GPS.txt",
+      "hash": "71aa3f012c239248629894e48e5ce5d7e83fc4c4b3e6e166d835a73b8e8588e7",
+      "title": "UAV Tech - DJI with GPS",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "DJI",
+        "GPS"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
       "priority": 0
     },
     {
@@ -800,6 +939,45 @@
         "sugarK"
       ],
       "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/gyroflow_min_blackbox.txt",
+      "hash": "15c71e564d549b8e3abd80026c83ff17241606137af32dd5a7b6f42ee228cc4c",
+      "title": "Gyroflow minimum settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "gyroflow",
+        "blackbox",
+        "log",
+        "DDC",
+        "Acrobaix",
+        "Garban"
+      ],
+      "author": "Garban",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/LaunchMode_Stand60.txt",
+      "hash": "5d719549d73fc99d2d55cc73222ea8ab9faff41f80c80950cd9a6124b944923b",
+      "title": "Tehllama Launch Stand Mode Enabled",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "status": "EXPERIMENTAL",
+      "category": "OTHER",
+      "keywords": [
+        "Race",
+        "Launch",
+        "LaunchMode",
+        "Mode"
+      ],
+      "author": "Daniel Appel / Tehllama",
       "priority": 0
     },
     {
@@ -927,6 +1105,91 @@
         "stats"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_1600-2250KV_4S-5S-6S_Race_TUNE-OTHER.txt",
+      "hash": "02119c80bcbcd4f8b8c62f5be0282d2fb61beaa5bb643bad1b1e6aa60dc8d21e",
+      "title": "5in Tehllama Race Tune 1600-2250KV on 4S/5S/6S",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Race",
+        "Llama",
+        "Safe",
+        "Tune",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
+      "hash": "e28de3947d6208c58d87fd82e636ad2583ec9247c944af0c26ce72d869ee006e",
+      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
+      "hash": "0349aa73fb07608e1d145a011e93f98185401529b7549347ea5c4a09fb825d1d",
+      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "533",
+        "HighKV",
+        "FreedomSpec",
+        "Spec",
+        "Tune",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_OTHER.txt",
+      "hash": "bde48ee9a556913410d3517874b1fd1e378908dfa2298a8ee07a5f1b9f3eba93",
+      "title": "3in Lightweight Race GTB339 3S/2S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "GTB339",
+        "Toothpick",
+        "Spec",
+        "Tune",
+        "Race",
+        "Llama",
+        "SWPR",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
       "priority": 0
     },
     {
@@ -1164,22 +1427,46 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.3/rates/Tehllama_Nytfury_533_Limon_RATEBANK.txt",
+      "hash": "2faf80cb8ee623f58edc12b0e4432c2b12c79ba80ab1b4d88187f1431c1a9920",
+      "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
+      "firmware_version": [
+        "3.5",
+        "4.2",
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Race",
+        "Rates",
+        "Racing",
+        "Bank",
+        "Nytfury",
+        "HeadsUp",
+        "533",
+        "Limon",
+        "Beginner"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.3/rates/UAV_tech.txt",
-      "hash": "b446efe96a216241890e10e0308030dd02b4ca975df3d50ba6723039768c343e",
-      "title": "UAV Tech rates",
+      "hash": "b0ca5a2a097e8b90f0aa50cbc72936512b4adfdde9a83cff76bd05fc87d36e62",
+      "title": "UAV Tech Rates (w/ Cinematic/Whoop Options)",
       "firmware_version": [
         "4.3"
       ],
       "category": "RATES",
-      "status": "OFFICIAL",
+      "status": "COMMUNITY",
       "keywords": [
-        "UAV Tech",
-        "youtube",
-        "freestyle",
-        "HD",
-        "cinematic"
+        "whoop",
+        "freetyle",
+        "cinematic",
+        "HD"
       ],
-      "author": "Mark Spatz (UAV Tech)",
+      "author": "UAV Tech (Mark Spatz)",
       "priority": 10000
     },
     {
@@ -1226,7 +1513,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/DJI_Normal.txt",
-      "hash": "502da7e4901758251bc6e239d5a48a5a1e2e8b8ff108092040948a2a0d7a5ab4",
+      "hash": "f6adb5f164fe234ee3e0f96747d629d548ac222fb7d7f658202a2bb60d786bdf",
       "title": "DJI Normal",
       "firmware_version": [
         "4.3"
@@ -1245,7 +1532,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/DJI_SBUS_Fast.txt",
-      "hash": "8903a50237bdb9b735effce19ae351f4dc1709315f572a2620c198e600035302",
+      "hash": "47e4acedecf6c68c74f9fe664a8614f4a2d3517e0665030918a549ca34d623ad",
       "title": "DJI SBUS FAST",
       "firmware_version": [
         "4.3"
@@ -1765,8 +2052,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/long_range.txt",
-      "hash": "f3e7692c910c73f728776b190406d6395afbdfcf4e867aaed8f99a412559e9c9",
-      "title": "IRC Ghost; Mode: Long Range",
+      "hash": "37bf52892ae6489822ac980577a60b81bf2762b87f0b5d18fce38855637f84d9",
+      "title": "IRC Ghost (Long Range)",
       "firmware_version": [
         "4.3"
       ],
@@ -1790,8 +2077,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/normal.txt",
-      "hash": "f00c3298575744c10549dcaa46e11f1b9f47ad9d1ecea75fb1018254c1deeae4",
-      "title": "IRC Ghost; Mode: Normal",
+      "hash": "2c208ecec8ec21fe23a20c150d91b9debe94a3bbe85e8513730288bad2fdc221",
+      "title": "IRC Ghost (Mode: Normal)",
       "firmware_version": [
         "4.3"
       ],
@@ -1816,8 +2103,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/pure_race.txt",
-      "hash": "774246459eb0f90d2a711f33629434a158e6901d4d9f151096e60a215176f97e",
-      "title": "IRC Ghost; Mode: Pure Race",
+      "hash": "02fa58697a85f4015a6727202565265dcd1d96119299ff7122a6a0827af42e79",
+      "title": "IRC Ghost (Pure Race)",
       "firmware_version": [
         "4.3"
       ],
@@ -1842,8 +2129,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race.txt",
-      "hash": "3ce22e7cbe17569b09ab5ffb2ed027d279400aeb40d76dcc8341a327b18662eb",
-      "title": "IRC Ghost; Mode: Race",
+      "hash": "604505e2bf18d7064bcd5579ef9f1c54817639605f0e413f20c863a2af271a6e",
+      "title": "IRC Ghost (Mode: Race)",
       "firmware_version": [
         "4.3"
       ],
@@ -1868,8 +2155,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race250.txt",
-      "hash": "c766372d2ac35962104ad3b62438b3b0d154483a793ea1c5499919aea3fbb59c",
-      "title": "IRC Ghost; Mode: Race250",
+      "hash": "594e3c6aac3387c98e601ad733ed1661a1cee9ea6f3118e7d9e42b7c7602b476",
+      "title": "IRC Ghost (Race250)",
       "firmware_version": [
         "4.3"
       ],
@@ -1894,8 +2181,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/race500.txt",
-      "hash": "08e2901805cbd785b585fd1ea2b0c0a27cb81322a0df498732ab681a2ef2a01f",
-      "title": "IRC Ghost; Mode: Race500",
+      "hash": "a609358caf58090ece18d86916b19dc418a5d6321ac557a61f6d90827a0c8c2c",
+      "title": "IRC Ghost (Race500)",
       "firmware_version": [
         "4.3"
       ],
@@ -1920,8 +2207,8 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/ghost/solid250.txt",
-      "hash": "9645822102017ac300fd5a72114a2bbd0c91550656dc5aa0677b52f8b57b6f1a",
-      "title": "IRC Ghost; Mode: Solid250",
+      "hash": "10e98599896fb36691557a0a09134139b9640055a8e7e58bc48d10e73dbffd95",
+      "title": "IRC Ghost (Solid250)",
       "firmware_version": [
         "4.3"
       ],
@@ -2002,7 +2289,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/crossfire_150hz.txt",
-      "hash": "b85196050a49fe7ef7a6baa826b6043867fdd3fe81c61830629bb98dd7f8c77a",
+      "hash": "cc79b53a8abaf6413302d29c93daafdc51643e2268bd29b0ed369f93202c7af4",
       "title": "TBS Crossfire 150Hz",
       "firmware_version": [
         "4.3"
@@ -2025,7 +2312,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/crossfire_50hz.txt",
-      "hash": "831ebad99ca3a77241177dacd9101dde7bcab7b10610d3a6a26149823eedb312",
+      "hash": "e4bfdca099a049bf525bb8fa236a4bd97168a59516db639f4936f47402ccbc50",
       "title": "TBS Crossfire 50Hz",
       "firmware_version": [
         "4.3"
@@ -2048,7 +2335,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/tbs/tracer_250hz.txt",
-      "hash": "aa4919189a2e306adc8921c21c95fef3ac465b736921b6b0acfe13e5a2b21b45",
+      "hash": "7ae066ca7f02c9a14de85ed184e0dac160eb47123bb6467d127a0c4211ee0695",
       "title": "TBS Tracer 250Hz",
       "firmware_version": [
         "4.3"
@@ -2070,110 +2357,31 @@
       "priority": 10000000000
     },
     {
-      "fullPath": "presets/4.3/rc_smoothing/cinematic.txt",
-      "hash": "b3b220fca9bf07ad226b9f4347ed7e891d75649f860582936b664956bfc512e2",
-      "title": "Cinematic RC smoothing",
+      "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
+      "hash": "fe82d05637b42f806e6d49577c0876a571433b06021dda049e8709e1cb153a47",
+      "title": "Tehllama RC Link Settings",
       "firmware_version": [
         "4.3"
       ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
+      "category": "RC_LINK",
+      "status": "COMMUNITY",
       "keywords": [
-        "cinematic",
-        "rc",
-        "smoothing",
-        "rc_smoothing",
-        "jitter",
-        "transition",
-        "hd"
+        "RC_LINK",
+        "Llama",
+        "CRSF",
+        "ELRS",
+        "FrSky",
+        "FPort",
+        "SBUS",
+        "FlySky",
+        "IBUS"
       ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
-      "hash": "c91b7b93cf4a33a15d606a827e983f67441ac78a9b9a11f8ecfb36d772d62739",
-      "title": "Default 4.3 RC smoothing settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc smoothing",
-        "rc_smoothing"
-      ],
-      "author": "Betaflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/freestyle.txt",
-      "hash": "120bde850517f3d90edc988b2d9f459913e27b694e675036b7901086ecd64465",
-      "title": "Freestyle RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "freestyle",
-        "rc",
-        "smooth",
-        "smoothing",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/hd_freestyle.txt",
-      "hash": "e1bd40e254fb9007be2f2dc944fa7384076113b38e8d03090cca622e121eb8ab",
-      "title": "Freestyle HD RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "freestyle",
-        "rc",
-        "smooth",
-        "HD",
-        "freestyle_HD",
-        "HD_freestyle",
-        "smoothing",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/race.txt",
-      "hash": "d47f866a989e9d1a4bae748872f0cf13302987c27462d3b67bc23eb922717e9a",
-      "title": "Race RC smoothing",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "aggressive",
-        "rc",
-        "smoothing",
-        "race",
-        "rc_smoothing",
-        "jitter"
-      ],
-      "author": "ctzsnooze",
-      "priority": 100000000
+      "author": "Daniel Appel / Tehllama",
+      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "681f93f549f7331f0b4b1e779dff4efa1bbc8d0e33a30f8539ca805d8c8b7766",
+      "hash": "ffab8a4f6a116e72b15a4f40eef954b393890d55792df7b3e3de4c684084e5c8",
       "title": "4S, 3\" to 5\" race tune by ctzsznooze",
       "firmware_version": [
         "4.3"
@@ -2196,7 +2404,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
-      "hash": "a34613c8541c3bf5611d5d3596ece890b902fd8d2378e7f6a03b60a59b61230b",
+      "hash": "e0d4f600277f68d45120b00656d994af8e0492cdfc7f14f6ac2542ed4a781723",
       "title": "Tune defaults for Basic 4.3 TUNES",
       "firmware_version": [
         "4.3"
@@ -2216,13 +2424,13 @@
     },
     {
       "fullPath": "presets/4.3/tune/fpvian_basher_freestyle.txt",
-      "hash": "03b21087600c46dec99c7c6f6c0dbba6a48011830a5b26e3a3d1c9ea220d4dde",
+      "hash": "63dc4b90e64d4e88e245820dfb88572706708ce82951cf4ef227e7b6d90a5c8a",
       "title": "Basher Freestyle 6S 5\" by FPVian",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "basher",
         "freestyle",
@@ -2238,13 +2446,13 @@
     },
     {
       "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "f3cf15cb439abc653735f014f30a940e02eb48eb06aa367bee73cfaeb4e020f0",
+      "hash": "5ac3216c39f3b1b630d6938ac943e3b00c38e15585394413d0d424f634db5e16",
       "title": "Freedom Spec 460 - 500g",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "sugarK",
         "limon",
@@ -2408,6 +2616,25 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_Options.txt",
+      "hash": "279078d793a9ef2801e2a7958ec00d2d7b818e96d60bb90db63f0beaba5ca7ca",
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.3/tune/tiny_karate.txt",
       "hash": "a417f87aae3f44caffc5fbf43a6b538053db73b74a94ecb762a362de739d32c5",
       "title": "533 TinyTrainer Karate",
@@ -2430,6 +2657,142 @@
         "tinyTrainer"
       ],
       "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_5in.txt",
+      "hash": "db11ec74fa5760f5b31c90197f79be79458248ea146f7a3ced7525519d4c9305",
+      "title": "UAV Tech - 5in (~630g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_6-7in.txt",
+      "hash": "af9aaeaea38e9c44cd49214ae98d5d04859e9ab12588ce5dd342cfa3e1b0be37",
+      "title": "UAV Tech - 6-7in (~700g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "6in",
+        "7in",
+        "6\"",
+        "7\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_8-9in.txt",
+      "hash": "7a86ab26a50a7e3fe1d2e506a4486e03672787ecd63b1a233989cf900fb72cea",
+      "title": "UAV Tech - 8-9in (~750g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_8-9in_Cinelifter.txt",
+      "hash": "3095ffbd6584fe3af610bbc7cc9a14b002082e644b20e7a36cffb5d792288cab",
+      "title": "UAV Tech - 8-9in Cinelifter (>2,000g AUW)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "6S",
+        "8S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "cinelifter"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_Cinewhoop.txt",
+      "hash": "d408ae55e64986f84cf8d07428200b4dc88b44e3b30ef2df711818d2ecc17c4d",
+      "title": "UAV Tech - Cinewhoop",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "cinewhoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_Toothpic.txt",
+      "hash": "4453e4d8a25f97a96de25e53ef29e77961cd2f2335e15205251599a28aa740af",
+      "title": "UAV Tech - Toothpic (2in to 4in)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "2S",
+        "4S",
+        "6S",
+        "toothpic",
+        "2in",
+        "3in",
+        "3.5in",
+        "4in"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/tune/UAV_tech_Whoop.txt",
+      "hash": "bb4f0552015b1e5109dac54610a82759bceba8f84fbd28909bd342095cf5347f",
+      "title": "UAV Tech - Whoop (1S & 2S)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "whoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
       "priority": 1000000000000
     },
     {
@@ -2458,7 +2821,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/whoop_justice.txt",
-      "hash": "3a7fc98a781ab27d1ae77dd0678bfdbb4b5180b22d7fd595d476520322704b6e",
+      "hash": "8ffd94378502eb5498b290188345b98b9ad8c4d117d8f87edbedbfa179eb119b",
       "title": "Whoop race tune by Justice",
       "firmware_version": [
         "4.3"
@@ -2536,6 +2899,33 @@
         "ultra 1000"
       ],
       "author": "NemesisXB",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/Eachine_Nano_V2.txt",
+      "hash": "501c014c05fd0d9b46c0cab00c6dc9edabee5dfb89ce8e2e5a9bdda03778c93b",
+      "title": "Eachine Nano V2 VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "eachine",
+        "Eachine",
+        "nano",
+        "Nano",
+        "irc",
+        "IRC",
+        "tramp",
+        "TRAMP",
+        "Tramp",
+        "IRC Tramp",
+        "irc tramp",
+        "IRC TRAMP"
+      ],
+      "author": "MrAlucardDante",
       "priority": 1000000
     },
     {
