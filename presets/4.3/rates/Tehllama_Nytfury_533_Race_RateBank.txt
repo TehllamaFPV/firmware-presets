@@ -19,10 +19,10 @@
 rateprofile 0
 # rateprofile 1 - Tehllama Rates
 set rates_type = BETAFLIGHT
-set roll_rc_rate = 75
+set roll_rc_rate = 72
 set pitch_rc_rate = 72
 set yaw_rc_rate = 63
-set roll_srate = 70
+set roll_srate = 73
 set pitch_srate = 68
 set yaw_srate = 64
 set roll_expo = 0
