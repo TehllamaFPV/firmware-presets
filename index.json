@@ -1400,7 +1400,7 @@
     },
     {
       "fullPath": "presets/4.3/rates/Tehllama_Nytfury_533_Race_RateBank.txt",
-      "hash": "c3cd21e2b14625b013d07ce55014416a7081338f99e3dcc8c8dfdd999dbd5984",
+      "hash": "e41151b2c85de0abf62b404d3982dec07afdff4f416c8c25cc6e0fae56310931",
       "options": [
         {
           "name": "Overwrite Rate Profile 1 with Tehllama Rates",
@@ -1882,7 +1882,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "a31e8013d481cf1e52a73b0d95dd43a0d48e0f9a443ff8f6563aba32d5475d57",
+      "hash": "b2d35290f4c7c1a3429294528fe1a8a21954fe14d9e59aa49761814c36363136",
       "options": [
         {
           "name": "ELRS Race 250Hz - All Profiles",
@@ -3133,6 +3133,64 @@
       "discussion": "https://app.slack.com/client/T221J1F6J/C0228HK2MD4/",
       "include": [
         "presets/4.3/tune/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_AOS_3-5in_Tune.txt",
+      "hash": "083dee80dd8f35513c67f5f4ef9dda230b08bc3cee09040ad3ea348292f8f999",
+      "options": [
+        {
+          "name": "Apply Matching Filters",
+          "checked": true
+        },
+        {
+          "name": "Apply RPM Features (Strongly Recommended)",
+          "checked": true
+        },
+        {
+          "name": "Set Motor Poles = 12 (Required for RPM Features)",
+          "checked": true
+        },
+        {
+          "name": "Set VBat Sag Compensation = 100",
+          "checked": true
+        },
+        {
+          "name": "Set Small Angle to 180",
+          "checked": false
+        },
+        {
+          "name": "Apply TPA Settings to all rateprofiles (Will Select RateProfile #1)",
+          "checked": true
+        },
+        {
+          "name": "Apply TPA Settings to current rateprofile only",
+          "checked": true
+        }
+      ],
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
+      "description": [
+        "This is an adaptation of the 533 TinyTrainer tune, and expects bidirectional DShot ESCs at 48kHz PWM with MedHigh timing.",
+        "These fly best on 3S batteries in the 450-550mAh capacity range with 533 1404 motors."
+      ],
+      "disclaimer": "By default, this overwrites the current tune profile and makes TPA changes in the current rateprofile.",
+      "discussion": "https://github.com/betaflight/firmware-presets/pull/233",
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/defaults.txt"
       ]
     },
     {
