@@ -134,6 +134,7 @@
   "uniqueValues": {
     "firmware_version": [
       "3.5",
+      "4.0",
       "4.1",
       "4.2",
       "4.3"
@@ -193,7 +194,9 @@
       "3 inch",
       "3.5in",
       "3\"",
+      "35",
       "3in",
+      "3S",
       "4in",
       "4S",
       "5 In",
@@ -225,6 +228,7 @@
       "adjustments",
       "AlexFPV",
       "analog",
+      "AOS",
       "aux",
       "AyyyKayyy",
       "bando",
@@ -265,6 +269,7 @@
       "E7082VM",
       "eachine",
       "ELRS",
+      "ELRS Betaflight Passthrough Configure",
       "emax",
       "EVO",
       "expert",
@@ -295,7 +300,7 @@
       "gyroscope",
       "HD",
       "HDzero",
-      "Headsup",
+      "HeadsUp",
       "HighKV",
       "hot",
       "HV",
@@ -323,6 +328,7 @@
       "MinChan",
       "mode",
       "modes",
+      "Multi",
       "MultiGP",
       "MultiVoltage",
       "names",
@@ -351,8 +357,8 @@
       "race rates ctzsnooze actual",
       "Race250",
       "Race500",
-      "racing",
-      "rates",
+      "Racing",
+      "Rates",
       "RC",
       "rc link",
       "rc_link",
@@ -416,6 +422,7 @@
       "very",
       "very clean",
       "very noisy",
+      "Voltage",
       "vtx",
       "vtx table",
       "vtxtable",
@@ -761,8 +768,8 @@
     },
     {
       "fullPath": "presets/4.3/filters/Tehllama_Filter_5in_LlamaFilterArray.txt",
-      "hash": "76af1d75c86d121c9af370283babcc326b711122a4cd6a3e9a8e6a273f4a1f18",
-      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "hash": "ee25979ccdf1e8583ee31737538e9f9250c7238506c1a2f90b6b04826ff0035e",
+      "title": "Karate-Llama Filter Array for 5\" Racing Tunes Using RPM Filtering",
       "firmware_version": [
         "4.3"
       ],
@@ -942,6 +949,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/other/ELRS_Passthrough.txt",
+      "hash": "0dbdb120b601912c3d248b0688c614d919c95023f4042c0e7b656ae54f89c798",
+      "title": "Tehllama Launch Stand Mode Enabled",
+      "firmware_version": [
+        "3.5",
+        "4.2",
+        "4.3"
+      ],
+      "status": "OFFICIAL",
+      "category": "OTHER",
+      "keywords": [
+        "ELRS Betaflight Passthrough Configure"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/other/gyroflow_min_blackbox.txt",
       "hash": "15c71e564d549b8e3abd80026c83ff17241606137af32dd5a7b6f42ee228cc4c",
       "title": "Gyroflow minimum settings",
@@ -963,8 +987,8 @@
     },
     {
       "fullPath": "presets/4.3/other/LaunchMode_Stand60.txt",
-      "hash": "5d719549d73fc99d2d55cc73222ea8ab9faff41f80c80950cd9a6124b944923b",
-      "title": "Tehllama Launch Stand Mode Enabled",
+      "hash": "887c8ccf95be2d139c09e9fad179c2f7b02bfdf34b2bf8be49f152a97b82e77d",
+      "title": "Tehllama 60 Degree Launch Stand Mode Enabled",
       "firmware_version": [
         "4.2",
         "4.3"
@@ -1108,9 +1132,53 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/other/Tehllama_5in_1600-2250KV_4S-5S-6S_Race_TUNE-OTHER.txt",
-      "hash": "02119c80bcbcd4f8b8c62f5be0282d2fb61beaa5bb643bad1b1e6aa60dc8d21e",
-      "title": "5in Tehllama Race Tune 1600-2250KV on 4S/5S/6S",
+      "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
+      "hash": "8020a08b914e99129a50135cc57be04cd4758a483bdeeef03b6fe2ce0be74ebd",
+      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
+      "hash": "abcf64a82b030a29d270ea3b235d31bdf59318ac19389682d7e7d9dbc449ecf7",
+      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "HighKV",
+        "FreedomSpec",
+        "Spec",
+        "Tune",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_5in_BMS-Spec_1600-2350KV_4S-5S-6S_Race_TUNE-OTHER.txt",
+      "hash": "d92f8462c5747f35216c3aaba1a58fcef20c093a0fbf9deaa4547036678d5aee",
+      "title": "5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S",
       "firmware_version": [
         "4.3"
       ],
@@ -1127,52 +1195,27 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
-      "hash": "e28de3947d6208c58d87fd82e636ad2583ec9247c944af0c26ce72d869ee006e",
-      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "fullPath": "presets/4.3/other/Tehllama_AOS_3-5in_Tune.txt",
+      "hash": "f0ad7d57a746daa39e0885b51cebc581e94d73ff649f2060742e2b62eb594a40",
+      "title": "Tehllama 3.5\" Tune for AOS 3.5 and XKnight",
       "firmware_version": [
         "4.3"
       ],
       "category": "OTHER",
-      "status": "COMMUNITY",
+      "status": "EXPERIMENTAL",
       "keywords": [
-        "533",
-        "FreedomSpec",
-        "Tune",
-        "Spec",
-        "Race",
-        "Llama",
-        "MultiVoltage"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
-      "hash": "0349aa73fb07608e1d145a011e93f98185401529b7549347ea5c4a09fb825d1d",
-      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "533",
-        "HighKV",
-        "FreedomSpec",
-        "Spec",
+        "AOS",
+        "35",
         "Tune",
         "Race",
-        "Llama",
-        "MultiVoltage",
-        "Texas"
+        "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_OTHER.txt",
-      "hash": "bde48ee9a556913410d3517874b1fd1e378908dfa2298a8ee07a5f1b9f3eba93",
+      "hash": "7458cf77e5ef1b90a8cf00e59ecebc9fe11c8c7b3ba15bca722ed777184fcf38",
       "title": "3in Lightweight Race GTB339 3S/2S Tune",
       "firmware_version": [
         "4.3"
@@ -1183,11 +1226,40 @@
         "GTB339",
         "Toothpick",
         "Spec",
-        "Tune",
         "Race",
         "Llama",
         "SWPR",
-        "MultiVoltage"
+        "Multi",
+        "Voltage",
+        "2S",
+        "3S"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/Tehllama_Nytfury_533_Limon_Ratebank_Profile_OTHER.txt",
+      "hash": "30d5084fb5b2f18caa89406e0a99ba6b87176c489009cf33eceb5d1d7181911c",
+      "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
+      "firmware_version": [
+        "3.5",
+        "4.0",
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Race",
+        "Rates",
+        "Racing",
+        "Bank",
+        "Nytfury",
+        "HeadsUp",
+        "533",
+        "Limon",
+        "Beginner"
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
@@ -2358,7 +2430,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "fe82d05637b42f806e6d49577c0876a571433b06021dda049e8709e1cb153a47",
+      "hash": "7f48c0192d8731421a81f73574c454874a962a974d010d24010e99418b3fbfb8",
       "title": "Tehllama RC Link Settings",
       "firmware_version": [
         "4.3"
@@ -2617,7 +2689,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_Options.txt",
-      "hash": "fee43ac4a9f38f7e108d4b54e7f4dec3f267ab363259b60b95830ae14dd3e52b",
+      "hash": "1ca97d812423d41bb11c57d8c0bd102fa96f60f36f3396ebcb5edf590e05fb7e",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
       "firmware_version": [
         "4.3"
@@ -2631,7 +2703,7 @@
         "Race",
         "Llama"
       ],
-      "author": "Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp",
+      "author": "Daniel Appel / Tehllama",
       "priority": 1000000000000
     },
     {

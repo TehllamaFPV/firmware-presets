@@ -1,25 +1,28 @@
 #$ TITLE: 5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 533, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: Built for 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
+#$ DESCRIPTION: Tune is built for 533 FreedomSpec and similar builds with 1900-2150KV Motors.
+#$ DESCRIPTION: This tune works best with bidirectional DShot ESCs at 48kHz PWM with 23°-27°/MedHigh timing.
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune on Profile 3 and auto-select this tune when a 3S pack is plugged in.  
-#$ DESCRIPTION: 6S and 5S will run a conservative open race tune of Profile 1 and 2 Respectively.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs. Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
+#$ DESCRIPTION: 6S and 5S will run a conservative open race tune of Profiles 1 and 2 respectively.
+#$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired after installing this preset.
+#$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.  
 #$ WARNING: Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case issues if Profile 3 (3S) is selected. 
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/235
+
+# FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-# master
-
 
 # Fallback if dynamic idle does not function or is deselected
 set dshot_idle_value = 440
 
 
-#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune to Profile 1
 profile 0
 # profile 0 - 6S
 set iterm_rotation = ON
@@ -55,7 +58,7 @@ simplified_tuning apply
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune to Profile 2
 profile 1
 # profile 1
 set iterm_relax = RPY
@@ -90,7 +93,7 @@ simplified_tuning apply
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply 3S Freedom Spec Tune on Auto-Select
+#$ OPTION BEGIN (CHECKED): Apply 3S Freedom Spec Tune on Auto-Select to Profile 3
 profile 2
 # profile 2
 set dterm_lpf1_dyn_min_hz = 100
@@ -131,7 +134,7 @@ simplified_tuning apply
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation for ALL Profiles
 profile 0
 set vbat_sag_compensation = 88
 profile 1
@@ -142,7 +145,7 @@ set vbat_sag_compensation = 99
 #$ OPTION END
 
 
-#% OPTION BEGIN (CHECKED): Apply Dynamic Idle
+#% OPTION BEGIN (CHECKED): Apply Dynamic Idle to ALL Profiles
 set dshot_bidir = ON
 
 profile 0
@@ -163,7 +166,7 @@ set dyn_idle_d_gain = 42
 #% OPTION END
 
 
-#% OPTION BEGIN (CHECKED): Apply Matching Filters
+#% OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 # master
 set dshot_bidir = ON

@@ -2,13 +2,16 @@
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: GTB339, Toothpick, Spec, Tune, Race, Llama, SWPR, MultiVoltage
+#$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, Multi, Voltage, 2S, 3S
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
-#$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  Works with biblade and triblade props (e.g. Gemfan 3016/3018, HQ 3x1.8x3/3x1.5x3, etc.)
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. Assumes 12-pole motors by default.
-#$ WARNING:Use at your own risk.  Extensive testing has been done across 37+ builds, however not every craft will run best on this tune.  13A ESCs may experience failures on 3S batteries.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
+#$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  
+#$ DESCRIPTION: This tune works with biblade and triblade props, such as Gemfan 3016-3, GF 3018-2, HQ 3x1.8x3, and HQ 3x1.5x3.
+#$ DESCRIPTION: This tune also works well on other lightweight 1303/1303.5/1204/1106 3" setups at 4500-6000KV.
+#$ DESCRIPTION: Extensive testing has been done across 39+ builds, however not every craft will fly well on this tune.
+#$ DISCLAIMER: Strongly recommend a full chip erase reflash if alternative tunes are desired.  This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. Assumes 12-pole motors by default.
+#$ WARNING: Use at your own risk.  Some 13A ESCs may experience failures on 3S batteries.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/239
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
@@ -21,7 +24,7 @@ set dshot_idle_value = 475
 
 set thrust_linear = 20
 
-# profile 3:  3S
+# 3S Auto-Select Tune on Profile #3
 profile 2
 set anti_gravity_gain = 4400
 set iterm_rotation = ON
@@ -62,7 +65,7 @@ set dshot_idle_value = 475
 
 set thrust_linear = 20
 
-# profile 1: 2S
+# 2S Tune on Profile #2
 profile 1
 set anti_gravity_gain = 4400
 set iterm_rotation = ON

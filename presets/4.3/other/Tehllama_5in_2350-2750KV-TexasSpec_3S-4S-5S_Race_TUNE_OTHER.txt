@@ -1,15 +1,19 @@
 #$ TITLE: 5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 533, HighKV, FreedomSpec, Spec, Tune, Race, Llama, MultiVoltage, Texas
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: Built for EMULATING 533 FreedomSpec and similar builds on bidir DShot ESCs at 48kHz PWM with 23-27°/MedHigh timing
-#$ DESCRIPTION: 3S (2200mAh) will run a spec tune on Profile #3 that auto-selects and applies motor limits with options selected
-#$ DESCRIPTION: 4S and 5S will run a conservative open race tune on Profiles #1/2 respectively, based on voltage plugged in.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin by default, but only for 3S, 4S and 5S packs. Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
-#$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause damage.  
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
+#$ DESCRIPTION: This tune is intended for builds on bidir DShot ESCs at 48kHz PWM with 23-27°/MedHigh timing.
+#$ DESCRIPTION: 3S batteries will EMULATE 533 FreedomSpec (3S 2200mAh) with motor output limits, and select the spec tune on Profile #3 that auto-selects with correct motor KV selections.
+#$ DESCRIPTION: 4S and 5S will run a conservative open race tune on Profiles #1/#2 respectively, based on voltage plugged in.
+#$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired.
+#$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
+#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin by default, but only for 3S, 4S and 5S packs. 
+#$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause SERIOUS damage.  
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/236
+
+# FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 # master
@@ -17,7 +21,7 @@
 set dshot_idle_value = 440
 # Fallback value if dynamic idle does not work, or is deselected
 
-#$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune to Profile 1
 profile 0
 # profile 0 - 4S
 set iterm_rotation = ON
@@ -49,11 +53,11 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 135
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-
+simplified_tuning apply
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune to Profile 2
 profile 1
 # profile 1 - 5S
 set iterm_rotation = ON
@@ -89,11 +93,11 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 150
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-
+simplified_tuning apply
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Apply 3S TexasSpec Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 3S TexasSpec Auto-Select Tune to Profile 3
 profile 2
 # profile 2 - 3S Spec
 set iterm_relax = RPY
@@ -128,7 +132,7 @@ set simplified_dmax_gain = 85
 set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
-
+simplified_tuning apply
 #$ OPTION END
 
 
@@ -156,7 +160,7 @@ set dyn_idle_d_gain = 42
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters
+#$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters to ALL Profiles
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 

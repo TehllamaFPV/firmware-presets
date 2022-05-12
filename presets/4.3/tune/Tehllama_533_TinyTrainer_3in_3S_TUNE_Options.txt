@@ -3,10 +3,12 @@
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: TinyTrainer, 533, Spec, Race, Llama
-#$ AUTHOR: Daniel Appel / Tehllama && Armando Gallegos / Mondo && Evan Turner / HeadsUp
+#$ AUTHOR: Daniel Appel / Tehllama 
+#$ DESCRIPTION: Tune developed by Armando 'Mondo' Gallegos and Evan 'HeadsUp' Turner
 #$ DESCRIPTION: This is an adaptation of the 533 TinyTrainer tune, and expects bidirectional DShot ESCs at 48kHz PWM with MedHigh timing. 
 #$ DESCRIPTION: These fly best on 3S batteries in the 450-550mAh capacity range with 533 1404 motors.
-#$ DISCLAIMER: By default, this overwrites the current tune profile and makes TPA changes in the current rateprofile.
+#$ DISCLAIMER: This tune requires ESC with Bidirectional DShot Capable Firmware, and works best at 48kHz PWM and MedHigh or 23° Motor Timing.
+#$ WARNING: By default, this overwrites the current tune profile and makes TPA changes in the current rateprofile.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/233
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt

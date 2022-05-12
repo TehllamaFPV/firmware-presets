@@ -1,14 +1,18 @@
-#$ TITLE: 5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)
+#$ TITLE: Karate-Llama Filter Array for 5" Racing Tunes Using RPM Filtering
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: 533, FreedomSpec, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: Filter array for 5" Race Builds, tested on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
-#$ DISCLAIMER: This applies only one profile of filters if the 'Multiple Voltage Profile' option is deselected
+#$ DESCRIPTION: This is a ilter array for 5" Race Builds, and requires bidirectional DShot ESCs. This works best with 48kHz PWM and 23°-27°/MedHigh timing
+#$ DISCLAIMER: Please review the options to select either the appropriate filtering for the current profile.
+#$ WARNING: Applying MultiVoltage Filtering will change the current profile.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
 
+# FORCE_OPTIONS_REVIEW: TRUE
+
 #$ INCLUDE: presets/4.3/filters/defaults.txt
+
 # master
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 675
@@ -20,11 +24,31 @@ set gyro_lpf1_dyn_max_hz = 675
 set gyro_lpf1_dyn_expo = 7
 
 set simplified_gyro_filter_multiplier = 135
+simplified_tuning apply
 
 set rpm_filter_harmonics = 2
 set rpm_filter_q = 750
 set rpm_filter_min_hz = 125
 set rpm_filter_fade_range_hz = 100
+
+#$ OPTION BEGIN: (UNCHECKED) Apply High-Power Filtering Profile
+
+profile 0
+# profile 0
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 266
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 140
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
+
+
+#$ OPTION BEGIN: (CHECKED) Apply Mid-Power (75-83% Maximum Voltage) Filtering Profile
 
 set dterm_lpf1_dyn_min_hz = 100
 set dterm_lpf1_dyn_max_hz = 244
@@ -36,8 +60,23 @@ set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
+#$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply Multiple Voltage Filters
+
+#$ OPTION BEGIN (UNCHECKED): Apply Low Power (50% Power // Spec Racing) Filtering Profile
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 135
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED): Apply Llama Multiple Voltage Filters for Full Power (Profile 1), 75-80% power (Profile 2), and Half Power (Profile 3)
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 # master
 set gyro_lpf1_static_hz = 0

@@ -1,18 +1,21 @@
-#$ TITLE: 5in Tehllama Race Tune 1600-2250KV on 4S/5S/6S 
+#$ TITLE: 5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: Race, Llama, Safe, Tune, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: Built for Powerful racing builds on bidir DShot ESCs at 48kHz PWM with 27°/MedHigh timing
+#$ DESCRIPTION: Built for Powerful racing builds on bidir DShot ESCs at 48kHz PWM with 23°-27°/MedHigh timing
 #$ DESCRIPTION: Each battery setting will will run a conservative race tune that should withstand damaged props and bent motor shafts.
+#$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired.
 #$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 4S, 5S, and 6S packs.
-#$ WARNING: Use at your own risk.  Extensive testing has been done across 64+ builds, however not every craft will run best on this tune.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/168
+#$ WARNING: Use at your own risk.  Extensive testing has been done across 67+ builds, however not every craft will run best on this tune.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/237
+
+# FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
-#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune to Profile 1
 # master
 
 set dshot_idle_value = 440
@@ -58,7 +61,7 @@ simplified_tuning apply
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 5S Auto-Select Tune to Profile 2
 # master
 set dshot_bidir = ON
 
@@ -103,7 +106,7 @@ simplified_tuning apply
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune to Profile 3
 # master
 set dshot_bidir = ON
 
@@ -162,7 +165,7 @@ set dyn_idle_min_rpm = 24
 #% OPTION END
 
 
-#% OPTION BEGIN (CHECKED): Apply Matching Filters
+#% OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 # master
 set dshot_bidir = ON
