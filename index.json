@@ -310,12 +310,14 @@
       "immersionRC",
       "IRC",
       "IRC Tramp",
+      "JB",
       "justice",
       "karate",
       "KarateBrot",
       "Launch",
       "launch_mode",
       "LaunchMode",
+      "LED",
       "leds",
       "Limon",
       "link",
@@ -351,6 +353,7 @@
       "pro32",
       "profile",
       "Pure Race",
+      "QAV",
       "quaddiction",
       "quick",
       "race",
@@ -950,10 +953,12 @@
     },
     {
       "fullPath": "presets/4.3/other/ELRS_Passthrough.txt",
-      "hash": "0dbdb120b601912c3d248b0688c614d919c95023f4042c0e7b656ae54f89c798",
-      "title": "Tehllama Launch Stand Mode Enabled",
+      "hash": "d0a320db3e9856ecb04366fc8d72ed9eec70d8d589ca8ee6b725bbf35d5d2054",
+      "title": "Tehllama ELRS Passthrough",
       "firmware_version": [
         "3.5",
+        "4.0",
+        "4.1",
         "4.2",
         "4.3"
       ],
@@ -1000,6 +1005,28 @@
         "Launch",
         "LaunchMode",
         "Mode"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/LED_TinyTrainer_ELRS.txt",
+      "hash": "35d294b77c8a6246e5e220b5f15ea140037e5c677595fe912136fb01ba31c4e4",
+      "title": "Tehllama TinyTrainer LED Preset for Aux 8",
+      "firmware_version": [
+        "3.5",
+        "4.0",
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "status": "COMMUNITY",
+      "category": "OTHER",
+      "keywords": [
+        "Llama",
+        "Mode",
+        "LED",
+        "ELRS"
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
@@ -2808,6 +2835,28 @@
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/tune/Tehllama_QAV-S_JB-Edition_TUNE_5in_4S-5S-6S_1800KV.txt",
+      "hash": "781f1aeb66153468f752ea86fa56e0db12b9b545d49180f5018859391ccf9148",
+      "title": "Tehllama QAV-S Freestyle and Chase Tune for 4/5/6S on 1700-1900KV Motors",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Llama",
+        "JB",
+        "Bardwell",
+        "QAV",
+        "Freestyle",
+        "Multi",
+        "Voltage",
+        "Multivoltage"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/tiny_karate.txt",

@@ -1,5 +1,7 @@
-#$ TITLE: Tehllama Launch Stand Mode Enabled
+#$ TITLE: Tehllama ELRS Passthrough 
 #$ FIRMWARE_VERSION: 3.5
+#$ FIRMWARE_VERSION: 4.0
+#$ FIRMWARE_VERSION: 4.1
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ STATUS: OFFICIAL
