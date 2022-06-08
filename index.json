@@ -2838,7 +2838,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_QAV-S_JB-Edition_TUNE_5in_4S-5S-6S_1800KV.txt",
-      "hash": "781f1aeb66153468f752ea86fa56e0db12b9b545d49180f5018859391ccf9148",
+      "hash": "b4fe07e4d832a762dd18783b68aac547aab874727e52f91cb36db5243840bb54",
       "title": "Tehllama QAV-S Freestyle and Chase Tune for 4/5/6S on 1700-1900KV Motors",
       "firmware_version": [
         "4.3"
@@ -2856,6 +2856,7 @@
         "Multivoltage"
       ],
       "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {

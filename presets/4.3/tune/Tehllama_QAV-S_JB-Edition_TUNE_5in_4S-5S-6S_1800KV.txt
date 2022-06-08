@@ -4,31 +4,34 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: Llama, JB, Bardwell, QAV, Freestyle, Multi, Voltage, Multivoltage
 #$ AUTHOR: Daniel Appel / Tehllama 
-#$ DESCRIPTION: This tune came out of doing a quick set of PID Toolbox "Basement Tunes" on each battery voltage.
-#$ DESCRIPTION: This works best with bidirectional DShot ESCs at 48kHz PWM with 23° to MedHigh timing. 
+#$ DESCRIPTION: !! Please review all options !!  
+#$ DESCRIPTION: By default, this applies a multi-voltage tune that automatically selects profile based on battery plugged in for 4S, 5S, and 6S.
+#$ DESCRIPTION: Please ensure that the appropriate RC_LINK Preset and/or settings are applied.
+#$ DESCRIPTION: ...
+#$ DESCRIPTION: This tune is intended for use on any solidly built 5" Freestyle quadcopter.  A solid example is the Joshua Bardwell QAV-S. 
 #$ DESCRIPTION: These fly best with craft all-up-weight in the 575g-775g range, and 2306, 2207, or 2506 motors
-#$ DISCLAIMER: This tune makes TPA changes in the current rateprofile.
+#$ DESCRIPTION: This tune came out of doing a quick set of PID Toolbox "Basement Tunes" on each battery voltage.
+#$ DESCRIPTION: This works best with bidirectional DShot ESCs at 48kHz PWM with 23° to MedHigh timing.
+#$ DESCRIPTION: ..
+#$ DESCRIPTION: !! Default options assume that Bidirectional DShot is enabled !!
+#$ DESCRIPTION: This tune has been tested across 17 builds from 5 builders, but is still not certain to fly well on your specific craft.
+#$ DISCLAIMER: This tune makes TPA changes in the current rateprofile, and includes automatic profile switching with default options.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/278
+#$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
-
-
-
 ## Set for All Configurations
-
-
 set dshot_idle_value = 700
 # Fallback if Dynamic Idle not working or not selected
 
-
 #$ OPTION_GROUP BEGIN: Filtering Scheme
 
-#$ OPTION BEGIN (UNCHECKED): Use No-RPM Clean Filters
+#$ OPTION BEGIN (UNCHECKED): Use Default No-RPM Clean Filters
 #$ INCLUDE: presets/4.3/filters/default_no_rpm_clean.txt
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Use RPM Very-Clean Filters
+#$ OPTION BEGIN (UNCHECKED): Use Default RPM Very-Clean Filters
 #$ INCLUDE: presets/4.3/filters/default_rpm_very_clean.txt
 set dshot_bidir = ON
 #$ OPTION END
@@ -183,7 +186,10 @@ set i_yaw = 68
 set f_yaw = 117
 set d_min_roll = 31
 set d_max_advance = 0
-
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set feedforward_jitter_factor = 11
 set feedforward_boost = 12
 
@@ -215,7 +221,10 @@ set f_yaw = 138
 set d_min_roll = 37
 set d_min_pitch = 40
 set d_max_advance = 0
-
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set feedforward_jitter_factor = 11
 
 set simplified_d_gain = 125
@@ -250,7 +259,10 @@ set f_yaw = 165
 set d_min_roll = 44
 set d_min_pitch = 48
 set d_max_advance = 0
-
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 set feedforward_jitter_factor = 11
 set feedforward_boost = 18
 
