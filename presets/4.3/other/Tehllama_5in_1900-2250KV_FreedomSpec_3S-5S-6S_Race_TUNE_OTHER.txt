@@ -1,4 +1,4 @@
-#$ TITLE: 5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)
+#$ TITLE: 5in FreedomSpec Race Tune 1900-2250KV on 3S (Spec) and 5S/6S (Open)
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
@@ -8,10 +8,10 @@
 #$ DESCRIPTION: This tune works best with bidirectional DShot ESCs at 48kHz PWM with 23°-27°/MedHigh timing.
 #$ DESCRIPTION: 3S (2200mAh) will run a spec tune on Profile 3 and auto-select this tune when a 3S pack is plugged in.  
 #$ DESCRIPTION: 6S and 5S will run a conservative open race tune of Profiles 1 and 2 respectively.
-#$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired after installing this preset.
+#$ DESCRIPTION: !!! Strongly recommend a full chip erase reflash if alternative tunes are desired after installing this preset!!!
 #$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.  
-#$ WARNING: Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case issues if Profile 3 (3S) is selected. 
+#$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.  
+#$ WARNING: Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case flyaways or potential damage if Profile 3 (3S) is selected. 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/235
 
 # FORCE_OPTIONS_REVIEW: TRUE
@@ -21,6 +21,7 @@
 # Fallback if dynamic idle does not function or is deselected
 set dshot_idle_value = 440
 
+#$ OPTION_GROUP BEGIN: Tune Profiles
 
 #$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune to Profile 1
 profile 0
@@ -133,40 +134,11 @@ simplified_tuning apply
 
 #$ OPTION END
 
+#$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation for ALL Profiles
-profile 0
-set vbat_sag_compensation = 88
-profile 1
-set vbat_sag_compensation = 88
-profile 2
-set vbat_sag_compensation = 99
+#$ OPTION_GROUP BEGIN: Filters
 
-#$ OPTION END
-
-
-#% OPTION BEGIN (CHECKED): Apply Dynamic Idle to ALL Profiles
-set dshot_bidir = ON
-
-profile 0
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-profile 1
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-profile 2
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-#% OPTION END
-
-
-#% OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 # master
 set dshot_bidir = ON
@@ -219,8 +191,41 @@ set dterm_lpf2_static_hz = 202
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
-#% OPTION END
+#$ OPTION END
 
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Features and TPA 
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic Idle to ALL Profiles
+set dshot_bidir = ON
+
+profile 0
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+profile 1
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+profile 2
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 77 for ALL Profiles
+profile 0
+set vbat_sag_compensation = 77
+profile 1
+set vbat_sag_compensation = 77
+profile 2
+set vbat_sag_compensation = 77
+
+#$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Apply TPA Settings to all rateprofiles
 rateprofile 0
@@ -280,3 +285,4 @@ profile 2
 set motor_output_limit = 90
 #$ OPTION END
 
+#$ OPTION_GROUP END

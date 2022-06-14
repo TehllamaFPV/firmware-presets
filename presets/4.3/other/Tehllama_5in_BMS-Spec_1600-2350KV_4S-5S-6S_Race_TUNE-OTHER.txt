@@ -1,4 +1,4 @@
-#$ TITLE: 5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S 
+#$ TITLE: 5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S including BMS Spec
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
@@ -7,14 +7,15 @@
 #$ DESCRIPTION: Built for Powerful racing builds on bidir DShot ESCs at 48kHz PWM with 23°-27°/MedHigh timing
 #$ DESCRIPTION: Each battery setting will will run a conservative race tune that should withstand damaged props and bent motor shafts.
 #$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin, but only for 4S, 5S, and 6S packs.
-#$ WARNING: Use at your own risk.  Extensive testing has been done across 67+ builds, however not every craft will run best on this tune.
+#$ WARNING: Use at your own risk.  Extensive testing has been done across 67+ builds, however not every craft will run best on this tune.     This tune will auto-select profiles based on battery voltage at plugin, but only for 4S, 5S, and 6S packs.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/237
 
 # FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
+
+#$ OPTION_GROUP BEGIN: Tune Profiles
 #$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune to Profile 1
 # master
 
@@ -152,20 +153,11 @@ simplified_tuning apply
 
 #$ OPTION END
 
+#$ OPTION_GROUP END
 
-#% OPTION BEGIN (CHECKED): Apply Dynamic Idle
-set dshot_bidir = ON
+#$ OPTION_GROUP BEGIN: Filters
 
-profile 0
-set dyn_idle_min_rpm = 24
-profile 1
-set dyn_idle_min_rpm = 24
-profile 2
-set dyn_idle_min_rpm = 24
-#% OPTION END
-
-
-#% OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 # master
 set dshot_bidir = ON
@@ -221,9 +213,24 @@ set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 
-#% OPTION END
+#$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 88
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Features and TPA
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic Idle
+set dshot_bidir = ON
+
+profile 0
+set dyn_idle_min_rpm = 24
+profile 1
+set dyn_idle_min_rpm = 24
+profile 2
+set dyn_idle_min_rpm = 24
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 88
 profile 0
 set vbat_sag_compensation = 88
 profile 1
@@ -267,11 +274,27 @@ set tpa_rate = 72
 set tpa_breakpoint = 1250
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2350KV 6S Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2070KV 6S Motor Output Limit
 profile 0
-set motor_output_limit = 92
+set motor_output_limit = 98
 profile 2
-set simplified_master_multiplier = 105
+set simplified_master_multiplier = 120
+simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  2150KV 6S Motor Output Limit
+profile 0
+set motor_output_limit = 98
+profile 2
+set simplified_master_multiplier = 115
+simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED):  2250KV 6S Motor Output Limit
+profile 0
+set motor_output_limit = 95
+profile 2
+set simplified_master_multiplier = 110
 simplified_tuning apply
 profile 1
 set simplified_master_multiplier = 90
@@ -289,29 +312,15 @@ set simplified_master_multiplier = 90
 simplified_tuning apply
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2250KV 6S Motor Output Limit
+#$ OPTION BEGIN (UNCHECKED):  2350KV 6S Motor Output Limit
 profile 0
-set motor_output_limit = 95
+set motor_output_limit = 92
 profile 2
-set simplified_master_multiplier = 110
+set simplified_master_multiplier = 105
 simplified_tuning apply
 profile 1
 set simplified_master_multiplier = 90
 simplified_tuning apply
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  2150KV 6S Motor Output Limit
-profile 0
-set motor_output_limit = 98
-profile 2
-set simplified_master_multiplier = 115
-simplified_tuning apply
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED):  2050KV 6S Motor Output Limit
-profile 0
-set motor_output_limit = 98
-profile 2
-set simplified_master_multiplier = 120
-simplified_tuning apply
-#$ OPTION END
+#$ OPTION_GROUP END

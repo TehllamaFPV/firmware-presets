@@ -9,7 +9,7 @@
 #$ DESCRIPTION: 4S and 5S will run a conservative open race tune on Profiles #1/#2 respectively, based on voltage plugged in.
 #$ DESCRIPTION: Strongly recommend a full chip erase reflash if alternative tunes are desired.
 #$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
-#$ DISCLAIMER: This tune will auto-select profiles based on battery voltage at plugin by default, but only for 3S, 4S and 5S packs. 
+#$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin by default, but only for 3S, 4S and 5S packs. 
 #$ WARNING: Use at your own risk.  NO 6-cell tune or throttle limit is provided with this tune.  Plugging in a 6S pack with 3S profile active will likely cause SERIOUS damage.  
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/236
 
@@ -20,6 +20,8 @@
 
 set dshot_idle_value = 440
 # Fallback value if dynamic idle does not work, or is deselected
+
+#$ OPTION_GROUP BEGIN: Tune Profiles
 
 #$ OPTION BEGIN (CHECKED): Apply 4S Auto-Select Tune to Profile 1
 profile 0
@@ -135,30 +137,9 @@ set simplified_pitch_pi_gain = 105
 simplified_tuning apply
 #$ OPTION END
 
+#$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): Apply Dynamic idle to all profiles
-set dshot_bidir = ON
-
-profile 0
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-
-profile 1
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-
-profile 2
-set dyn_idle_min_rpm = 24
-set dyn_idle_p_gain = 42
-set dyn_idle_i_gain = 42
-set dyn_idle_d_gain = 42
-
-#$ OPTION END
-
+#$ OPTION_GROUP BEGIN: Filters
 
 #$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters to ALL Profiles
 
@@ -210,6 +191,34 @@ set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 210
 set simplified_dterm_filter = OFF
 simplified_tuning apply
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Features and TPA
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic idle to all profiles
+set dshot_bidir = ON
+
+profile 0
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+profile 1
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+profile 2
+set dyn_idle_min_rpm = 24
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
 
 #$ OPTION END
 
@@ -304,3 +313,5 @@ set motor_output_limit = 71
 set simplified_master_multiplier = 85
 simplified_tuning apply
 #$ OPTION END
+
+#$ OPTION_GROUP END

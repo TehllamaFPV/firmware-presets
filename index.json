@@ -1160,8 +1160,8 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
-      "hash": "8020a08b914e99129a50135cc57be04cd4758a483bdeeef03b6fe2ce0be74ebd",
-      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
+      "hash": "dd53f9d5edb077c0929ac3252667f3d4d40000c444d48338ce569c85fc36e541",
+      "title": "5in FreedomSpec Race Tune 1900-2250KV on 3S (Spec) and 5S/6S (Open)",
       "firmware_version": [
         "4.3"
       ],
@@ -1181,7 +1181,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
-      "hash": "abcf64a82b030a29d270ea3b235d31bdf59318ac19389682d7e7d9dbc449ecf7",
+      "hash": "3d238ca653d717035343a831b3d92ff954bd827f3f4140cf87b3062acde635a1",
       "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
       "firmware_version": [
         "4.3"
@@ -1204,8 +1204,8 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_BMS-Spec_1600-2350KV_4S-5S-6S_Race_TUNE-OTHER.txt",
-      "hash": "d92f8462c5747f35216c3aaba1a58fcef20c093a0fbf9deaa4547036678d5aee",
-      "title": "5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S",
+      "hash": "7ccd25a83a3f10f197d1c6b8ec9c5fbe495d514656c04aedb6e8f9b47a766340",
+      "title": "5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S including BMS Spec",
       "firmware_version": [
         "4.3"
       ],
