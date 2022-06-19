@@ -1,21 +1,27 @@
-#$ TITLE: 3in Lightweight Race GTB339 3S/2S Tune
+#$ TITLE: 3in Lightweight 3S/2S Tune for GTB-339 or 3" Racing Toothpick 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, Multi, Voltage, 2S, 3S
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
 #$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  
 #$ DESCRIPTION: This tune works with biblade and triblade props, such as Gemfan 3016-3, GF 3018-2, HQ 3x1.8x3, and HQ 3x1.5x3.
-#$ DESCRIPTION: This tune also works well on other lightweight 1303/1303.5/1204/1106 3" setups at 4500-6000KV.
+#$ DESCRIPTION: This tune also works well on other lightweight 1303/1303.5/1204/1106 3" setups in the 4500-6000KV range.
 #$ DESCRIPTION: Extensive testing has been done across 39+ builds, however not every craft will fly well on this tune.
-#$ DISCLAIMER: Strongly recommend a full chip erase reflash if alternative tunes are desired.  This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. Assumes 12-pole motors by default.
+#$ DESCRIPTION: Strongly recommend a full chip erase reflash if using alternative tune presets is desired.  
+#$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. 
+#$ DESCRIPTION: This preset assumes 12-pole motors by default.  In the unlikely case your motors actually have 14 MAGNETS, de-select this option.
 #$ WARNING: Use at your own risk.  Some 13A ESCs may experience failures on 3S batteries.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/239
 
+# FORCE_OPTIONS_REVIEW: TRUE
+
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
-#$ OPTION BEGIN (CHECKED): Apply 3S Auto-Select Tune
+#$ OPTION_GROUP BEGIN: Tune Profiles
+
+#$ OPTION BEGIN (CHECKED): Apply 3S Auto-Select Tune on Profile 3
 # master
 set dshot_bidir = ON
 
@@ -56,7 +62,7 @@ simplified_tuning apply
 #$ OPTION END
 
 
-#$ OPTION BEGIN (CHECKED): Apply 2S Auto-Select Tune
+#$ OPTION BEGIN (CHECKED): Apply 2S Auto-Select Tune on Profile 2
 
 set dshot_bidir = ON
 
@@ -98,16 +104,11 @@ set simplified_pitch_d_gain = 105
 simplified_tuning apply
 
 #$ OPTION END
+#$ OPTION_GROUP END
 
+#$ OPTION_GROUP BEGIN: Filters and RPM Features
 
-#$ OPTION BEGIN (CHECKED): Set Motor Poles = 12 (Mamba 1105 Motors)
-
-set motor_poles = 12
-
-#$ OPTION END
-
-
-#$ OPTION BEGIN (CHECKED): Apply Matching Filters
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters (Strongly Recommended)
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
@@ -143,15 +144,26 @@ set dterm_lpf2_static_hz = 240
 set simplified_dterm_filter_multiplier = 160
 simplified_tuning apply
 
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Set Motor Poles = 12
+
+set motor_poles = 12
+
+#$ OPTION END
+
+#$ OPTION BEGIN: (CHECKED) Use Dynamic Idle (Requires Correct Motor Pole Count)
 profile 2
 set dyn_idle_min_rpm = 24
 profile 1
 set dyn_idle_min_rpm = 24
-
 #$ OPTION END
 
+#$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 88
+#$ OPTION_GROUP BEGIN: Features and TPA
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 88
 
 profile 2
 set vbat_sag_compensation = 88
@@ -193,3 +205,5 @@ rateprofile 0
 set tpa_rate = 72
 set tpa_breakpoint = 1350
 #$ OPTION END
+
+#$ OPTION_GROUP END

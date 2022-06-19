@@ -5,10 +5,9 @@
 #$ KEYWORDS: TinyTrainer, 533, Spec, Race, Llama
 #$ AUTHOR: Daniel Appel / Tehllama 
 #$ DESCRIPTION: Tune developed by Armando 'Mondo' Gallegos and Evan 'HeadsUp' Turner
-#$ DESCRIPTION: This is an adaptation of the 533 TinyTrainer tune, and expects bidirectional DShot ESCs at 48kHz PWM with MedHigh timing. 
+#$ DESCRIPTION: This is an adaptation of the 533 TinyTrainer tune, and expects works best using ESCs with Bidirectional DShot Capable Firmware at 48kHz PWM with MedHigh timing. 
 #$ DESCRIPTION: These fly best on 3S batteries in the 450-550mAh capacity range with 533 1404 motors.
-#$ DISCLAIMER: This tune requires ESC with Bidirectional DShot Capable Firmware, and works best at 48kHz PWM and MedHigh or 23° Motor Timing.
-#$ WARNING: By default, this overwrites the current tune profile and makes TPA changes in the current rateprofile.
+#$ DISCLAIMER: If 'Apply RPM Features' is selected, strongly recommend selecting 'Set Motor Poles = 12' option as well. By default, this overwrites the current tune profile and makes TPA changes in the current rateprofile.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/233
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
@@ -49,7 +48,7 @@ set simplified_pitch_d_gain = 90
 set simplified_pitch_pi_gain = 105
 simplified_tuning apply
 
-
+#$ OPTION_GROUP BEGIN: Filters
 #$ OPTION BEGIN (CHECKED): Apply Matching Filters
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
@@ -72,6 +71,8 @@ set dterm_lpf2_static_hz = 195
 set simplified_dterm_filter_multiplier = 130
 
 #$ OPTION END
+#$ OPTION_GROUP END
+#$ OPTION_GROUP BEGIN: RPM Features
 
 #$ OPTION BEGIN (UNCHECKED): Apply RPM Features (Strongly Recommended)
 set dshot_bidir = ON
@@ -92,6 +93,9 @@ set dyn_idle_d_gain = 42
 set motor_poles = 12
 
 #$ OPTION END
+
+#$ OPTION_GROUP END
+#$ OPTION_GROUP BEGIN: Other Features and TPA
 
 #$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 100
 set vbat_sag_compensation = 100
@@ -134,3 +138,5 @@ rateprofile 0
 set tpa_rate = 60
 set tpa_breakpoint = 1200
 #$ OPTION END
+
+#$ OPTION_GROUP END

@@ -1242,13 +1242,13 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_OTHER.txt",
-      "hash": "7458cf77e5ef1b90a8cf00e59ecebc9fe11c8c7b3ba15bca722ed777184fcf38",
-      "title": "3in Lightweight Race GTB339 3S/2S Tune",
+      "hash": "37ee8f18517d5df993d973ae8a372db27f5501a9440eb6ce6dfea1a35d5dcdc3",
+      "title": "3in Lightweight 3S/2S Tune for GTB-339 or 3\" Racing Toothpick",
       "firmware_version": [
         "4.3"
       ],
       "category": "OTHER",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "GTB339",
         "Toothpick",
@@ -2716,7 +2716,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_Options.txt",
-      "hash": "1ca97d812423d41bb11c57d8c0bd102fa96f60f36f3396ebcb5edf590e05fb7e",
+      "hash": "d16893206254ce89e24740b3b3b932abd8cacf8427c4e811cb4aecf053d60a1f",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
       "firmware_version": [
         "4.3"
