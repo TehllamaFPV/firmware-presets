@@ -1222,33 +1222,14 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/other/Tehllama_AOS_3-5in_Tune.txt",
-      "hash": "f0ad7d57a746daa39e0885b51cebc581e94d73ff649f2060742e2b62eb594a40",
-      "title": "Tehllama 3.5\" Tune for AOS 3.5 and XKnight",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OTHER",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "AOS",
-        "35",
-        "Tune",
-        "Race",
-        "Llama"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/other/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_OTHER.txt",
-      "hash": "37ee8f18517d5df993d973ae8a372db27f5501a9440eb6ce6dfea1a35d5dcdc3",
+      "hash": "c694912c98e8ed25af5d898075ffffcd604dc2fcf9eb003e302d5371c1923d50",
       "title": "3in Lightweight 3S/2S Tune for GTB-339 or 3\" Racing Toothpick",
       "firmware_version": [
         "4.3"
       ],
       "category": "OTHER",
-      "status": "COMMUNITY",
+      "status": "EXPERIMENTAL",
       "keywords": [
         "GTB339",
         "Toothpick",
@@ -2734,69 +2715,6 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.3/tune/Tehllama_5in_1600-2250KV_4S-5S-6S_Race_TUNE-OTHER.txt",
-      "hash": "3a4fed64ce78d1555d41f2f75b8ef646067f4c5c8ec5d4f0acccce353d90860c",
-      "title": "5in Tehllama Race Tune 1600-2250KV on 4S/5S/6S",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OTHER",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "Race",
-        "Llama",
-        "Safe",
-        "Tune",
-        "MultiVoltage"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
-      "hash": "9e03c1a0a01d0bfadefa7d68632dfddf9c27f0f3a7bdf78701d3bb355c44a578",
-      "title": "5in FreedomSpec Race Tune 1900-2150KV on 3S (Spec) and 5S/6S (Open)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "533",
-        "FreedomSpec",
-        "Tune",
-        "Spec",
-        "Race",
-        "Llama",
-        "MultiVoltage"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
-      "hash": "d17f18a7fe542f8563a34a3febfd39b84c9827c5c082e9db06230182874f3f5b",
-      "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "533",
-        "HighKV",
-        "FreedomSpec",
-        "Spec",
-        "Tune",
-        "Race",
-        "Llama",
-        "MultiVoltage",
-        "Texas"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/tune/Tehllama_AOS_3-5in_Tune.txt",
       "hash": "083dee80dd8f35513c67f5f4ef9dda230b08bc3cee09040ad3ea348292f8f999",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
@@ -2816,25 +2734,23 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.3/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_OTHER.txt",
-      "hash": "6c3d11006d6ed8cde782c8a6829afcb254353d39060a93ac3415c94b7f852d30",
-      "title": "3in Lightweight Race GTB339 3S/2S Tune",
+      "fullPath": "presets/4.3/tune/Tehllama_AOS_3-5in_TUNE_Options.txt",
+      "hash": "4cb96f404399261d18529a168a7def8165da9bc1a5495c5e9ef4ad4025c361b4",
+      "title": "Tehllama 3.5\" Tune for XKnight and AOS-3.5",
       "firmware_version": [
         "4.3"
       ],
-      "category": "OTHER",
+      "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "GTB339",
-        "Toothpick",
-        "Spec",
+        "AOS",
+        "35",
+        "Tune",
         "Race",
-        "Llama",
-        "SWPR",
-        "MultiVoltage"
+        "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
-      "priority": 0
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/Tehllama_QAV-S_JB-Edition_TUNE_5in_4S-5S-6S_1800KV.txt",

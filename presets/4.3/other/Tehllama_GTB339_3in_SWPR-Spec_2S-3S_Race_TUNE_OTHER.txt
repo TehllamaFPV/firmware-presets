@@ -1,17 +1,21 @@
 #$ TITLE: 3in Lightweight 3S/2S Tune for GTB-339 or 3" Racing Toothpick 
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
+#$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, Multi, Voltage, 2S, 3S
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: This tune is intended for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
-#$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW to 95-105g on these motors.  
+#$ DESCRIPTION: This tune was designed for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
+#$ DESCRIPTION: These fly best on 2S-3S batteries in the 450-650mAh capacity range, resulting in an AUW of 95-105g on these motors.  
 #$ DESCRIPTION: This tune works with biblade and triblade props, such as Gemfan 3016-3, GF 3018-2, HQ 3x1.8x3, and HQ 3x1.5x3.
+#$ DESCRIPTION: -------
 #$ DESCRIPTION: This tune also works well on other lightweight 1303/1303.5/1204/1106 3" setups in the 4500-6000KV range.
 #$ DESCRIPTION: Extensive testing has been done across 39+ builds, however not every craft will fly well on this tune.
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: !!!
 #$ DESCRIPTION: Strongly recommend a full chip erase reflash if using alternative tune presets is desired.  
 #$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin for 2S and 3S packs with default selections. 
-#$ DESCRIPTION: This preset assumes 12-pole motors by default.  In the unlikely case your motors actually have 14 MAGNETS, de-select this option.
+#$ DESCRIPTION: This preset requires 12-pole motors by default.  In the unlikely case your motors actually have 14 MAGNETS, de-select this option.
+#$ DESCRIPTION: !!!
 #$ WARNING: Use at your own risk.  Some 13A ESCs may experience failures on 3S batteries.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/239
 
@@ -23,7 +27,6 @@
 
 #$ OPTION BEGIN (CHECKED): Apply 3S Auto-Select Tune on Profile 3
 # master
-set dshot_bidir = ON
 
 set dshot_idle_value = 475
 # Fallback if dynamic idle does not work or is disabled
@@ -36,7 +39,7 @@ set anti_gravity_gain = 4400
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
-set yaw_lowpass_hz = 125
+
 set p_pitch = 54
 set i_pitch = 72
 set d_pitch = 44
@@ -64,8 +67,6 @@ simplified_tuning apply
 
 #$ OPTION BEGIN (CHECKED): Apply 2S Auto-Select Tune on Profile 2
 
-set dshot_bidir = ON
-
 set dshot_idle_value = 475
 # Fallback if dynamic idle does not work or is disabled
 
@@ -77,7 +78,7 @@ set anti_gravity_gain = 4400
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 37
-set yaw_lowpass_hz = 125
+
 set p_pitch = 82
 set i_pitch = 110
 set d_pitch = 82
@@ -108,7 +109,11 @@ simplified_tuning apply
 
 #$ OPTION_GROUP BEGIN: Filters and RPM Features
 
-#$ OPTION BEGIN (CHECKED): Apply Matching Filters (Strongly Recommended)
+#$ OPTION BEGIN (UNCHECKED): Apply Default non-RPM Filters
+#$ INCLUDE: presets/4.3/filters/default_no_rpm_clean.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply Matching RPM Filters (Strongly Recommended)
 
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
@@ -132,7 +137,7 @@ set dterm_lpf1_dyn_max_hz = 240
 set dterm_lpf1_dyn_expo = 8
 set dterm_lpf1_static_hz = 120
 set dterm_lpf2_static_hz = 240
-
+set yaw_lowpass_hz = 125
 set simplified_dterm_filter_multiplier = 160
 simplified_tuning apply
 
@@ -142,6 +147,7 @@ set dterm_lpf1_dyn_max_hz = 240
 set dterm_lpf1_static_hz = 120
 set dterm_lpf2_static_hz = 240
 set simplified_dterm_filter_multiplier = 160
+set yaw_lowpass_hz = 125
 simplified_tuning apply
 
 #$ OPTION END

@@ -1,15 +1,20 @@
-#$ TITLE: Tehllama 3.5" Tune for AOS 3.5 and XKnight 
+#$ TITLE: Tehllama 3.5" Tune for XKnight and AOS-3.5
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
+#$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: AOS, 35, Tune, Race, Llama
 #$ AUTHOR: Daniel Appel / Tehllama 
-#$ DESCRIPTION: This is a general tune for 3.5" quads with 1404, 1505, or 1604 motors.
-#$ DESCRIPTION: This tune works best with bidirectional DShot ESCs at 48kHz PWM with MedHigh timing. 
-#$ DESCRIPTION: This tune has only been validated on 7 build configurations, with 5 powertrain configurations.
-#$ DISCLAIMER: Bidirectional DSHOT Features for 12 magnet motors are enabled by default.  
-#$ WARNING: This is an experimental tune with limited validation.
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/2XX
+#$ DESCRIPTION: This is a general tune for 3.5" quads with 1404, 1505, 1604, or 1207 motors.
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: The KV/Voltage combinations tested include: 2S ~6000KV, 3S ~4000KV, or 4S ~3000KV.
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: This tune works best with bidirectional DShot ESCs at 48kHz PWM with MedHigh or 23° timing. 
+#$ DESCRIPTION: -------
+#$ DESCRIPTION: This tune has only been validated on 9 build configurations, with 6 powertrain configurations.  Use at your own risk.
+#$ WARNING: This is an experimental tune. Using Bidirectional DSHOT Features Requires Correct Motor Magnet Count to be set.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/255
+
+# FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
@@ -69,7 +74,7 @@ set dterm_lpf1_dyn_expo = 8
 set dterm_lpf2_static_hz = 165
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply RPM Features (Strongly Recommended)
+#$ OPTION BEGIN (UNCHECKED): Apply RPM Features (Strongly Recommended - Keep Matching Filters Required)
 set dshot_bidir = ON
 set rpm_filter_harmonics = 2
 set rpm_filter_q = 750
@@ -84,7 +89,7 @@ set dyn_idle_d_gain = 42
 
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Set Motor Poles = 12 (Required for RPM Features on 12 Magnet Motors)
+#$ OPTION BEGIN (UNCHECKED): Set Motor Poles = 12 (Required for RPM Features on 12 Magnet Motors)
 set motor_poles = 12
 
 #$ OPTION END
