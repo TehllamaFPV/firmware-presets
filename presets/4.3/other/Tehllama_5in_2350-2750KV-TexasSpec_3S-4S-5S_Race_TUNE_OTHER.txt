@@ -228,7 +228,7 @@ set vbat_sag_compensation = 88
 profile 1
 set vbat_sag_compensation = 88
 profile 2
-set vbat_sag_compensation = 99
+set vbat_sag_compensation = 0
 
 #$ OPTION END
 

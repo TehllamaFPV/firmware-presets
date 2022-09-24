@@ -171,6 +171,7 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
+      "Jye Smith // Daniel Appel",
       "MinChan Kim",
       "MrAlucardDante",
       "NemesisXB",
@@ -865,7 +866,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/Tehllama_OSD_All.txt",
-      "hash": "9f591af253ae481e9de56f6ca548ef714f6d429cc84c635c001f6821370197d9",
+      "hash": "1c792b6259ff8a86b7b1decce5538563c6314de896555bb03df756025fd76619",
       "title": "Tehllama OSD Settings",
       "firmware_version": [
         "3.5",
@@ -1160,7 +1161,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_1900-2250KV_FreedomSpec_3S-5S-6S_Race_TUNE_OTHER.txt",
-      "hash": "dd53f9d5edb077c0929ac3252667f3d4d40000c444d48338ce569c85fc36e541",
+      "hash": "a79feb06e4dfb8b754fff52134bb28d303d9c808a83026f3787bb96d6ef92a19",
       "title": "5in FreedomSpec Race Tune 1900-2250KV on 3S (Spec) and 5S/6S (Open)",
       "firmware_version": [
         "4.3"
@@ -1181,7 +1182,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_5in_2350-2750KV-TexasSpec_3S-4S-5S_Race_TUNE_OTHER.txt",
-      "hash": "3d238ca653d717035343a831b3d92ff954bd827f3f4140cf87b3062acde635a1",
+      "hash": "472571120b453f376a1ff0768e77e6bc858817aae737ee3b235384dcd887d119",
       "title": "5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)",
       "firmware_version": [
         "4.3"
@@ -1247,7 +1248,7 @@
     },
     {
       "fullPath": "presets/4.3/other/Tehllama_Nytfury_533_Limon_Ratebank_Profile_OTHER.txt",
-      "hash": "30d5084fb5b2f18caa89406e0a99ba6b87176c489009cf33eceb5d1d7181911c",
+      "hash": "86c90ff4cef2f7be87612033c54c2230ce37b307b75534464655ecbaaca5aeaf",
       "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
       "firmware_version": [
         "3.5",
@@ -2438,7 +2439,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "7f48c0192d8731421a81f73574c454874a962a974d010d24010e99418b3fbfb8",
+      "hash": "f61fd4f1e2a06cbc8b9c322666e6bec9d07f9a2de9dd6a13bb2419913807e52b",
       "title": "Tehllama RC Link Settings",
       "firmware_version": [
         "4.3"
@@ -3134,6 +3135,31 @@
         "OP400"
       ],
       "author": "Jye Smith",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/OpenVTx_Tehllama.txt",
+      "hash": "cd1b09771123f0aa83e3296fa7fc2e4d4c94df8d65d797b89e70d2239627ae1e",
+      "title": "OpenVTx",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "OpenVTx",
+        "TRAMP",
+        "SA 2.1",
+        "E7082VM",
+        "OVX300",
+        "OVX303",
+        "OP400",
+        "Llama"
+      ],
+      "author": "Jye Smith // Daniel Appel",
       "priority": 1000000
     },
     {

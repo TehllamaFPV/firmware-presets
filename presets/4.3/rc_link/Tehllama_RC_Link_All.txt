@@ -6,14 +6,14 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Contains various radio link configurations for racing and dual-sport RC_Link setups
 
-#$ OPTION BEGIN (UNCHECKED):  ELRS Race 250Hz - All Profiles
+#$ OPTION BEGIN (CHECKED):  ELRS Race 250Hz - All Profiles
 feature RX_SERIAL
 set serialrx_provider = CRSF
 
 set rc_smoothing = ON
 set feedforward_averaging = OFF
 set report_cell_voltage = ON
-set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor = 33
 
 set rssi_channel = 0
 
@@ -197,7 +197,7 @@ set feedforward_max_rate_limit = 90
 set rc_smoothing_auto_factor = 30
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  Include Llama Modes (3 AUX)
+#$ OPTION BEGIN (CHECKED):  Include Llama Modes (3 AUX)
 
 #$ INCLUDE: presets/4.3/modes/Llama_ELRS_Modes.txt
 

@@ -18,7 +18,7 @@
 # FORCE_OPTIONS_REVIEW: TRUE
 
 
-#$ OPTION BEGIN (UNCHECKED): Overwrite Rate Profile 1 with Tehllama Rates
+#$ OPTION BEGIN (CHECKED): Overwrite Rate Profile 1 with Tehllama Rates
 # Tehllama Rate Bank - Defaul unchecked behavior will retain user rates in the default rateprofile
 rateprofile 0
 # rateprofile 1 - Tehllama Rates
