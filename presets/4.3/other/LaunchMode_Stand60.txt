@@ -1,7 +1,7 @@
 #$ TITLE: Tehllama 60 Degree Launch Stand Mode Enabled
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ CATEGORY: OTHER
 #$ KEYWORDS: Race, Launch, LaunchMode, Mode
 #$ AUTHOR: Daniel Appel / Tehllama
@@ -19,7 +19,7 @@ set launch_trigger_allow_reset = OFF
 set launch_angle_limit = 60
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Apply to ALL Profiles (Sets Profile #1)
+#$ OPTION BEGIN (CHECKED): Apply to ALL Profiles (Sets Profile #1)
 profile 0
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = OFF

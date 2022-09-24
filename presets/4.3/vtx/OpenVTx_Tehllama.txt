@@ -1,4 +1,4 @@
-#$ TITLE: OpenVTx
+#$ TITLE: OpenVTx - Llama - ELRS
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: VTX
@@ -15,7 +15,18 @@
 #$ DISCUSSION:  https://github.com/betaflight/firmware-presets/pull/157
 #$ INCLUDE_DISCLAIMER: misc/disclaimer/en/vtxtable.txt
 
-#$ OPTION BEGIN (CHECKED): TRAMP
+#$ OPTION BEGIN (CHECKED): Select RACEBAND 2
+set vtx_band = 5
+set vtx_channel = 2
+set vtx_freq = 5695
+set vtx_power = 1
+set vtx_low_power_disarm = OFF
+#$ OPTION END
+
+set vtx_power = 1
+set vtx_low_power_disarm = OFF
+
+#$ OPTION BEGIN (UNCHECKED): TRAMP
 vtxtable bands 7
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725

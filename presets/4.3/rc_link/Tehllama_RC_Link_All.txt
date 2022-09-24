@@ -1,7 +1,7 @@
 #$ TITLE: Tehllama RC Link Settings
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RC_LINK
-#$ STATUS: COMMUNITY
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: RC_LINK, Llama, CRSF, ELRS, FrSky, FPort, SBUS, FlySky, IBUS
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Contains various radio link configurations for racing and dual-sport RC_Link setups

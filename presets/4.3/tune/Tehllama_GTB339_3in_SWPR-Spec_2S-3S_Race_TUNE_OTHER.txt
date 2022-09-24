@@ -1,7 +1,7 @@
 #$ TITLE: 3in Lightweight 3S/2S Tune for GTB-339 or 3" Racing Toothpick 
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
-#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: GTB339, Toothpick, Spec, Race, Llama, SWPR, Multi, Voltage, 2S, 3S
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune was designed for GTB339 3in 1105-5500KV Racers on on bidir DShot ESCs at 48kHz PWM with MedHigh timing. 
@@ -32,6 +32,8 @@ set dshot_idle_value = 475
 # Fallback if dynamic idle does not work or is disabled
 
 set thrust_linear = 20
+
+set vbat_max_cell_voltage = 438
 
 # 3S Auto-Select Tune on Profile #3
 profile 2

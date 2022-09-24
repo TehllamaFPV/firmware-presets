@@ -1,7 +1,7 @@
 #$ TITLE: 5in TexasSpec Freedom Race Tune 2350-2750KV on 3S (Spec) and 4S/5S (Open)
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
-#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 533, HighKV, FreedomSpec, Spec, Tune, Race, Llama, MultiVoltage, Texas
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: This tune is intended for builds on bidir DShot ESCs at 48kHz PWM with 23-27°/MedHigh timing.
@@ -20,6 +20,67 @@
 
 set dshot_idle_value = 440
 # Fallback value if dynamic idle does not work, or is deselected
+
+set vbat_max_cell_voltage = 438
+
+#$ OPTION_GROUP BEGIN: Filters
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters to ALL Profiles
+
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+set dshot_bidir = ON
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_count = 2
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+
+set simplified_gyro_filter_multiplier = 135
+simplified_tuning apply
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+profile 0
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 1
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 277
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+
+profile 2
+set dterm_lpf1_dyn_min_hz = 98
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 210
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
 
 #$ OPTION_GROUP BEGIN: Tune Profiles
 
@@ -135,63 +196,6 @@ set simplified_feedforward_gain = 160
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
 simplified_tuning apply
-#$ OPTION END
-
-#$ OPTION_GROUP END
-
-#$ OPTION_GROUP BEGIN: Filters
-
-#$ OPTION BEGIN (CHECKED): Apply Matching Multi Voltage Filters to ALL Profiles
-
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-
-set dshot_bidir = ON
-
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 675
-set dyn_notch_q = 333
-set dyn_notch_min_hz = 98
-set dyn_notch_max_hz = 674
-set gyro_lpf1_dyn_min_hz = 337
-set gyro_lpf1_dyn_max_hz = 675
-set gyro_lpf1_dyn_expo = 7
-
-set simplified_gyro_filter_multiplier = 135
-simplified_tuning apply
-
-set rpm_filter_harmonics = 2
-set rpm_filter_q = 750
-set rpm_filter_min_hz = 125
-set rpm_filter_fade_range_hz = 100
-
-profile 0
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 244
-set dterm_lpf1_dyn_expo = 8
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-profile 1
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 277
-set dterm_lpf1_dyn_expo = 10
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-
-profile 2
-set dterm_lpf1_dyn_min_hz = 98
-set dterm_lpf1_dyn_max_hz = 222
-set dterm_lpf1_dyn_expo = 7
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 210
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
 #$ OPTION END
 
 #$ OPTION_GROUP END

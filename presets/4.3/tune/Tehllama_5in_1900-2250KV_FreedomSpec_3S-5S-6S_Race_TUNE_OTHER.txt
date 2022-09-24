@@ -1,7 +1,7 @@
 #$ TITLE: 5in FreedomSpec Race Tune 1900-2250KV on 3S (Spec) and 5S/6S (Open)
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
-#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 533, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Tune is built for 533 FreedomSpec and similar builds with 1900-2150KV Motors.
@@ -11,7 +11,7 @@
 #$ DESCRIPTION: !!! Strongly recommend a full chip erase reflash if alternative tunes are desired after installing this preset!!!
 #$ DESCRIPTION: Extensive testing has been done across 57+ builds, however not every craft will run best on this tune.
 #$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin, but only for 3S, 5S, and 6S packs.  
-#$ WARNING: Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case flyaways or potential damage if Profile 3 (3S) is selected. 
+#$ WARNING: Use at your own risk.  This tune does NOT have a profile auto-select with 4S batteries, which may case flyaways or potential damage if Profile 3 (3S) is selected.  Field expedient solution - plug in a 5S/6S battery before plugging in 4S pack
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/235
 
 # FORCE_OPTIONS_REVIEW: TRUE
@@ -20,6 +20,68 @@
 
 # Fallback if dynamic idle does not function or is deselected
 set dshot_idle_value = 440
+
+set vbat_max_cell_voltage = 438
+
+#$ OPTION_GROUP BEGIN: Filters
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+# master
+set dshot_bidir = ON
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_count = 2
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+
+set simplified_gyro_filter_multiplier = 135
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+simplified_tuning apply
+
+profile 0
+# profile 0
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 266
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 175
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 1
+# profile 1
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 9
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 2
+# profile 2
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Tune Profiles
 
@@ -104,7 +166,7 @@ set dterm_lpf2_static_hz = 175
 set iterm_rotation = ON
 set iterm_relax = RPY
 set iterm_relax_cutoff = 33
-set yaw_lowpass_hz = 115
+set yaw_lowpass_hz = 133
 set p_pitch = 83
 set i_pitch = 126
 set d_pitch = 65
@@ -136,64 +198,7 @@ simplified_tuning apply
 
 #$ OPTION_GROUP END
 
-#$ OPTION_GROUP BEGIN: Filters
 
-#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-# master
-set dshot_bidir = ON
-
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 675
-set dyn_notch_q = 333
-set dyn_notch_min_hz = 98
-set dyn_notch_max_hz = 674
-set gyro_lpf1_dyn_min_hz = 337
-set gyro_lpf1_dyn_max_hz = 675
-set gyro_lpf1_dyn_expo = 7
-
-set simplified_gyro_filter_multiplier = 135
-
-set rpm_filter_harmonics = 2
-set rpm_filter_q = 750
-set rpm_filter_min_hz = 125
-set rpm_filter_fade_range_hz = 100
-
-simplified_tuning apply
-
-profile 0
-# profile 0
-set dterm_lpf1_dyn_min_hz = 100
-set dterm_lpf1_dyn_max_hz = 266
-set dterm_lpf1_dyn_expo = 10
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 175
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-profile 1
-# profile 1
-set dterm_lpf1_dyn_min_hz = 100
-set dterm_lpf1_dyn_max_hz = 244
-set dterm_lpf1_dyn_expo = 9
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 202
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-profile 2
-# profile 2
-set dterm_lpf1_dyn_min_hz = 101
-set dterm_lpf1_dyn_max_hz = 222
-set dterm_lpf1_dyn_expo = 7
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 202
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-#$ OPTION END
-
-#$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Features and TPA 
 
@@ -217,7 +222,7 @@ set dyn_idle_i_gain = 42
 set dyn_idle_d_gain = 42
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 77 for ALL Profiles
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 77 for ALL open Profiles
 profile 0
 set vbat_sag_compensation = 77
 profile 1
@@ -253,11 +258,6 @@ set tpa_rate = 72
 set tpa_breakpoint = 1250
 
 rateprofile 0
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): Apply TPA Settings to current rateprofile only
-set tpa_rate = 72
-set tpa_breakpoint = 1250
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED):  2000KV Motor Output Limit on 3S

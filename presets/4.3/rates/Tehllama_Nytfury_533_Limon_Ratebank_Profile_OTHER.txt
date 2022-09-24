@@ -1,21 +1,24 @@
 #$ TITLE: Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama 
 #$ FIRMWARE_VERSION: 3.5
+#$ FIRMWARE_VERSION: 4.0
+#$ FIRMWARE_VERSION: 4.1
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: RATES
-#$ STATUS: COMMUNITY
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Race, Rates, Racing, Bank, Nytfury, HeadsUp, 533, Limon, Beginner
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: These are some proven race rates for pilots to use
-#$ DESCRIPTION: Use selected options to change any RateProfile values (will retain RateProfile 1 by default)
-#$ DISCLAIMER: These rates are all Legacy Betaflight type rates.  
+#$ DESCRIPTION: These are some proven race rates available as a complete bank of rates. 
+#$ DESCRIPTION: This preset will dictate which rate profile is selected.
+#$ DESCRIPTION: These rates are all Legacy Betaflight type rates.  
+#$ DESCRIPTION: Use selected options to change any RateProfile values.  Preset will retain RateProfile 1 as-is by default.
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/234
 
 # FORCE_OPTIONS_REVIEW: TRUE
 
 
-#$ OPTION BEGIN (UNCHECKED): Overwrite Rate Profile 1 with Tehllama Rates
-# Tehllama Rate Bank
+#$ OPTION BEGIN (CHECKED): Overwrite Rate Profile 1 with Tehllama Rates
+# Tehllama Rate Bank - Defaul unchecked behavior will retain user rates in the default rateprofile
 rateprofile 0
 # rateprofile 1 - Tehllama Rates
 set rates_type = BETAFLIGHT
@@ -115,4 +118,4 @@ rateprofile 5
 
 #$ OPTION BEGIN (CHECKED): Use RateProfile 1
 rateprofile 0
-#$ OPTION END# Tehllama Rate Bank
+#$ OPTION END# 

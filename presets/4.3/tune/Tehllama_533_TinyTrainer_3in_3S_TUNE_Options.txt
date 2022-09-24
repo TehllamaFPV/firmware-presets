@@ -1,7 +1,7 @@
 #$ TITLE: FlyFive33 3in TinyTrainer 3S Tune
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: TinyTrainer, 533, Spec, Race, Llama
 #$ AUTHOR: Daniel Appel / Tehllama 
 #$ DESCRIPTION: Tune developed by Armando 'Mondo' Gallegos and Evan 'HeadsUp' Turner
@@ -97,8 +97,9 @@ set motor_poles = 12
 #$ OPTION_GROUP END
 #$ OPTION_GROUP BEGIN: Other Features and TPA
 
-#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 100
-set vbat_sag_compensation = 100
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation = 77 & Max Cell Voltage to 4.38V/cell
+set vbat_sag_compensation = 77
+set vbat_max_cell_voltage = 438
 
 #$ OPTION END
 

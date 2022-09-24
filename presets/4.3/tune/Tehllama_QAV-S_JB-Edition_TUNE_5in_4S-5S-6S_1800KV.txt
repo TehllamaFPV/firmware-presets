@@ -24,6 +24,8 @@
 set dshot_idle_value = 700
 # Fallback if Dynamic Idle not working or not selected
 
+set vbat_max_cell_voltage = 438
+
 #$ OPTION_GROUP BEGIN: Filtering Scheme
 
 #$ OPTION BEGIN (UNCHECKED): Use Default No-RPM Clean Filters

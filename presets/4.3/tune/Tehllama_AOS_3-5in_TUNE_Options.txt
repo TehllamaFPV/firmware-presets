@@ -94,9 +94,9 @@ set motor_poles = 12
 
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 100
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 100 & Max Cell Voltage to 4.38
 set vbat_sag_compensation = 100
-
+set vbat_max_cell_voltage = 438
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Set Small Angle to 180

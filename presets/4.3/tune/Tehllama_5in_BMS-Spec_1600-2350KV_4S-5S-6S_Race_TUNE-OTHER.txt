@@ -1,7 +1,7 @@
 #$ TITLE: 5in Tehllama Race Tune 1600-2350KV on 4S/5S/6S including BMS Spec
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: OTHER
-#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Race, Llama, Safe, Tune, MultiVoltage
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Built for Powerful racing builds on bidir DShot ESCs at 48kHz PWM with 23°-27°/MedHigh timing
@@ -14,6 +14,69 @@
 
 #$ INCLUDE: presets/4.3/tune/defaults.txt
 
+#$ OPTION_GROUP BEGIN: Filters
+
+#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+# master
+set dshot_bidir = ON
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 675
+set dyn_notch_count = 2
+set dyn_notch_q = 333
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+set gyro_lpf1_dyn_expo = 7
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 100
+
+set simplified_gyro_filter_multiplier = 135
+
+profile 0
+# profile 0
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 266
+set dterm_lpf1_dyn_expo = 10
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 140
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 1
+# profile 1
+set dterm_lpf1_dyn_min_hz = 100
+set dterm_lpf1_dyn_max_hz = 244
+set dterm_lpf1_dyn_expo = 9
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 140
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+profile 2
+# profile 2
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 222
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 202
+
+set simplified_dterm_filter_multiplier = 135
+set simplified_dterm_filter = OFF
+simplified_tuning apply
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
 
 #$ OPTION_GROUP BEGIN: Tune Profiles
 #$ OPTION BEGIN (CHECKED): Apply 6S Auto-Select Tune to Profile 1
@@ -21,6 +84,8 @@
 
 set dshot_idle_value = 440
 # Fallback value if dynamic idle does not operate correctly or is deselected
+
+set vbat_max_cell_voltage = 438
 
 profile 0
 # profile 0
@@ -149,68 +214,6 @@ set simplified_feedforward_gain = 140
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 
-simplified_tuning apply
-
-#$ OPTION END
-
-#$ OPTION_GROUP END
-
-#$ OPTION_GROUP BEGIN: Filters
-
-#$ OPTION BEGIN (CHECKED): Apply Matching Filters to ALL Profiles
-#$ INCLUDE: presets/4.3/filters/defaults.txt
-# master
-set dshot_bidir = ON
-
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 675
-set dyn_notch_q = 333
-set dyn_notch_min_hz = 98
-set dyn_notch_max_hz = 674
-set gyro_lpf1_dyn_min_hz = 337
-set gyro_lpf1_dyn_max_hz = 675
-set gyro_lpf1_dyn_expo = 7
-set rpm_filter_harmonics = 2
-set rpm_filter_q = 750
-set rpm_filter_min_hz = 125
-set rpm_filter_fade_range_hz = 100
-
-set simplified_gyro_filter_multiplier = 135
-
-profile 0
-# profile 0
-set dterm_lpf1_dyn_min_hz = 100
-set dterm_lpf1_dyn_max_hz = 266
-set dterm_lpf1_dyn_expo = 10
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 202
-
-set simplified_dterm_filter_multiplier = 140
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-profile 1
-# profile 1
-set dterm_lpf1_dyn_min_hz = 100
-set dterm_lpf1_dyn_max_hz = 244
-set dterm_lpf1_dyn_expo = 9
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 202
-
-set simplified_dterm_filter_multiplier = 140
-set simplified_dterm_filter = OFF
-simplified_tuning apply
-
-profile 2
-# profile 2
-set dterm_lpf1_dyn_min_hz = 101
-set dterm_lpf1_dyn_max_hz = 222
-set dterm_lpf1_dyn_expo = 7
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 202
-
-set simplified_dterm_filter_multiplier = 135
-set simplified_dterm_filter = OFF
 simplified_tuning apply
 
 #$ OPTION END
