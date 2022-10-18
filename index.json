@@ -134,9 +134,10 @@
   "uniqueValues": {
     "firmware_version": [
       "3.5",
+      "4.0",
+      "4.1",
       "4.2",
       "4.3",
-      "4.3, 4.4",
       "4.4"
     ],
     "category": [
@@ -158,6 +159,7 @@
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
+      "Daniel Appel",
       "Daniel Appel / Tehllama",
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
@@ -172,6 +174,7 @@
       "Joshua Bardwell",
       "Justice - Gary Kent",
       "Jye Smith",
+      "Jye Smith // Daniel Appel",
       "KMfpv",
       "LeadFingers",
       "MinChan Kim",
@@ -200,6 +203,7 @@
       "3 Inch",
       "3.5in",
       "3\"",
+      "35",
       "3in",
       "3S",
       "4in",
@@ -242,15 +246,18 @@
       "Avatar",
       "AyyyKayyy",
       "bando",
+      "Bank",
       "bardwell",
       "basher",
       "basic",
+      "Beginner",
       "betaflight",
       "blackbox",
       "BMI270",
       "BMS",
       "BMSThomas",
       "brushless",
+      "Busy",
       "camera",
       "camera_control",
       "Cgo",
@@ -278,6 +285,7 @@
       "DJI",
       "DShot telemetry",
       "dual",
+      "E7082VM",
       "eachine",
       "ELRS",
       "emax",
@@ -290,7 +298,9 @@
       "filtering",
       "filters",
       "five33",
+      "FlySky",
       "Foxeer",
+      "FPort",
       "fpv.wtf",
       "FPVCycle",
       "FPVCycle TP3",
@@ -318,18 +328,22 @@
       "HighKV",
       "hot",
       "HV",
+      "IBUS",
       "IllusionFpv",
       "immersion",
       "immersionRC",
       "IRC",
       "IRC Tramp",
+      "JB",
       "justice",
       "karate",
       "KarateBrot",
       "launch",
       "launch_mode",
+      "LaunchMode",
       "LeadFingers",
       "League",
+      "LED",
       "leds",
       "Limon",
       "link",
@@ -357,10 +371,16 @@
       "no rpm",
       "noisy",
       "normal",
+      "NTSC",
+      "Nytfury",
+      "OP400",
       "OpenRacer",
       "OpenVTx",
       "OSD",
       "output limit",
+      "OVX300",
+      "OVX303",
+      "PAL",
       "partial",
       "Passthrough",
       "pid",
@@ -368,6 +388,7 @@
       "pro32",
       "profile",
       "Pure Race",
+      "QAV",
       "quaddiction",
       "quick",
       "race",
@@ -3464,10 +3485,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_no_rpm_clean.txt",
-      "hash": "8c7c178d5f51698460f204efd94690088b23411998bc110aae1afb3c7a799203",
-      "title": "4.3 Filter settings for CLEAN build WITH NO RPM FILTERING.",
+      "hash": "ee47e261f8f55aeee18ae423a86deffdf4678744ab7271d3611d0dfb77cc8bd6",
+      "title": "4.4 Filter settings for CLEAN build WITH NO RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3485,10 +3506,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_no_rpm_noisy.txt",
-      "hash": "b58602640d7b76d68bd4a44b826c578c94f239d44a2d9d1fe63c9ff591270d1e",
-      "title": "4.3 Filter settings for NOISY build WITH NO RPM FILTERING.",
+      "hash": "bb88f0ea90db25557b7b4a7fec119b4a68f3f01470d3d9daeced07eda31763f5",
+      "title": "4.4 Filter settings for NOISY build WITH NO RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3506,10 +3527,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_no_rpm_normal.txt",
-      "hash": "7adcc28035357071ff59d5876e3f33f9087a0136de757f8f3df86567d862ae00",
-      "title": "4.3 Filter settings for NORMAL build WITH NO RPM FILTERING.",
+      "hash": "585e7fe6f19098753afefc01e1041d5b7805ed4d239fecef292f8e61c4c40e07",
+      "title": "4.4 Filter settings for NORMAL build WITH NO RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3527,10 +3548,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_no_rpm_very_clean.txt",
-      "hash": "ace99eb43b01119b0f6effa7eeefb9097693001346e80b241b9ace3245d75628",
-      "title": "4.3 Filter settings for VERY CLEAN build WITHOUT RPM FILTERING.",
+      "hash": "8630029dd038a276e279a9bcfcbd1746e63a22e7275c8e41c10cbb80e8106528",
+      "title": "4.4 Filter settings for VERY CLEAN build WITHOUT RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3550,10 +3571,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_no_rpm_very_noisy.txt",
-      "hash": "e82d7168410f9410a5c8c00cac0ed81c66c252275345fc9da89e4f0355cf4e2d",
-      "title": "4.3 Filter settings for VERY NOISY build WITH NO RPM FILTERING.",
+      "hash": "14dd748f95cfb827e0312565cc1e1446a83c943f3853d322a5dd35bdcf5e5b23",
+      "title": "4.4 Filter settings for VERY NOISY build WITH NO RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3572,10 +3593,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_rpm_clean.txt",
-      "hash": "4e4a6c4a82b248acf5e0de6474815c50a2e0dfa24a1d83688907ecf2dd94331d",
-      "title": "4.3 Filter settings for CLEAN build with RPM FILTERING.",
+      "hash": "b742a63cec39141e9e3e9d0db09fbe6de753e9710c89176d980e08e986e34893",
+      "title": "4.4 Filter settings for CLEAN build with RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3593,10 +3614,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_rpm_noisy.txt",
-      "hash": "43d0cc2f9ab6250da84b14dc8ab617e4794c326f9eea91b5e3072b543f583c5d",
-      "title": "4.3 Filter settings for NOISY build with RPM FILTERING.",
+      "hash": "e0f4b96438e60c654641393f1e6e0ba2f5124ed0d80dc20afa2a72e8931ee4bf",
+      "title": "4.4 Filter settings for NOISY build with RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3614,10 +3635,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_rpm_normal.txt",
-      "hash": "c780572acf3f8520fc79789b219647f1f8fd45e7a0d019018403cd3524c03975",
-      "title": "4.3 Filter settings for NORMAL build with RPM FILTERING.",
+      "hash": "f96b09e9a5faf3a667b276543c33b101894faea1efdf4e438c4fe6eeb2dc2dcf",
+      "title": "4.4 Filter settings for NORMAL build with RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3635,10 +3656,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_rpm_very_clean.txt",
-      "hash": "f1acd694e9f493f374cd7a31f0726bc68b56ed4aea66fac4207fd067b05441b8",
-      "title": "4.3 Filter settings for VERY CLEAN build with RPM FILTERING.",
+      "hash": "128ad12a35be311182808f8b00949296bfb2cddc706fc523986a533055ce688a",
+      "title": "4.4 Filter settings for VERY CLEAN build with RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3658,10 +3679,10 @@
     },
     {
       "fullPath": "presets/4.4/filters/basic_rpm_very_noisy.txt",
-      "hash": "f6a235cd27601dde662194212e66048579dcae039035ae245ea4c38c6729c1f3",
-      "title": "4.3 Filter settings for VERY NOISY build with RPM FILTERING.",
+      "hash": "717f52cc032a31a708a9a3941805d749175fabecb0297ccaa72bba1874b731e2",
+      "title": "4.4 Filter settings for VERY NOISY build with RPM FILTERING.",
       "firmware_version": [
-        "4.3, 4.4"
+        "4.4"
       ],
       "category": "FILTERS",
       "status": "OFFICIAL",
@@ -3681,8 +3702,27 @@
       "priority": 100
     },
     {
+      "fullPath": "presets/4.4/filters/ctzsnooze_race.txt",
+      "hash": "d72292bf9e3ffdedb70cc4a197d9841f4cfc8d5916749c93405d8f39a32eb390",
+      "title": "ctzsnooze's race filter settings",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "FILTERS",
+      "status": "OFFICIAL",
+      "keywords": [
+        "race",
+        "filter",
+        "filters",
+        "ctzsnooze",
+        "RPM"
+      ],
+      "author": "Betaflight",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.4/filters/defaults.txt",
-      "hash": "c64a29f4fa8672ad6af57bde18779bc7fd2ba87cc21dc32b85852cae19e4e969",
+      "hash": "78e8e866818aeab79606c2a25e89d22fedf557c319c3d71f2c776ac441dcf116",
       "title": "Default 4.4 Filter settings",
       "firmware_version": [
         "4.4"
@@ -3697,6 +3737,196 @@
       ],
       "author": "Betaflight",
       "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/karate_array.txt",
+      "hash": "581b27028bf30e0251f8b7961b22430805c460b5f9d8a0cae248f5ebcab362c4",
+      "title": "the Karate array",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "FILTERS",
+      "status": "OFFICIAL",
+      "keywords": [
+        "filter",
+        "filters",
+        "karate",
+        "race",
+        "freesytle",
+        "suagrK",
+        "CTZsoonze",
+        "KarateBrot",
+        "5\""
+      ],
+      "author": "sugarK",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/modes/Llama_ELRS_Modes.txt",
+      "hash": "eb37c9ebadbe6a5090eb891ef95b5c5d02cba5c8441b90a19e72a20bc7ddfd3c",
+      "title": "My ELRS Modes",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "mode",
+        "modes",
+        "adjustments",
+        "aux",
+        "switch"
+      ],
+      "author": "Daniel Appel",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/Tehllama_OSD_All.txt",
+      "hash": "22495395684c3e2a8ca8b8f4cb38499af2a818373f0afcbc7d2d2c2597227d41",
+      "title": "Tehllama OSD Settings",
+      "firmware_version": [
+        "3.5",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "OSD",
+        "Llama",
+        "DJI",
+        "PAL",
+        "NTSC",
+        "Busy"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/other/LaunchMode_Stand60.txt",
+      "hash": "51e602cd28e2286c4030f9aca448ee931bf57c25265473e817975eab05d2fdb6",
+      "title": "Tehllama 60 Degree Launch Stand Mode Enabled",
+      "firmware_version": [
+        "4.4",
+        "4.3",
+        "4.2"
+      ],
+      "status": "COMMUNITY",
+      "category": "OTHER",
+      "keywords": [
+        "Race",
+        "Launch",
+        "LaunchMode",
+        "Mode"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/other/LED_TinyTrainer_ELRS.txt",
+      "hash": "ef1cd773689ad61603a72cc830fd37028f3844d405632ac57b043b23fb52a166",
+      "title": "Tehllama TinyTrainer LED Preset for Aux 8",
+      "firmware_version": [
+        "3.5",
+        "4.0",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "status": "EXPERIMENTAL",
+      "category": "OTHER",
+      "keywords": [
+        "Llama",
+        "Mode",
+        "LED",
+        "ELRS"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/other/Tehllama_5in_Race_MultiTune_1600-2750KV_3-6S.txt",
+      "hash": "e46ec66830e774d394586696e42536e8bf785dd01d2582fcb3255503aedbe22d",
+      "title": "Tehllama 5in Race MultiVoltage Tune - 1600-2750KV 4S/5S/6S (Open) & 3S (Spec)",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "533",
+        "Freedom",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas",
+        "BMS",
+        "3S",
+        "5in",
+        "AutoSelect",
+        "MM"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/rates/Tehllama_Nytfury_533_4-4_Ratebank.txt",
+      "hash": "6a7394b3fcf7472d569ee4c5fa9820845c369b1a5d8df9c3f15a21ac3bf8b4cd",
+      "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
+      "firmware_version": [
+        "3.5",
+        "4.0",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Race",
+        "Rates",
+        "Racing",
+        "Bank",
+        "Nytfury",
+        "HeadsUp",
+        "533",
+        "Limon",
+        "Beginner"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/rc_link/Tehllama_RC_Link_All.txt",
+      "hash": "ac777eb35dfbc15725fda875ed5f4db43a352e5dd76373223cee3433611a8ed5",
+      "title": "Tehllama RC Link Settings",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "RC_LINK",
+        "Llama",
+        "CRSF",
+        "ELRS",
+        "FrSky",
+        "FPort",
+        "SBUS",
+        "FlySky",
+        "IBUS"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.4/tune/defaults.txt",
@@ -3719,8 +3949,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_44.txt",
+      "hash": "69091b262b807ffd0e8ba3639a758e88563cede305637a0d6ef863b309d3e18c",
+      "title": "FlyFive33 3in TinyTrainer 3S Tune",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "TinyTrainer",
+        "533",
+        "Spec",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.4/tune/Tehllama_5in_Race_Tune_1600-2750KV_Freedom_MultiVoltage_3S-4S-5S-6S.txt",
-      "hash": "e4a53f58eec2646620d32a122fc1c8cda8de990f29e8be10fecea460181422f6",
+      "hash": "8768cc1816fbacd07b8279598dce486c14e76ed8c00a99a76d88059f4f77c80c",
       "title": "Tehllama 5in Race Tune - Llama Freedom Multi-Voltage 1600-2750KV 4S/5S/6S (Open) & 3S (Spec)",
       "firmware_version": [
         "4.4"
@@ -3742,6 +3991,72 @@
         "5in",
         "AutoSelect",
         "MM"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/Tehllama_AOS_3-5in_TUNE_44.txt",
+      "hash": "858e45c8b4f82774282cfc4394171cc01bacee0c313c2534e622b8a6eb95e415",
+      "title": "Tehllama 3.5\" Tune for XKnight and AOS-3.5",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "AOS",
+        "35",
+        "Tune",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_44.txt",
+      "hash": "b31ef0b27f1d733fd83a03b28ff96dbe187cf9ec89b333e332179c23ff7e45fe",
+      "title": "3in Lightweight 3S/2S Tune for GTB-339 or 3\" Racing Toothpick",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "GTB339",
+        "Toothpick",
+        "Spec",
+        "Race",
+        "Llama",
+        "SWPR",
+        "Multi",
+        "Voltage",
+        "2S",
+        "3S"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/Tehllama_QAV-S_JB-Edition_TUNE_5in_4S-5S-6S_1800KV_44.txt",
+      "hash": "70d7cff10ad86173aa77ffbba6a37962a9df8264cd1c8344db309fcbb257cd75",
+      "title": "Tehllama QAV-S Freestyle and Chase Tune for 4/5/6S on 1700-1900KV Motors",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Llama",
+        "JB",
+        "Bardwell",
+        "QAV",
+        "Freestyle",
+        "Multi",
+        "Voltage",
+        "Multivoltage"
       ],
       "author": "Daniel Appel / Tehllama",
       "force_options_review": true,
@@ -3772,6 +4087,32 @@
         "MSP VTX"
       ],
       "author": "sugarK",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.4/vtx/OpenVTx_Tehllama.txt",
+      "hash": "bbb18a2402fcdd4062e1821122ef920a386f8a007322c2bb4d07f5e3901e7a20",
+      "title": "OpenVTx - Llama - ELRS",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "OpenVTx",
+        "TRAMP",
+        "SA 2.1",
+        "E7082VM",
+        "OVX300",
+        "OVX303",
+        "OP400",
+        "Llama"
+      ],
+      "author": "Jye Smith // Daniel Appel",
       "priority": 1000000
     }
   ]

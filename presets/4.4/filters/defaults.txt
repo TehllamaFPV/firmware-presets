@@ -4,7 +4,7 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, filter, filters, reset
 #$ AUTHOR: Betaflight
-#$ DESCRIPTION: Resets Filter settings to 4.3 defaults
+#$ DESCRIPTION: Resets Filter settings to 4.4 defaults
 
 set gyro_hardware_lpf = NORMAL
 

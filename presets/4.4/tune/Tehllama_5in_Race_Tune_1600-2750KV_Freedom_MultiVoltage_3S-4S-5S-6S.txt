@@ -44,7 +44,7 @@
 #$ OPTION_GROUP BEGIN: Filters
 #$ OPTION BEGIN (CHECKED): Apply RPM Enabled SAFE Filters to ALL profiles (Requires Bidirectional DShot)
 profile 0
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set dterm_lpf1_dyn_min_hz = 101
 set dterm_lpf1_dyn_max_hz = 266
 set dterm_lpf1_dyn_expo = 10
@@ -55,7 +55,7 @@ set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 1
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set dterm_lpf1_dyn_min_hz = 101
 set dterm_lpf1_dyn_max_hz = 255
 set dterm_lpf1_dyn_expo = 9
@@ -66,7 +66,7 @@ set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 2
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set dterm_lpf1_dyn_min_hz = 101
 set dterm_lpf1_dyn_max_hz = 244
 set dterm_lpf1_dyn_expo = 8
@@ -77,7 +77,7 @@ set simplified_dterm_filter_multiplier = 135
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 3
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set dterm_lpf1_dyn_min_hz = 101
 set dterm_lpf1_dyn_max_hz = 233
 set dterm_lpf1_dyn_expo = 5
@@ -106,7 +106,7 @@ set rpm_filter_fade_range_hz = 50
 
 #$ OPTION BEGIN (UNCHECKED): Apply RPM Enabled SPICY Filters to ALL profiles (Requires Bidirectional DShot)
 profile 0
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set yaw_lowpass_hz = 111
 set simplified_dterm_filter_multiplier = 145
 set dterm_lpf1_dyn_min_hz = 111
@@ -117,7 +117,7 @@ set dterm_lpf2_static_hz = 222
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 1
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set yaw_lowpass_hz = 111
 set simplified_dterm_filter_multiplier = 145
 set dterm_lpf1_dyn_min_hz = 111
@@ -128,7 +128,7 @@ set dterm_lpf2_static_hz = 195
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 2
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set yaw_lowpass_hz = 111
 set simplified_dterm_filter_multiplier = 145
 set dterm_lpf1_dyn_min_hz = 111
@@ -139,7 +139,7 @@ set dterm_lpf2_static_hz = 222
 set simplified_dterm_filter = OFF
 simplified_tuning apply
 profile 3
-#$ INCLUDE: presets/4.4/filters/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 set yaw_lowpass_hz = 111
 set simplified_dterm_filter_multiplier = 145
 set dterm_lpf1_dyn_min_hz = 111
@@ -168,16 +168,16 @@ set rpm_filter_fade_range_hz = 111
 
 #$ OPTION BEGIN (UNCHECKED): Use Non-RPM Filters on All Profiles (Not Recommended)
 profile 0
-#$ INCLUDE: presets/4.4/filters/basic_no_rpm_clean.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_clean.txt
 set yaw_lowpass_hz = 99
 profile 1
-#$ INCLUDE: presets/4.4/filters/basic_no_rpm_clean.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_clean.txt
 set yaw_lowpass_hz = 99
 profile 2
-#$ INCLUDE: presets/4.4/filters/basic_no_rpm_clean.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_clean.txt
 set yaw_lowpass_hz = 99
 profile 3
-#$ INCLUDE: presets/4.4/filters/basic_no_rpm_clean.txt
+#$ INCLUDE: presets/4.3/filters/basic_no_rpm_clean.txt
 set yaw_lowpass_hz = 99
 # Filter Master
 set dyn_notch_min_hz = 77

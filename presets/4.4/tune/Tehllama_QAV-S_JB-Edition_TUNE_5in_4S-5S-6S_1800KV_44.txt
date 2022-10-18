@@ -1,0 +1,261 @@
+#$ TITLE: Tehllama QAV-S Freestyle and Chase Tune for 4/5/6S on 1700-1900KV Motors
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: Llama, JB, Bardwell, QAV, Freestyle, Multi, Voltage, Multivoltage
+#$ AUTHOR: Daniel Appel / Tehllama 
+#$ DESCRIPTION: !! Please review all options !!  
+#$ DESCRIPTION: By default, this applies a multi-voltage tune that automatically selects profile based on battery plugged in for 4S, 5S, and 6S.
+#$ DESCRIPTION: Please ensure that the appropriate RC_LINK Preset and/or settings are applied.
+#$ DESCRIPTION: ...
+#$ DESCRIPTION: This tune is intended for use on any solidly built 5" Freestyle quadcopter.  A solid example is the Joshua Bardwell QAV-S. 
+#$ DESCRIPTION: These fly best with craft all-up-weight in the 575g-775g range, and 2306, 2207, or 2506 motors
+#$ DESCRIPTION: This tune came out of doing a quick set of PID Toolbox "Basement Tunes" on each battery voltage.
+#$ DESCRIPTION: This works best with bidirectional DShot ESCs at 48kHz PWM with 23° to MedHigh timing.
+#$ DESCRIPTION: ..
+#$ DESCRIPTION: !! Default options assume that Bidirectional DShot is enabled !!
+#$ DESCRIPTION: This tune has been tested across 17 builds from 5 builders, but is still not certain to fly well on your specific craft.
+#$ DISCLAIMER: This tune makes TPA changes in the current rateprofile, and includes automatic profile switching with default options.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/278
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/4.4/tune/defaults.txt
+## Set for All Configurations
+set dshot_idle_value = 700
+# Fallback if Dynamic Idle not working or not selected
+
+set vbat_max_cell_voltage = 438
+
+#$ OPTION_GROUP BEGIN: Filtering Scheme
+
+#$ OPTION BEGIN (UNCHECKED): Use Default No-RPM Clean Filters
+#$ INCLUDE: presets/4.4/filters/basic_no_rpm_clean.txt
+#$ OPTION END
+
+
+#$ OPTION BEGIN (UNCHECKED): Use basic RPM Very-Clean Filters
+#$ INCLUDE: presets/4.4/filters/basic_rpm_very_clean.txt
+set dshot_bidir = ON
+#$ OPTION END
+
+#$ OPTION BEGIN: (CHECKED): Use Spicy Llama RPM Filters 
+#$ INCLUDE: presets/4.4/filters/defaults.txt
+set dshot_bidir = ON
+set gyro_lpf1_static_hz = 337
+set gyro_lpf2_static_hz = 675
+set dyn_notch_count = 2
+set dyn_notch_q = 444
+set dyn_notch_min_hz = 98
+set dyn_notch_max_hz = 674
+set gyro_lpf1_dyn_min_hz = 337
+set gyro_lpf1_dyn_max_hz = 675
+
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 202
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
+
+set simplified_gyro_filter_multiplier = 135
+set simplified_dterm_filter_multiplier = 135
+simplified_tuning apply
+
+set yaw_lowpass_hz = 125
+
+set rpm_filter_harmonics = 2
+set rpm_filter_q = 750
+set rpm_filter_min_hz = 133
+set rpm_filter_fade_range_hz = 75
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Tune Profile(s)
+
+#$ OPTION BEGIN (UNCHECKED): Apply 6S Tune to Current Profile
+# set auto_profile_cell_count = 6
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+
+set d_max_advance = 0
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+
+set feedforward_boost = 12
+
+set simplified_master_multiplier = 85
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+
+simplified_tuning apply
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply 5S Tune to Current Profile
+# set auto_profile_cell_count = 5
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+set throttle_boost = 8
+
+set d_max_advance = 0
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+
+simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Apply 4S Tune to Current Profile
+# set auto_profile_cell_count = 4
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+set throttle_boost = 15
+
+set d_max_advance = 0
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+
+set feedforward_boost = 18
+
+set simplified_master_multiplier = 120
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply Multi-Voltage 4/5/6S to ALL PROFILES (Tune & Filters)
+# 6S on Profile 0
+profile 0
+set auto_profile_cell_count = 6
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+
+set d_max_advance = 0
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+set feedforward_boost = 12
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+set simplified_master_multiplier = 85
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 135
+simplified_tuning apply
+
+# 5S on Profile 1
+profile 1
+
+set auto_profile_cell_count = 5
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+set throttle_boost = 8
+
+set d_max_advance = 0
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 135
+simplified_tuning apply
+
+simplified_tuning apply
+
+# 4S on Profile 1
+profile 2
+set auto_profile_cell_count = 4
+set iterm_rotation = ON
+set iterm_relax = RPY
+set iterm_relax_cutoff = 8
+set yaw_lowpass_hz = 125
+set throttle_boost = 15
+
+set d_max_advance = 0
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+set feedforward_boost = 18
+set tpa_rate = 72
+set tpa_breakpoint = 1200
+set simplified_master_multiplier = 120
+set simplified_d_gain = 125
+set simplified_dmax_gain = 80
+set simplified_feedforward_gain = 115
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 135
+simplified_tuning apply
+#$ OPTION END
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Additional Features
+
+#$ OPTION BEGIN (CHECKED): Apply Dynamic Idle RPM Features (Strongly Recommended)
+set dshot_bidir = ON
+set dyn_idle_min_rpm = 22
+set dyn_idle_p_gain = 42
+set dyn_idle_i_gain = 42
+set dyn_idle_d_gain = 42
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set Small Angle to 180
+set small_angle = 180
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation to 100
+set vbat_sag_compensation = 100
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation to 88
+set vbat_sag_compensation = 88
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Increase Master Multiplier - SPICY Tune - (For Heavier Builds)
+profile 0
+set simplified_master_multiplier = 95
+profile 1
+set simplified_master_multiplier = 110
+profile 2
+set simplified_master_multiplier = 135
+
+#$ OPTION END
+
+#$ OPTION_GROUP END
