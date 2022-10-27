@@ -3851,7 +3851,7 @@
     },
     {
       "fullPath": "presets/4.4/rates/Tehllama_Nytfury_533_4-4_Ratebank.txt",
-      "hash": "6a7394b3fcf7472d569ee4c5fa9820845c369b1a5d8df9c3f15a21ac3bf8b4cd",
+      "hash": "2eaccf6c9749f553f74a41d7951035230037ab861a938c090539bdd7758a6ab0",
       "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
       "firmware_version": [
         "3.5",
@@ -3941,7 +3941,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/Tehllama_5in_Race_Spec_MultiTUNE.txt",
-      "hash": "724598a0ab637e91217b52801f4cf2068c67e0631bc7cdc7c821552a7f442e10",
+      "hash": "a19c6d8ed0842532b9fb3ed60c0e60216fcd0ec3f517a14a668b8dbe08d3b02a",
       "title": "Tehllama 5\" Race Spec ONLY Multivoltage",
       "firmware_version": [
         "4.4"
@@ -3971,7 +3971,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/Tehllama_5in_Race_Tune_1600-2750KV_Freedom_MultiVoltage_3S-4S-5S-6S.txt",
-      "hash": "8768cc1816fbacd07b8279598dce486c14e76ed8c00a99a76d88059f4f77c80c",
+      "hash": "8149c558835ca3cc9d156a7d6ae7bf47cfb2a4c2da2f05d14f440a4e7ebc13a2",
       "title": "Tehllama 5in Race Tune - Llama Freedom Multi-Voltage 1600-2750KV 4S/5S/6S (Open) & 3S (Spec)",
       "firmware_version": [
         "4.4"

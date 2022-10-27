@@ -700,3 +700,9 @@ simplified_tuning apply
 set motor_output_limit = 72
 #$ OPTION END
 #$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: RC Link
+	#$ OPTION BEGIN (CHECKED): Use Llama ELRS with 250Hz Defaults
+		#$ INCLUDE: presets/4.4/rc_link/Tehllama_RC_Link_All.txt
+	#$ OPTION END
+#$ OPTION_GROUP END
