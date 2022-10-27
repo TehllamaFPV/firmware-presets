@@ -1,33 +1,33 @@
-#$ TITLE: Tehllama 5in Race MultiVoltage Tune - 1600-2750KV 4S/5S/6S (Open) & 3S (Spec) 
+#$ TITLE: Tehllama 5" Race Spec ONLY Multivoltage
 #$ FIRMWARE_VERSION: 4.4
-#$ CATEGORY: OTHER
-#$ STATUS: COMMUNITY
-#$ KEYWORDS: 533, Freedom, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage, Texas, BMS, 3S, 5in, AutoSelect, MM
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: 533, Freedom, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage, Texas, BMS, 3S, 5in, AutoSelect, MM, Omni
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: This is a multi-voltage tune built for 5in Race Builds in the 400-575g AUW range. 
+#$ DESCRIPTION: This is a multi-voltage SPEC tune built for 5in Race Builds in the 400-575g AUW range. 
+#$ DESCRIPTION: Use the Options to select KV - 1600-2750KV are supported for the entire 3S-6S voltage range
 #$ DESCRIPTION: ALL FOUR Tune Profiles are used, with tunes Auto-Selected for 6S, 5S, 4S, and 3S (respectively) 
 #$ DESCRIPTION:
 #$ DESCRIPTION: Select the Motor KV Range from the Drop-Down Menu that most closely matches your craft
 #$ DESCRIPTION: Default is for ~1950KV motors, for example Freedom Spec 2207 1960KV 533/XNOVA Motors
 #$ DESCRIPTION: Special Thanks to Stephen 'Supafly' Wright for Master Slider Calculator assistance
+#$ DESCRIPTION: and also special thanks to Texas Drone Champs for this calculator: http://texasdronechamps.com/spec/
 #$ DESCRIPTION: 
 #$ DESCRIPTION: This tune works best with bidirectional DShot enabled, running RPM and Dynamic Idle Features
 #$ DESCRIPTION: This tune expects ESCs configured to 48kHz PWM Frequency, 23°-27°/MedHigh timing and 0.38 Rampup
 #$ DESCRIPTION: Using more aggressive ESC settings is NOT advised if using higher cell count batteries
 #$ DESCRIPTION: 
 #$ DESCRIPTION: This tune will auto-select profiles based on battery voltage at plugin.
-#$ DESCRIPTION: When 3S packs are plugged in, this will auto-select an aggressive spec racing tune on Profile 3
+#$ DESCRIPTION: When a battery pack is plugged in, this will auto-select the tune and apply the TexasSpec motor output limit
 #$ DESCRIPTION: At higher motor KV, MotorOutput Limiting is used to scale these to Freedom Spec RPM 
-#$ DESCRIPTION: 3S batteries on craft with <1950KV motors experience very reduced performance
-#$ DESCRIPTION: 
-#$ DESCRIPTION: 6S, 5S, and 4S will run conservative open race tunes 
-#$ DESCRIPTION: Small motor output limits are applied for EXTREME Battery-KV combinations
-#$ DESCRIPTION: Combinations that spin 5" propellers in transonic regimes (i.e. 6S >2200KV and 5S >2650KV)
+#$ DESCRIPTION: 6S, 5S, and 4S will run conservative PID Tunes with scaled throttle limits
+#$ DESCRIPTION: 
+#$ DESCRIPTION: 3S batteries on craft with <1900KV motors experience very reduced performance - not recommended
 #$ DESCRIPTION: 
 #$ DESCRIPTION: !!! Strongly recommend a full chip erase reflash if alternative tunes are desired after installing this preset!!!
 #$ DESCRIPTION: Extensive testing has been done across 83+ builds, however not every craft will run best on this tune.
 #$ WARNING: Use at your own risk.  Verify Correct ESC Settings are used.  
-#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/301
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/307
 
 ## Filters - Choose RPM Enabled (Spicy or Non-Spicy) or non-RPM (Super-Safe)
 ## Filters - by Profile x4 (Enables 6S, 5S, 4S, and 3S Spec Tune)
@@ -181,7 +181,7 @@
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Tune
-	#$ OPTION BEGIN (CHECKED): Llama Freedom Tune (Safer)
+	#$ OPTION BEGIN (UNCHECKED): Llama Freedom Tune (Safer)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set anti_gravity_gain = 44
@@ -270,7 +270,7 @@
 			simplified_tuning apply
 	#$ OPTION END
 
-	#$ OPTION BEGIN (UNCHECKED): Llama Spicy Tune (Aggressive)
+	#$ OPTION BEGIN (CHECKED): Llama Spicy Tune (Aggressive)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set anti_gravity_gain = 44
@@ -409,10 +409,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1600KV Motors
 		profile 0
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 61
 		profile 1
 			set simplified_master_multiplier = 95
+			set motor_output_limit = 73
 		profile 2
 			set simplified_master_multiplier = 120
+			set motor_output_limit = 92
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -420,10 +423,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1700KV Motors
 		profile 0
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 60
 		profile 1
 			set simplified_master_multiplier = 95
+			set motor_output_limit = 71
 		profile 2
 			set simplified_master_multiplier = 120
+			set motor_output_limit = 89
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -431,10 +437,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1750KV Motors
 		profile 0
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 58
 		profile 1
 			set simplified_master_multiplier = 90
+			set motor_output_limit = 69
 		profile 2
 			set simplified_master_multiplier = 110
+			set motor_output_limit = 87
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -442,10 +451,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1800KV Motor
 		profile 0
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 55
 		profile 1
 			set simplified_master_multiplier = 85
+			set motor_output_limit = 67
 		profile 2
 			set simplified_master_multiplier = 110
+			set motor_output_limit = 84
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -453,10 +465,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1850KV Motors
 		profile 0
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 53
 		profile 1
 			set simplified_master_multiplier = 85
+			set motor_output_limit = 64
 		profile 2
 			set simplified_master_multiplier = 105
+			set motor_output_limit = 80
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -464,10 +479,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~1900KV Motors
 		profile 0
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 52
 		profile 1
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 62
 		profile 2
 			set simplified_master_multiplier = 100
+			set motor_output_limit = 78
 		profile 3
 			set simplified_master_multiplier = 140
 			simplified_tuning apply
@@ -475,10 +493,13 @@
 	#$ OPTION BEGIN (CHECKED): ~1950KV Motors
 		profile 0
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 50
 		profile 1
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 60
 		profile 2
 			set simplified_master_multiplier = 100
+			set motor_output_limit = 80
 		profile 3
 			set simplified_master_multiplier = 135
 			simplified_tuning apply
@@ -486,34 +507,45 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2000KV Motors
 		profile 0
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 49
 		profile 1
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 59
 		profile 2
 			set simplified_master_multiplier = 100
+			set motor_output_limit = 74
 		profile 3
 			set simplified_master_multiplier = 130
-			simplified_tuning apply
 			set motor_output_limit = 98
+			simplified_tuning apply
+			
 	#$ OPTION END
 	#$ OPTION BEGIN (UNCHECKED): ~2050KV Motors
 		profile 0
 			set simplified_master_multiplier = 60
+			set motor_output_limit = 48
 		profile 1
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 59
 		profile 2
 			set simplified_master_multiplier = 95
+			set motor_output_limit = 72
 		profile 3
-		set simplified_master_multiplier = 130
-		simplified_tuning apply	
-		set motor_output_limit = 96
+			set simplified_master_multiplier = 130
+			set motor_output_limit = 96
+			simplified_tuning apply	
+			
 	#$ OPTION END
 	#$ OPTION BEGIN (UNCHECKED): ~2100KV Motors
 		profile 0
 			set simplified_master_multiplier = 60
+			set motor_output_limit = 47
 		profile 1
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 58
 		profile 2
 			set simplified_master_multiplier = 95
+			set motor_output_limit = 74
 		profile 3
 			set simplified_master_multiplier = 125
 			simplified_tuning apply
@@ -522,10 +554,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2150KV Motors
 		profile 0
 			set simplified_master_multiplier = 55
+			set motor_output_limit = 46
 		profile 1
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 55
 		profile 2
 			set simplified_master_multiplier = 90
+			set motor_output_limit = 69
 		profile 3
 			set simplified_master_multiplier = 120
 			simplified_tuning apply
@@ -534,23 +569,28 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2200KV Motors
 		profile 0
 			set simplified_master_multiplier = 55
+			set motor_output_limit = 45
 		profile 1
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 55
 		profile 2
 			set simplified_master_multiplier = 90
+			set motor_output_limit = 67
 		profile 3
 			set simplified_master_multiplier = 120
 			simplified_tuning apply
-			set motor_output_limit = 90
+			set motor_output_limit = 89
 	#$ OPTION END
 	#$ OPTION BEGIN (UNCHECKED): ~2250KV Motors
 		profile 0
 			set simplified_master_multiplier = 55
-			set motor_output_limit = 97
+			set motor_output_limit = 44
 		profile 1
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 53
 		profile 2
 			set simplified_master_multiplier = 85
+			set motor_output_limit = 66
 		profile 3
 			set simplified_master_multiplier = 120
 			simplified_tuning apply
@@ -559,11 +599,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2300KV Motors
 		profile 0
 			set simplified_master_multiplier = 55
-			set motor_output_limit = 94
+			set motor_output_limit = 43
 		profile 1
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 51
 		profile 2
 			set simplified_master_multiplier = 85
+			set motor_output_limit = 64
 		profile 3
 			set simplified_master_multiplier = 115
 			simplified_tuning apply
@@ -572,11 +614,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2350KV Motors
 		profile 0
 			set simplified_master_multiplier = 55
-			set motor_output_limit = 92
+			set motor_output_limit = 42
 		profile 1
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 50
 		profile 2
 			set simplified_master_multiplier = 85
+			set motor_output_limit = 63
 		profile 3
 			set simplified_master_multiplier = 110
 			simplified_tuning apply
@@ -585,11 +629,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2400KV Motors
 		profile 0
 			set simplified_master_multiplier = 50
-			set motor_output_limit = 90
+			set motor_output_limit = 41
 		profile 1
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 49
 		profile 2
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 61
 		profile 3
 			set simplified_master_multiplier = 110
 			simplified_tuning apply
@@ -598,11 +644,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2450KV Motors
 		profile 0
 			set simplified_master_multiplier = 50
-			set motor_output_limit = 88
+			set motor_output_limit = 40
 		profile 1
 			set simplified_master_multiplier = 65
+			set motor_output_limit = 47
 		profile 2
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 60
 		profile 3
 			set simplified_master_multiplier = 105
 			simplified_tuning apply
@@ -611,11 +659,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2500KV Motors
 		rofile 0
 			set simplified_master_multiplier = 50
-			set motor_output_limit = 86
+			set motor_output_limit = 39
 		profile 1
 			set simplified_master_multiplier = 60
+			set motor_output_limit = 47
 		profile 2
 			set simplified_master_multiplier = 80
+			set motor_output_limit = 59
 		profile 3
 			set simplified_master_multiplier = 105
 			simplified_tuning apply
@@ -624,11 +674,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2550KV Motors
 		profile 0
 			set simplified_master_multiplier = 50
-			set motor_output_limit = 85
+			set motor_output_limit = 39
 		profile 1
 			set simplified_master_multiplier = 60
+			set motor_output_limit = 46
 		profile 2
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 58
 		profile 3
 			set simplified_master_multiplier = 105
 			simplified_tuning apply
@@ -637,11 +689,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2600KV Motors
 		profile 0
 			set simplified_master_multiplier = 50
-			set motor_output_limit = 83
+			set motor_output_limit = 38
 		profile 1
 			set simplified_master_multiplier = 60
+			set motor_output_limit = 46
 		profile 2
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 57
 		profile 3
 			set simplified_master_multiplier = 100
 			simplified_tuning apply
@@ -650,12 +704,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2650KV Motors
 		profile 0
 			set simplified_master_multiplier = 45
-			set motor_output_limit = 81
+			set motor_output_limit = 37
 		profile 1
 			set simplified_master_multiplier = 60
-			set motor_output_limit = 98
+			set motor_output_limit = 45
 		profile 2
 			set simplified_master_multiplier = 75
+			set motor_output_limit = 56
 		profile 3
 			set simplified_master_multiplier = 100
 			simplified_tuning apply
@@ -664,12 +719,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2700KV Motors
 		profile 0
 			set simplified_master_multiplier = 45
-			set motor_output_limit = 80
+			set motor_output_limit = 37
 		profile 1
 			set simplified_master_multiplier = 55
-			set motor_output_limit = 96
+			set motor_output_limit = 44
 		profile 2
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 55
 		profile 3
 			set simplified_master_multiplier = 95
 			simplified_tuning apply
@@ -678,12 +734,13 @@
 	#$ OPTION BEGIN (UNCHECKED): ~2750KV Motors
 		profile 0
 			set simplified_master_multiplier = 45
-			set motor_output_limit = 78
+			set motor_output_limit = 36
 		profile 1
 			set simplified_master_multiplier = 55
-			set motor_output_limit = 96
+			set motor_output_limit = 43
 		profile 2
 			set simplified_master_multiplier = 70
+			set motor_output_limit = 54
 		profile 3
 			set simplified_master_multiplier = 95
 			simplified_tuning apply

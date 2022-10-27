@@ -373,6 +373,7 @@
       "normal",
       "NTSC",
       "Nytfury",
+      "Omni",
       "OP400",
       "OpenRacer",
       "OpenVTx",
@@ -3849,35 +3850,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/other/Tehllama_5in_Race_MultiTune_1600-2750KV_3-6S.txt",
-      "hash": "e46ec66830e774d394586696e42536e8bf785dd01d2582fcb3255503aedbe22d",
-      "title": "Tehllama 5in Race MultiVoltage Tune - 1600-2750KV 4S/5S/6S (Open) & 3S (Spec)",
-      "firmware_version": [
-        "4.4"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "533",
-        "Freedom",
-        "FreedomSpec",
-        "Tune",
-        "Spec",
-        "Race",
-        "Llama",
-        "MultiVoltage",
-        "Texas",
-        "BMS",
-        "3S",
-        "5in",
-        "AutoSelect",
-        "MM"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "force_options_review": true,
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.4/rates/Tehllama_Nytfury_533_4-4_Ratebank.txt",
       "hash": "6a7394b3fcf7472d569ee4c5fa9820845c369b1a5d8df9c3f15a21ac3bf8b4cd",
       "title": "Racing RateBank: Nytfury, HeadsUp-533, Limon, Tehllama",
@@ -3965,6 +3937,36 @@
         "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/Tehllama_5in_Race_Spec_MultiTUNE.txt",
+      "hash": "724598a0ab637e91217b52801f4cf2068c67e0631bc7cdc7c821552a7f442e10",
+      "title": "Tehllama 5\" Race Spec ONLY Multivoltage",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "533",
+        "Freedom",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas",
+        "BMS",
+        "3S",
+        "5in",
+        "AutoSelect",
+        "MM",
+        "Omni"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
