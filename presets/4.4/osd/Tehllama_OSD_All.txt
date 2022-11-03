@@ -12,7 +12,8 @@
 
 #$ OPTION BEGIN (CHECKED): New NTSC OSD
 # Reinsert links to defaults when fixed ::  INCLUDE: presets/4.4/osd/defaults.txt
-set osd_warn_bitmask = 24575
+set osd_units = METRIC
+set osd_warn_bitmask = 18431
 set osd_cap_alarm = 1000
 set osd_vbat_pos = 2401
 set osd_link_quality_pos = 2081
@@ -23,7 +24,8 @@ set osd_throttle_pos = 2409
 set osd_vtx_channel_pos = 2106
 set osd_ah_pos = 200
 set osd_mah_drawn_pos = 2415
-set osd_craft_name_pos = 2443
+set osd_craft_name_pos = 395
+set osd_pilot_name_pos = 2443
 set osd_gps_speed_pos = 218
 set osd_gps_lon_pos = 82
 set osd_gps_lat_pos = 65
@@ -49,10 +51,11 @@ set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_flip_arrow_pos = 2126
-set osd_stat_bitmask = 1210028
+set osd_stat_bitmask = 172560
+set pilot_name = Tehllama
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED):  PAL OSD
+#$ OPTION BEGIN (UNCHECKED):  PAL OSD (old)
 set osd_units = METRIC
 set osd_warn_arming_disable = ON
 set osd_warn_batt_not_full = ON
