@@ -8,7 +8,7 @@
 
 #$ OPTION BEGIN (CHECKED):  ELRS Race 250Hz - All Profiles
 feature RX_SERIAL
-set serialrx_provider = CRSF
+# set serialrx_provider = CRSF
 
 set rc_smoothing = ON
 set feedforward_averaging = OFF
@@ -29,6 +29,11 @@ set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 33
 set feedforward_max_rate_limit = 103
 profile 2
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 11
+set feedforward_smooth_factor = 33
+set feedforward_max_rate_limit = 103
+profile 3
 set feedforward_averaging = OFF
 set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 33
@@ -62,6 +67,11 @@ set feedforward_averaging = 2_POINT
 set feedforward_jitter_factor = 11
 set feedforward_smooth_factor = 44
 set feedforward_max_rate_limit = 103
+profile 3
+set feedforward_averaging = 2_POINT
+set feedforward_jitter_factor = 11
+set feedforward_smooth_factor = 44
+set feedforward_max_rate_limit = 103
 
 #$ OPTION END
 
@@ -80,6 +90,10 @@ set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 45
 set feedforward_max_rate_limit = 97
 profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 45
+set feedforward_max_rate_limit = 97
+profile 3
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 45
 set feedforward_max_rate_limit = 97
@@ -108,6 +122,10 @@ profile 2
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 92
+profile 3
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 92
 
 set rc_smoothing_auto_factor = 60
 #$ OPTION END
@@ -128,6 +146,10 @@ set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 90
 profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 3
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 90
@@ -169,6 +191,10 @@ profile 2
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 90
+profile 3
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
 
 set frsky_vfas_precision = 1
 set rc_smoothing_auto_factor = 30
@@ -190,6 +216,10 @@ set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 90
 profile 2
+set feedforward_averaging = 2_POINT
+set feedforward_smoothing = 25
+set feedforward_max_rate_limit = 90
+profile 3
 set feedforward_averaging = 2_POINT
 set feedforward_smoothing = 25
 set feedforward_max_rate_limit = 90

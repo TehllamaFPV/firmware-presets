@@ -3879,7 +3879,7 @@
     },
     {
       "fullPath": "presets/4.4/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "ac777eb35dfbc15725fda875ed5f4db43a352e5dd76373223cee3433611a8ed5",
+      "hash": "a29469b8eb03261af8d15b3abfff60702ceee68a8ca4cf83c34925867e5ffff5",
       "title": "Tehllama RC Link Settings",
       "firmware_version": [
         "4.4"
@@ -3971,7 +3971,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/Tehllama_5in_Race_Tune_1600-2750KV_Freedom_MultiVoltage_3S-4S-5S-6S.txt",
-      "hash": "7c16a2d0f0d454f828a9e3c39704dc19e1c3a645ce4da185260099f7294764de",
+      "hash": "40b928e8212295e50df23ad7ed501ee3a1597f998902d8e513c1eca157771481",
       "title": "Tehllama 5in Race Tune - Llama Freedom Multi-Voltage 1600-2750KV 4S/5S/6S (Open) & 3S (Spec)",
       "firmware_version": [
         "4.4"

@@ -400,7 +400,7 @@ set dyn_idle_d_gain = 42
 #$ OPTION BEGIN (CHECKED): Set Max Cell Voltage to 4.38V
 set vbat_max_cell_voltage = 438
 #$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation for 4/5/6S to 82
+#$ OPTION BEGIN (CHECKED): Set VBat Sag Compensation for 4/5/6S to 82
 profile 0
 set vbat_sag_compensation = 82
 profile 1
