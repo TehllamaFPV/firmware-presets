@@ -1,11 +1,13 @@
-#$ TITLE: My ELRS Modes
+#$ TITLE: Tehllama ELRS Modes
 #$ FIRMWARE_VERSION: 4.3
-#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: MODES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: mode, modes, adjustments, aux, switch
-#$ AUTHOR: Daniel Appel
+#$ AUTHOR: Daniel "Tehllama" Appel
 #$ DESCRIPTION: Sets modes and adjustment ranges to Llama ELRS Channels
+
+# bind UID
+set expresslrs_uid = 161,6,169,61,162,39
 
 # aux switch settings
 

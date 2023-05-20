@@ -159,7 +159,7 @@
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
-      "Daniel Appel",
+      "Daniel \"Tehllama\" Appel",
       "Daniel Appel / Tehllama",
       "Directory",
       "DusKing1 (Hugo Chiang), Pitronic",
@@ -3764,11 +3764,10 @@
     },
     {
       "fullPath": "presets/4.4/modes/Llama_ELRS_Modes.txt",
-      "hash": "eb37c9ebadbe6a5090eb891ef95b5c5d02cba5c8441b90a19e72a20bc7ddfd3c",
-      "title": "My ELRS Modes",
+      "hash": "2978d1ffd438c8b52e2b1202810c4b60660b895df57f25e839106efbcb19a56b",
+      "title": "Tehllama ELRS Modes",
       "firmware_version": [
-        "4.3",
-        "4.4"
+        "4.3"
       ],
       "category": "MODES",
       "status": "COMMUNITY",
@@ -3779,7 +3778,7 @@
         "aux",
         "switch"
       ],
-      "author": "Daniel Appel",
+      "author": "Daniel \"Tehllama\" Appel",
       "priority": 0
     },
     {
