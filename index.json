@@ -3802,30 +3802,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/osd/Tehllama_OSD_All.txt",
-      "hash": "51b319f342a51cfa6673a98cc2eb89b9068cc6d0dffd4a75b14015ec8e52f0bc",
-      "title": "Tehllama OSD Settings",
-      "firmware_version": [
-        "3.5",
-        "4.1",
-        "4.2",
-        "4.3",
-        "4.4"
-      ],
-      "category": "OSD",
-      "status": "OFFICIAL",
-      "keywords": [
-        "OSD",
-        "Llama",
-        "DJI",
-        "PAL",
-        "NTSC",
-        "Busy"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.4/other/LaunchMode_Stand60.txt",
       "hash": "51e602cd28e2286c4030f9aca448ee931bf57c25265473e817975eab05d2fdb6",
       "title": "Tehllama 60 Degree Launch Stand Mode Enabled",
