@@ -1,0 +1,41 @@
+#$ TITLE: Tehllama TinyTrainer LED Preset for Aux 8
+#$ FIRMWARE_VERSION: 3.5
+#$ FIRMWARE_VERSION: 4.0
+#$ FIRMWARE_VERSION: 4.1
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ STATUS: EXPERIMENTAL
+#$ CATEGORY: OTHER
+#$ KEYWORDS: Llama, Mode,, LED, ELRS
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: This is a preset to allow for AUX 8 (a 4-bit 8-position mode by default on ExpressLRS) to control the LED color
+#$ DESCRIPTION: The default LED behaviour is color selection, ideally paired with a potentiostat on the radio. Larson Scanner is enabled.
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/275
+
+# led
+led 0 7,4::CTO:8
+led 1 7,5::CTO:8
+led 2 7,6::CTO:8
+led 3 7,7::CTO:8
+led 4 7,8::CTO:8
+led 5 7,9::CTO:8
+led 6 7,10::CTO:8
+led 7 9,4::CTO:8
+led 8 9,5::CTO:8
+led 9 9,6::CTO:8
+led 10 9,7::CTO:8
+led 11 9,8::CTO:8
+led 12 9,9::CTO:8
+led 13 9,10::CTO:8
+led 14 9,10::CTO:8
+
+# color
+color 7 10,0,255
+color 9 300,0,255
+color 11 0,0,255
+color 13 355,0,255
+
+# mode_color
+mode_color 7 0 11
