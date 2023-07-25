@@ -51,6 +51,10 @@
 		set rpm_limit_i = 17
 		set rpm_limit_d = 11
 	#$ OPTION END
+	#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+		# Remove Persistent Stats
+		set stats_min_armed_time_s = -1
+	#$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Filters
@@ -394,11 +398,6 @@
 	
 	#$ OPTION BEGIN (CHECKED): Set Max Cell Voltage to 4.38V
 		set vbat_max_cell_voltage = 438
-	#$ OPTION END
-	
-	#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
-		# Remove Persistent Stats
-		set stats_min_armed_time_s = -1
 	#$ OPTION END
 	
 	#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation for 3/4/5/6S to 82
