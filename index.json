@@ -3784,6 +3784,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/osd/defaults.txt",
+      "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
+      "title": "Default 4.3 OSD settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/osd/Tehllama_OSD_All.txt",
       "hash": "51b319f342a51cfa6673a98cc2eb89b9068cc6d0dffd4a75b14015ec8e52f0bc",
       "title": "Tehllama OSD Settings",
@@ -4463,7 +4480,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/Tehllama_OSD_All.txt",
-      "hash": "4739ab87e5567e41dcd9d4cd0ca6ed9169d25889f617f4f45947d89bf8d6169b",
+      "hash": "99a7297cd8b6a677e619d46a46cbbf1889527c15f92c543ad74c54ff04affa44",
       "title": "Tehllama OSD Settings",
       "firmware_version": [
         "3.5",
