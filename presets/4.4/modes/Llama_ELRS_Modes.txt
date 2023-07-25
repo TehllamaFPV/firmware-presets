@@ -6,8 +6,9 @@
 #$ AUTHOR: Daniel "Tehllama" Appel
 #$ DESCRIPTION: Sets modes and adjustment ranges to Llama ELRS Channels
 
-# bind UID
-set expresslrs_uid = 161,6,169,61,162,39
+#$ OPTION BEGIN (UNCHECKED): Include ELRS bind UID
+	set expresslrs_uid = 161,6,169,61,162,39
+#$ OPTION END
 
 # aux switch settings
 

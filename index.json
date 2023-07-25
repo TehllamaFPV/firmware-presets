@@ -3767,7 +3767,7 @@
     },
     {
       "fullPath": "presets/4.4/modes/Llama_ELRS_Modes.txt",
-      "hash": "2978d1ffd438c8b52e2b1202810c4b60660b895df57f25e839106efbcb19a56b",
+      "hash": "ca0bc76b6d85277f87397c2d8fff26534d9262178508fe998ccc624075722af4",
       "title": "Tehllama ELRS Modes",
       "firmware_version": [
         "4.3"
@@ -4678,7 +4678,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_Race_Spec_MultiTUNE_45.txt",
-      "hash": "c7c28686775db83d31f9618350ca7a2f97980d1f23d88a2571041601913ce06c",
+      "hash": "0067aef675ce889716ccf93694ed19c5ba83d2f4aa1cd8471b37801b49587aa8",
       "title": "Tehllama 5\" Race RPM SPEC Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",
