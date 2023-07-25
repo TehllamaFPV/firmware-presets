@@ -325,6 +325,7 @@
       "gyros",
       "gyroscope",
       "HD",
+      "HDZ",
       "HDzero",
       "Headsup",
       "HighKV",
@@ -4481,8 +4482,8 @@
     },
     {
       "fullPath": "presets/4.5/osd/Tehllama_OSD_All.txt",
-      "hash": "d3538042bb881f9b4b1d1dcd60759ffcb0b5d029e9fa8f4fccc2f9c6b656705a",
-      "title": "Tehllama OSD Settings",
+      "hash": "0c50d66a5a38ec54c12e7f6f117b3b679f322bfd64ff580f41f5566a20d83cb6",
+      "title": "Tehllama OSD + KAACK",
       "firmware_version": [
         "3.5",
         "4.1",
@@ -4496,6 +4497,7 @@
       "keywords": [
         "OSD",
         "Llama",
+        "HDZ",
         "DJI",
         "PAL",
         "NTSC",

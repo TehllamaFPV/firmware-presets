@@ -1,4 +1,4 @@
-#$ TITLE: Tehllama OSD Settings
+#$ TITLE: Tehllama OSD + KAACK
 #$ FIRMWARE_VERSION: 3.5
 #$ FIRMWARE_VERSION: 4.1
 #$ FIRMWARE_VERSION: 4.2
@@ -7,7 +7,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OSD
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: OSD, Llama, DJI, PAL, NTSC, Busy
+#$ KEYWORDS: OSD, Llama, HDZ, DJI, PAL, NTSC, Busy
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Installs the appropriate Busy-Llama OSD
 
@@ -58,6 +58,16 @@ set osd_canvas_width = 30
 set osd_canvas_height = 13
 set pilot_name = Tehllama
 #$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): KAACK Mods
+	# Update KAACK Names
+		set extra_100_throttle = CAARL
+		set extra_fc_hot_warning = SHE HOT
+		set extra_low_battery_warning = FRENCH FRIES
+		set extra_armed_warning = FULL BOTATO
+
+#$ OPTION END
+
 
 #$ OPTION BEGIN (UNCHECKED): Implement Llama HDZ-Race OSD
 # Reinsert links to defaults when fixed ::  
