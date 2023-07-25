@@ -163,15 +163,15 @@
 	#$ OPTION BEGIN (UNCHECKED): Trash Can Filters (Strongly Not Recommended)
 		profile 0
 			#$ INCLUDE: presets/4.3/filters/defaults.txt
-			set simplified_dterm_filter = 195
+			set simplified_dterm_filter_multiplier = 195
 			set yaw_lowpass_hz = 133
 		profile 1
 			#$ INCLUDE: presets/4.3/filters/defaults.txt
-			set simplified_dterm_filter = 195
+			set simplified_dterm_filter_multiplier = 195
 			set yaw_lowpass_hz = 133
 		profile 2
 			#$ INCLUDE: presets/4.3/filters/defaults.txt
-			set simplified_dterm_filter = 195
+			set simplified_dterm_filter_multiplier = 195
 			set yaw_lowpass_hz = 133
 
 		# Filter Master
@@ -212,7 +212,7 @@
 
 
 #$ OPTION_GROUP BEGIN: Tune
-	#$ OPTION BEGIN (UNCHECKED): Llama SWPR-GTB339 Tune (Safer)
+	#$ OPTION BEGIN (CHECKED): Llama SWPR-GTB339 Tune (Safer)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set auto_profile_cell_count = 4
@@ -269,7 +269,7 @@
 			simplified_tuning apply	
 	#$ OPTION END
 
-	#$ OPTION BEGIN (CHECKED): Llama Spicy SWPR-GTB339 Tune (Aggressive)
+	#$ OPTION BEGIN (UNCHECKED): Llama Spicy SWPR-GTB339 Tune (Aggressive)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set auto_profile_cell_count = 4

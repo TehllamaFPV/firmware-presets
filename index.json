@@ -4651,7 +4651,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_OpenRace_RPM_MultiTUNE_45.txt",
-      "hash": "f97c9eecd22c0f98ba3ad49bcb81834385a9b1fc1b57d3a08217f31355d7488f",
+      "hash": "465040246258674b96582bcc4b952ed8ae8c997dc66d46e4d5577cd8a89dbf74",
       "title": "Tehllama 5\" OpenRace RPM Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",
@@ -4682,7 +4682,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_Race_Spec_MultiTUNE_45.txt",
-      "hash": "7d9ba46b5ae856c9f69e8f0c4ddb9878077032ec7a42565d16dc57fa9300a364",
+      "hash": "7820023553e20961bcf49caef600030f0af1c008fd65223bc7186bf1f5f52b6f",
       "title": "Tehllama 5\" Race RPM SPEC Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",
@@ -4731,8 +4731,31 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/Tehllama_DroneMax_SWPRv2_3in_TUNE_45.txt",
+      "hash": "0b095b51ab1086a3329ab6b8cf8af177abf416874d4770967b9111f21e505b83",
+      "title": "Tehllama 3\"-3.5\" Tune for DroneMax SWPRv2",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "SWPR",
+        "Spec",
+        "AOS",
+        "35",
+        "Tune",
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_45.txt",
-      "hash": "4617b86078b776af4301c5d53a29ffb96c04b35539ca919ac1f1f3292037149c",
+      "hash": "342c973080f5c7f2dd40a8c40591fd16aa26b0bd7cc2bc037cdac1202ca6ff45",
       "title": "3in Lightweight 4S/3S/2S Tune for GTB-339 or 3\" Racing Toothpick",
       "firmware_version": [
         "4.4",
@@ -4774,29 +4797,6 @@
         "Multi",
         "Voltage",
         "Multivoltage"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/Tehllama_SWPRv2_3in_TUNE_45.txt",
-      "hash": "88866f30cf294cc8498820723d7f8f83f56a992a0dc0bb24f7dc687cdda71ad2",
-      "title": "Tehllama 3\"-3.5\" Tune for DroneMax XKnight",
-      "firmware_version": [
-        "4.4",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "SWPR",
-        "Spec",
-        "AOS",
-        "35",
-        "Tune",
-        "Race",
-        "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
       "force_options_review": true,

@@ -195,7 +195,7 @@
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Tune
-	#$ OPTION BEGIN (UNCHECKED): Llama Freedom Tune (Safer)
+	#$ OPTION BEGIN (CHECKED): Llama Freedom Tune (Safer)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set iterm_rotation = ON
@@ -280,7 +280,7 @@
 			simplified_tuning apply
 	#$ OPTION END
 
-	#$ OPTION BEGIN (CHECKED): Llama Spicy Tune (Aggressive)
+	#$ OPTION BEGIN (UNCHECKED): Llama Spicy Tune (Aggressive)
 		profile 0
 			#$ INCLUDE: presets/4.4/tune/defaults.txt
 			set iterm_rotation = ON
