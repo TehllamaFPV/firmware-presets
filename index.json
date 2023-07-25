@@ -4804,7 +4804,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/HDZero-Llama.txt",
-      "hash": "de185b4b46ba0c5c2ab9186ff2f4289b552c19233e377c808160ab512a0f3e07",
+      "hash": "dfa23f3a0b6a7d5d09fc0ddd9460ebb23d1265f48f7559539f6ee7bf020c6e8b",
       "title": "Llama HDZero VTX-OSD",
       "firmware_version": [
         "4.4",
@@ -4832,7 +4832,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/HDZero.txt",
-      "hash": "07812a7afbc9d7850fb12545c765d8e0250de1b2ecf640c28a6e7e96ab31c5cf",
+      "hash": "24d6770586f399484b88598106d8b74ffc3b70a6dec04912216be61f897c062e",
       "title": "HDZero VTXs",
       "firmware_version": [
         "4.4"
