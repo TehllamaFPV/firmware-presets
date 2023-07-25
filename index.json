@@ -3897,10 +3897,11 @@
     },
     {
       "fullPath": "presets/4.4/rc_link/Tehllama_RC_Link_All.txt",
-      "hash": "a29469b8eb03261af8d15b3abfff60702ceee68a8ca4cf83c34925867e5ffff5",
+      "hash": "5db45825fc58aa0aea9690cd617f124f8aed710ddce189cc677fb4884e6e9c86",
       "title": "Tehllama RC Link Settings",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "category": "RC_LINK",
       "status": "OFFICIAL",
