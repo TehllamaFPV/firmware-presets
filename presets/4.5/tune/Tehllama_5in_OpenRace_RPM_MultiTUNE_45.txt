@@ -1,11 +1,11 @@
-#$ TITLE: Tehllama 5" Race RPM SPEC Multivoltage Tune & Filters
+#$ TITLE: Tehllama 5" OpenRace RPM Multivoltage Tune & Filters
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: 533, Freedom, FreedomSpec, Tune, Spec, Race, Llama, MultiVoltage, Texas, BMS, 3S, 5in, AutoSelect, MM, Omni
 #$ AUTHOR: Daniel Appel / Tehllama
-#$ DESCRIPTION: This is a multi-voltage SPEC tune built for 5in Race Builds in the 400-575g AUW range. 
+#$ DESCRIPTION: This is a multi-voltage tune built for 5in Race Builds in the 400-575g AUW range. 
 #$ DESCRIPTION: Use the Options to select KV - 1600-2750KV are supported for the entire 3S-6S voltage range
 #$ DESCRIPTION: ALL FOUR Tune Profiles are used, with tunes Auto-Selected for 6S, 5S, 4S, and 3S (respectively) 
 #$ DESCRIPTION:
@@ -42,18 +42,14 @@
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ OPTION_GROUP BEGIN: RPM Limiting
-    #$ OPTION BEGIN (CHECKED): Apply 18k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
+    #$ OPTION BEGIN (CHECKED): Apply 24k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
 		set rpm_limit = ON
-		set rpm_limit_value = 18000
+		set rpm_limit_value = 24000
 	#$ OPTION END
 	#$ OPTION BEGIN (UNCHECKED): Apply Spicier RPM PID Values
 		set rpm_limit_p = 44
 		set rpm_limit_i = 17
 		set rpm_limit_d = 11
-	#$ OPTION END
-	#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
-		# Remove Persistent Stats
-		set stats_min_armed_time_s = -1
 	#$ OPTION END
 #$ OPTION_GROUP END
 
@@ -399,7 +395,12 @@
 	#$ OPTION BEGIN (CHECKED): Set Max Cell Voltage to 4.38V
 		set vbat_max_cell_voltage = 438
 	#$ OPTION END
-		
+	
+	#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+		# Remove Persistent Stats
+		set stats_min_armed_time_s = -1
+	#$ OPTION END
+	
 	#$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation for 3/4/5/6S to 82
 		profile 0
 			set vbat_sag_compensation = 82

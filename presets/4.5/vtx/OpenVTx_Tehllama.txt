@@ -1,4 +1,4 @@
-#$ TITLE: OpenVTx - Llama - ELRS
+#$ TITLE: OpenVTx - Llama no-RCE SA2.1
 #$ FIRMWARE_VERSION: 4.2
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4

@@ -4067,11 +4067,10 @@
     },
     {
       "fullPath": "presets/4.4/vtx/HDZero-Llama.txt",
-      "hash": "d64d8798bc15c322d182d0cb6275143b3b808d34c4098b87e392598a94b82f98",
+      "hash": "84e326434e4e6c543c41278b764decb61418d184d007d3149c563c0c7e2b7a23",
       "title": "Llama HDZero VTX-OSD",
       "firmware_version": [
-        "4.4",
-        "4.5"
+        "4.4"
       ],
       "category": "VTX",
       "status": "COMMUNITY",
@@ -4122,13 +4121,12 @@
     },
     {
       "fullPath": "presets/4.4/vtx/OpenVTx_Tehllama.txt",
-      "hash": "740d4d67f42447310173aadc99d35c9f07042aad81aba63823b9b36fe30debc4",
+      "hash": "bbb18a2402fcdd4062e1821122ef920a386f8a007322c2bb4d07f5e3901e7a20",
       "title": "OpenVTx - Llama - ELRS",
       "firmware_version": [
         "4.2",
         "4.3",
-        "4.4",
-        "4.5"
+        "4.4"
       ],
       "category": "VTX",
       "status": "COMMUNITY",
@@ -4490,8 +4488,8 @@
     },
     {
       "fullPath": "presets/4.5/osd/Tehllama_OSD_HDZ.txt",
-      "hash": "eadb9c03cbd7a216221d5c76e29fa88741e8ab2ff896fea0a3fc88a2963930ab",
-      "title": "Tehllama OSD Settings",
+      "hash": "a8bfe1d406ef92c57339a6a21bf284daa3077c117ea502e2fb6df341899df469",
+      "title": "Tehllama HDZero OSD Settings",
       "firmware_version": [
         "3.5",
         "4.1",
@@ -4633,7 +4631,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_45.txt",
-      "hash": "b8d7738b314c0adfb584a69d941e6b0a3221d4671b5dd7cf73e82be5b5abaea2",
+      "hash": "ff59356f52b2c4edcfd46c5ea25de77fa4fbcb8ec21d85d69e47136bcc741fe3",
       "title": "FlyFive33 3in TinyTrainer 3S Tune",
       "firmware_version": [
         "4.4",
@@ -4652,9 +4650,40 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/Tehllama_5in_OpenRace_RPM_MultiTUNE_45.txt",
+      "hash": "f97c9eecd22c0f98ba3ad49bcb81834385a9b1fc1b57d3a08217f31355d7488f",
+      "title": "Tehllama 5\" OpenRace RPM Multivoltage Tune & Filters",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "533",
+        "Freedom",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas",
+        "BMS",
+        "3S",
+        "5in",
+        "AutoSelect",
+        "MM",
+        "Omni"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/Tehllama_5in_Race_Spec_MultiTUNE_45.txt",
-      "hash": "79399c3e22ff7d29a7f92a593c2635bc71bee95f94a0712bb38f40fdfaab0b11",
-      "title": "Tehllama 5\" Race Spec ONLY Multivoltage Tune & Filters",
+      "hash": "7d9ba46b5ae856c9f69e8f0c4ddb9878077032ec7a42565d16dc57fa9300a364",
+      "title": "Tehllama 5\" Race RPM SPEC Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",
         "4.5"
@@ -4703,7 +4732,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_GTB339_3in_SWPR-Spec_2S-3S_Race_TUNE_45.txt",
-      "hash": "d20fd314e854c95d6863806a1e4ef96bfe72db355cb1aa7f7a22c3310048ebce",
+      "hash": "4617b86078b776af4301c5d53a29ffb96c04b35539ca919ac1f1f3292037149c",
       "title": "3in Lightweight 4S/3S/2S Tune for GTB-339 or 3\" Racing Toothpick",
       "firmware_version": [
         "4.4",
@@ -4752,7 +4781,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_SWPRv2_3in_TUNE_45.txt",
-      "hash": "ceae78ac996adea781bcd62fc0a63a0de21ec025fdae868e67d2588fe3b67ac9",
+      "hash": "88866f30cf294cc8498820723d7f8f83f56a992a0dc0bb24f7dc687cdda71ad2",
       "title": "Tehllama 3\"-3.5\" Tune for DroneMax XKnight",
       "firmware_version": [
         "4.4",
@@ -4830,8 +4859,8 @@
     },
     {
       "fullPath": "presets/4.5/vtx/OpenVTx_Tehllama.txt",
-      "hash": "740d4d67f42447310173aadc99d35c9f07042aad81aba63823b9b36fe30debc4",
-      "title": "OpenVTx - Llama - ELRS",
+      "hash": "c8ccc2e8ac5eaf50e966402853dc6b56c42366aa83bc3360fc1fb501171159e8",
+      "title": "OpenVTx - Llama no-RCE SA2.1",
       "firmware_version": [
         "4.2",
         "4.3",

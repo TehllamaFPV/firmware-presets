@@ -113,6 +113,10 @@ set motor_poles = 12
 
 #$ OPTION_GROUP END
 
+#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+		# Remove Persistent Stats
+		set stats_min_armed_time_s = -1
+#$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Set VBat Sag Compensation = 77 
 set vbat_sag_compensation = 77

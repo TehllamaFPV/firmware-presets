@@ -45,6 +45,10 @@
 	#$ OPTION BEGIN (CHECKED): Set Motor Pole Count to 12
 		set motor_poles = 12
 	#$ OPTION END
+	#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+		# Remove Persistent Stats
+		set stats_min_armed_time_s = -1
+	#$ OPTION END
 #$ OPTION_GROUP END
 
 

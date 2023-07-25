@@ -1,4 +1,4 @@
-#$ TITLE: Tehllama OSD Settings
+#$ TITLE: Tehllama HDZero OSD Settings
 #$ FIRMWARE_VERSION: 3.5
 #$ FIRMWARE_VERSION: 4.1
 #$ FIRMWARE_VERSION: 4.2
@@ -61,9 +61,6 @@
 
 #$ OPTION BEGIN (CHECKED): Implement HDZ Team KAACK-Mod Naming
 # Reinsert links to defaults when fixed ::  #$ INCLUDE: presets/4.5/osd/LlamaKAACK.txt
-
-# Remove Persistent Stats
-	set stats_min_armed_time_s = -1
 	
 # Update KAACK Names
 set extra_100_throttle = CAARL
@@ -73,3 +70,7 @@ set extra_armed_warning = FULL BOTATO
 
 #$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+	# Remove Persistent Stats
+	set stats_min_armed_time_s = -1
+#$ OPTION END
