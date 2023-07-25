@@ -13,7 +13,7 @@
 
 #$ OPTION BEGIN (CHECKED): New NTSC OSD
 # Reinsert links to defaults when fixed ::  
-INCLUDE: presets/4.4/osd/defaults.txt
+#$ INCLUDE: presets/4.4/osd/defaults.txt
 set osd_units = METRIC
 set osd_warn_bitmask = 18431
 set osd_cap_alarm = 1000
