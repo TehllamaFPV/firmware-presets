@@ -45,6 +45,14 @@
     #$ OPTION BEGIN (CHECKED): Apply 18k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
 		set rpm_limit = ON
 		set rpm_limit_value = 18000
+		profile 0
+			set vbat_sag_compensation = 0
+		profile 1
+			set vbat_sag_compensation = 0
+		profile 2
+			set vbat_sag_compensation = 0
+		profile 3
+			set vbat_sag_compensation = 0
 	#$ OPTION END
 	#$ OPTION BEGIN (UNCHECKED): Apply Spicier RPM PID Values
 		set rpm_limit_p = 44

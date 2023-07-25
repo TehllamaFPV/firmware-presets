@@ -36,9 +36,9 @@ set osd_home_dir_pos = 302
 set osd_home_dist_pos = 303
 set osd_compass_bar_pos = 266
 set osd_altitude_pos = 247
-set osd_pid_roll_pos = 423
-set osd_pid_pitch_pos = 455
-set osd_pid_yaw_pos = 487
+set osd_pid_roll_pos = 391
+set osd_pid_pitch_pos = 391
+set osd_pid_yaw_pos = 391
 set osd_debug_pos = 1
 set osd_power_pos = 321
 set osd_pidrate_profile_pos = 345
@@ -46,62 +46,23 @@ set osd_warnings_pos = 2377
 set osd_avg_cell_voltage_pos = 2433
 set osd_pit_ang_pos = 257
 set osd_rol_ang_pos = 289
-set osd_battery_usage_pos = 456
+set osd_battery_usage_pos = 392
 set osd_disarmed_pos = 2187
 set osd_nheading_pos = 311
-# set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_flip_arrow_pos = 2126
-set osd_stat_bitmask = 172560
+set osd_stat_bitmask = 10645632
+set osd_menu_background = TRANSPARENT
+set osd_canvas_width = 30
+set osd_canvas_height = 13
 set pilot_name = Tehllama
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Implement Llama HDZ-Race OSD
 # Reinsert links to defaults when fixed ::  
 #$ INCLUDE: presets/4.5/osd/defaults.txt
-
-	set osd_warn_bitmask = 18431
-	set osd_cap_alarm = 1000
-	set osd_vbat_pos = 2561
-	set osd_link_quality_pos = 2049
-	set osd_tim_1_pos = 3628
-	set osd_tim_2_pos = 3596
-	set osd_flymode_pos = 173
-	set osd_throttle_pos = 2569
-	set osd_vtx_channel_pos = 3113
-	set osd_ah_pos = 200
-	set osd_mah_drawn_pos = 3587
-	set osd_craft_name_pos = 395
-	set osd_pilot_name_pos = 2613
-	set osd_gps_speed_pos = 218
-	set osd_gps_lon_pos = 82
-	set osd_gps_lat_pos = 65
-	set osd_gps_sats_pos = 51
-	set osd_home_dir_pos = 302
-	set osd_home_dist_pos = 303
-	set osd_compass_bar_pos = 266
-	set osd_altitude_pos = 247
-	set osd_pid_roll_pos = 391
-	set osd_pid_pitch_pos = 391
-	set osd_pid_yaw_pos = 391
-	set osd_debug_pos = 1
-	set osd_power_pos = 321
-	set osd_pidrate_profile_pos = 345
-	set osd_warnings_pos = 2516
-	set osd_avg_cell_voltage_pos = 2593
-	set osd_pit_ang_pos = 257
-	set osd_rol_ang_pos = 289
-	set osd_battery_usage_pos = 392
-	set osd_disarmed_pos = 2230
-	set osd_nheading_pos = 311
-	set osd_esc_tmp_pos = 82
-	set osd_esc_rpm_pos = 83
-	set osd_flip_arrow_pos = 2201
-	set osd_stat_bitmask = 172560
-	set osd_displayport_device = MSP
-	set osd_canvas_width = 50
-	set osd_canvas_height = 18
+#$ INCLUDE: presets/4.5/osd/Tehllama_OSD_HDZ.txt
 
 #$ OPTION END
 
