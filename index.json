@@ -4420,7 +4420,7 @@
     },
     {
       "fullPath": "presets/4.5/modes/Llama_ELRS_Modes.txt",
-      "hash": "9dbd48662cd96459174db98c04ac19c80f1d96981ebcf415b89d524e0e2fe365",
+      "hash": "e989cba737c4a6219368886bc2621f22dd9068192d381e8295c5cf23b1e2512c",
       "title": "Tehllama ELRS Modes",
       "firmware_version": [
         "4.3",
@@ -4458,7 +4458,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/Tehllama_OSD_All.txt",
-      "hash": "6b4d2a3c3f69299b4e7e1705b983c55a69aea779098ad7c8e122f3dc8e95de53",
+      "hash": "01542da95a52da1e0dab4fa90a136c63f31593844a81b6f83ef7fc8ff543c3d2",
       "title": "Tehllama OSD + KAACK",
       "firmware_version": [
         "3.5",
@@ -4484,7 +4484,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/Tehllama_OSD_HDZ.txt",
-      "hash": "a8bfe1d406ef92c57339a6a21bf284daa3077c117ea502e2fb6df341899df469",
+      "hash": "c4f63a7c4a4445bc8477ddbaa36f5e18dd829f4c8b40cd3a6aff4ae782b2e16f",
       "title": "Tehllama HDZero OSD Settings",
       "firmware_version": [
         "3.5",
@@ -4548,6 +4548,23 @@
         "Mode",
         "LED",
         "ELRS"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/Llama_Race_QuickFixer.txt",
+      "hash": "d00b65526a1e9b3486935bcb99e711661106cb1acc424a5bd4ad47bb488de06c",
+      "title": "Tehllama Woodstopia Quick Fixer",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Race",
+        "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
       "priority": 0
@@ -4647,7 +4664,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_OpenRace_RPM_MultiTUNE_45.txt",
-      "hash": "e88b6fa1deee4ee9ccc4e1320917e52c0a0a7bee6b7c8ad33c020619243f7913",
+      "hash": "682c5589055c92bbc923b9c72624e08b8af22b50cf7af1d04c33bc1765687571",
       "title": "Tehllama 5\" OpenRace RPM Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",

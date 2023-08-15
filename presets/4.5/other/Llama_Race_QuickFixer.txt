@@ -1,0 +1,21 @@
+#$ TITLE: Tehllama Woodstopia Quick Fixer
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: Race, Llama
+#$ AUTHOR: Daniel Appel / Tehllama
+#$ DESCRIPTION: This is a quick fix multi-quad bodge
+
+## Set Feedforward Max Rate Limit
+## Adjust KAACK Mods and Messages
+
+	set feedforward_max_rate_limit = 103
+
+	set extra_100_throttle = CAARL
+	set extra_fc_hot_warning = SHE HOT
+	set extra_low_battery_warning = TAYLOR TOTS
+	set extra_armed_warning = FULL BOTATO
+	set extra_turtle_mode_warning = SORRY SHAUN
+		
+## Add new items ??

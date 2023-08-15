@@ -63,7 +63,7 @@ set pilot_name = Tehllama
 	# Update KAACK Names
 		set extra_100_throttle = CAARL
 		set extra_fc_hot_warning = SHE HOT
-		set extra_low_battery_warning = FRENCH FRIES
+		set extra_low_battery_warning = TAYLOR TOTS
 		set extra_armed_warning = FULL BOTATO
 		set extra_turtle_mode_warning = SORRY SHAUN
 #$ OPTION END

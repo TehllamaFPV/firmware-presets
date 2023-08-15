@@ -61,13 +61,12 @@
 
 #$ OPTION BEGIN (CHECKED): Implement HDZ Team KAACK-Mod Naming
 # Reinsert links to defaults when fixed ::  #$ INCLUDE: presets/4.5/osd/LlamaKAACK.txt
-	
 # Update KAACK Names
-set extra_100_throttle = CAARL
-set extra_fc_hot_warning = SHE HOT
-set extra_low_battery_warning = FRENCH FRIES
-set extra_armed_warning = FULL BOTATO
-
+		set extra_100_throttle = CAARL
+		set extra_fc_hot_warning = SHE HOT
+		set extra_low_battery_warning = TAYLOR TOTS
+		set extra_armed_warning = FULL BOTATO
+		set extra_turtle_mode_warning = SORRY SHAUN
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Disable Persistent Stats
