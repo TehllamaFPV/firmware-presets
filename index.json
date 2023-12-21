@@ -4664,7 +4664,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_OpenRace_RPM_MultiTUNE_45.txt",
-      "hash": "682c5589055c92bbc923b9c72624e08b8af22b50cf7af1d04c33bc1765687571",
+      "hash": "306e8a8152da792c433aa958ee7da32b46231d8be0fd6633c38935139fe0a1e7",
       "title": "Tehllama 5\" OpenRace RPM Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",
@@ -4695,7 +4695,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/Tehllama_5in_Race_Spec_MultiTUNE_45.txt",
-      "hash": "0067aef675ce889716ccf93694ed19c5ba83d2f4aa1cd8471b37801b49587aa8",
+      "hash": "3a537357bff17e1a118109b45270797ba580b727318c53a829a98edff72afabb",
       "title": "Tehllama 5\" Race RPM SPEC Multivoltage Tune & Filters",
       "firmware_version": [
         "4.4",

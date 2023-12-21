@@ -31,7 +31,7 @@
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/307
 
 ## RPM Limiting - Enable and Run
-## Filters - Choose RPM Enabled (Spicy or Non-Spicy) or non-RPM (Super-Safe)
+## Filters - Choose RPM (18k or 24k) Enabled, (Spicy or Non-Spicy) or non-RPM (Super-Safe)
 ## Filters - by Profile x4 (Enables 6S, 5S, 4S, and 3S Spec Tune)
 ## Tune - TPA, iTerm, dMin, boost, & AutoCellSelect Parameters
 ## Tune - PI, D, I, Dmax, pitch PI/D, FF Offsets
@@ -42,9 +42,21 @@
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ OPTION_GROUP BEGIN: RPM Limiting
-    #$ OPTION BEGIN (CHECKED): Apply 18k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
+    #$ OPTION BEGIN (UNCHECKED): Apply 18k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
 		set rpm_limit = ON
 		set rpm_limit_value = 18000
+		profile 0
+			set vbat_sag_compensation = 0
+		profile 1
+			set vbat_sag_compensation = 0
+		profile 2
+			set vbat_sag_compensation = 0
+		profile 3
+			set vbat_sag_compensation = 0
+	#$ OPTION END
+	#$ OPTION BEGIN (CHECKED): Apply 24k RPM (Requires Bidirectional DShot, Recommend KAACK Firmware)
+		set rpm_limit = ON
+		set rpm_limit_value = 24000
 		profile 0
 			set vbat_sag_compensation = 0
 		profile 1
@@ -699,6 +711,11 @@
 #$ OPTION_GROUP BEGIN: RC Link
 	#$ OPTION BEGIN (CHECKED): Use Llama ELRS with 250Hz Defaults
 		#$ INCLUDE: presets/4.5/rc_link/Tehllama_RC_Link_All.txt
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (CHECKED): Use Narrow Endpoints to enable 100% Throttle
+		set min_check = 1050
+		set max_check = 1970
 	#$ OPTION END
 
 #$ OPTION_GROUP END

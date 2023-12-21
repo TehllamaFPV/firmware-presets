@@ -704,10 +704,14 @@
 	#$ OPTION_GROUP END
 	
 	
-#$ OPTION_GROUP BEGIN: RC Link
+#$ OPTION_GROUP BEGIN: RC 
 	#$ OPTION BEGIN (CHECKED): Use Llama ELRS with 250Hz Defaults
 		#$ INCLUDE: presets/4.4/rc_link/Tehllama_RC_Link_All.txt
 	#$ OPTION END
+	
+	#$ OPTION BEGIN (CHECKED): Use Narrow Endpoints to enable 100% Throttle
+		set min_check = 1050
+		set max_check = 1970
+	#$ OPTION END
 
 #$ OPTION_GROUP END
-	
