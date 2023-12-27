@@ -4554,7 +4554,7 @@
     },
     {
       "fullPath": "presets/4.5/other/Llama_Race_QuickFixer.txt",
-      "hash": "d00b65526a1e9b3486935bcb99e711661106cb1acc424a5bd4ad47bb488de06c",
+      "hash": "e486b52ecb81d522be14157374b437dcb969c973bb02a9bb2482e97c2f1fd86a",
       "title": "Tehllama Woodstopia Quick Fixer",
       "firmware_version": [
         "4.4",
@@ -4567,6 +4567,36 @@
         "Llama"
       ],
       "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/Tehllama_5in_Race_Multivoltage_Spec.txt",
+      "hash": "8811417f43f50a28b0cf1e3442fe2aa41d4203a3a661c729866d85ea427527db",
+      "title": "Tehllama 5\" Race Multivoltage Spec",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "533",
+        "Freedom",
+        "FreedomSpec",
+        "Tune",
+        "Spec",
+        "Race",
+        "Llama",
+        "MultiVoltage",
+        "Texas",
+        "BMS",
+        "3S",
+        "5in",
+        "AutoSelect",
+        "MM",
+        "Omni"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "force_options_review": true,
       "priority": 0
     },
     {
