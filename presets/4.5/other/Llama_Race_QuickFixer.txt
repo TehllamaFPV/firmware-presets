@@ -17,5 +17,7 @@
 	set extra_low_battery_warning = TAYLOR TOTS
 	set extra_armed_warning = FULL BOTATO
 	set extra_turtle_mode_warning = SORRY SHAUN
-		
+	set min_check = 1050
+	set max_check = 1970
+			
 ## Add new items ??
