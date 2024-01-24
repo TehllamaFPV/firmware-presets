@@ -11,11 +11,34 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Installs the appropriate Busy-Llama OSD
 
-#$ OPTION BEGIN (CHECKED): Implement Llama HDZ-Race OSD
+#$ OPTION BEGIN (CHECKED): Implement Llama HDZ-Race Rev2 2024 OSD
+#$ INCLUDE:presets/4.5/osd/defaults.txt
+
+	set osd_use_quick_menu = ON
+	set osd_show_spec_prearm = ON
+	set osd_tim1 = 2560
+	set osd_tim2 = 2561
+	set osd_vbat_pos = 2657
+	set osd_link_quality_pos = 2049
+	set osd_tim_1_pos = 3694
+	set osd_tim_2_pos = 3662
+	set osd_throttle_pos = 2633
+	set osd_vtx_channel_pos = 3084
+	set osd_mah_drawn_pos = 3650
+	set osd_pilot_name_pos = 2674
+	set osd_warnings_pos = 2611
+	set osd_avg_cell_voltage_pos = 2625
+	set osd_disarmed_pos = 2230
+	set osd_flip_arrow_pos = 2201
+	set osd_stat_bitmask = 737926
+	set osd_displayport_device = AUTO
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Use Old Llama HDZ-Race OSD
 # Reinsert links to defaults when fixed ::  
 #$ INCLUDE: presets/4.5/osd/defaults.txt
 
-	set osd_warn_bitmask = 18431
 	set osd_cap_alarm = 1000
 	set osd_vbat_pos = 2561
 	set osd_link_quality_pos = 2049
@@ -27,7 +50,7 @@
 	set osd_ah_pos = 200
 	set osd_mah_drawn_pos = 3587
 	set osd_craft_name_pos = 395
-	set osd_pilot_name_pos = 2613
+	set osd_pilot_name_pos = 2450
 	set osd_gps_speed_pos = 218
 	set osd_gps_lon_pos = 82
 	set osd_gps_lat_pos = 65
@@ -52,10 +75,11 @@
 	set osd_esc_tmp_pos = 82
 	set osd_esc_rpm_pos = 83
 	set osd_flip_arrow_pos = 2201
-	set osd_stat_bitmask = 172560
-	set osd_displayport_device = MSP
-	set osd_canvas_width = 50
-	set osd_canvas_height = 18
+	set osd_warn_bitmask = 18431
+	set osd_stat_bitmask = 737926
+	# set osd_displayport_device = MSP
+	# set osd_canvas_width = 50
+	# set osd_canvas_height = 18
 
 #$ OPTION END
 
