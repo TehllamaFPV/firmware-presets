@@ -7,7 +7,7 @@
 #$ AUTHOR: Daniel Appel / Tehllama
 #$ DESCRIPTION: Contains various radio link configurations for racing and dual-sport RC_Link setups
 
-#$ OPTION BEGIN (CHECKED):  ELRS Race 250Hz - All Profiles
+#$ OPTION BEGIN (CHECKED):  ELRS Race 250Hz & D500 - All Profiles
 feature RX_SERIAL
 # set serialrx_provider = CRSF
 
@@ -18,25 +18,24 @@ set rc_smoothing_auto_factor = 33
 
 set rssi_channel = 0
 
-
 profile 0
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 1
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 2
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 3
 set feedforward_averaging = OFF
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 
@@ -55,22 +54,22 @@ set rssi_channel = 0
 
 profile 0
 set feedforward_averaging = 2_POINT
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 1
 set feedforward_averaging = 2_POINT
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 2
 set feedforward_averaging = 2_POINT
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 profile 3
 set feedforward_averaging = 2_POINT
-set feedforward_jitter_factor = 5
+set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 55
 set feedforward_max_rate_limit = 103
 
