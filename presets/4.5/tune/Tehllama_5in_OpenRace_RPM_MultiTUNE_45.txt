@@ -209,7 +209,7 @@
 #$ OPTION_GROUP BEGIN: Tune
 	#$ OPTION BEGIN (CHECKED): Llama Freedom Tune (Safer)
 		profile 0
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -232,7 +232,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 1
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -255,7 +255,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 2
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -279,7 +279,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 3
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -306,7 +306,7 @@
 
 	#$ OPTION BEGIN (UNCHECKED): Llama Spicy Tune (Aggressive)
 		profile 0
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -330,7 +330,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 1
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -354,7 +354,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 2
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
@@ -378,7 +378,7 @@
 			set tpa_breakpoint = 1250
 			simplified_tuning apply
 		profile 3
-			#$ INCLUDE: presets/4.4/tune/defaults.txt
+			#$ INCLUDE: presets/4.5/tune/defaults.txt
 			set iterm_rotation = ON
 			set iterm_relax = RPY
 			set iterm_relax_cutoff = 33
