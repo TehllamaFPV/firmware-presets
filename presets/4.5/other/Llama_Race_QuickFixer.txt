@@ -21,3 +21,142 @@
 	set max_check = 1970
 			
 ## Add new items ??
+
+#$ OPTION BEGIN (UNCHECKED): Mayhem 24 OSD & Power Level Fixes
+	vtx 0 2 0 0 3 900 1800
+	vtx 1 2 0 0 1 1800 2100
+	rxfail 6 s 1050
+	set vtx_band = 5
+	set vtx_channel = 4
+	set vtx_freq = 5769
+	set extra_100_throttle = CAARL
+	set extra_fc_hot_warning = SHE HOT
+	set extra_low_battery_warning = FRENCH FRIES
+	set extra_armed_warning = FULL BOTATO
+	set osd_warn_bitmask = 18431
+	set osd_cap_alarm = 1000
+	set osd_vbat_pos = 2561
+	set osd_link_quality_pos = 2049
+	set osd_tim_1_pos = 3627
+	set osd_tim_2_pos = 3595
+	set osd_flymode_pos = 173
+	set osd_throttle_pos = 2571
+	set osd_vtx_channel_pos = 3081
+	set osd_ah_pos = 200
+	set osd_mah_drawn_pos = 3588
+	set osd_wh_drawn_pos = 3533
+	set osd_craft_name_pos = 395
+	set osd_pilot_name_pos = 2610
+	set osd_gps_speed_pos = 218
+	set osd_gps_lon_pos = 82
+	set osd_gps_lat_pos = 65
+	set osd_gps_sats_pos = 51
+	set osd_home_dir_pos = 302
+	set osd_home_dist_pos = 303
+	set osd_compass_bar_pos = 266
+	set osd_altitude_pos = 247
+	set osd_pid_roll_pos = 391
+	set osd_pid_pitch_pos = 391
+	set osd_pid_yaw_pos = 391
+	set osd_debug_pos = 1
+	set osd_power_pos = 321
+	set osd_pidrate_profile_pos = 345
+	set osd_warnings_pos = 2516
+	set osd_avg_cell_voltage_pos = 2593
+	set osd_pit_ang_pos = 257
+	set osd_rol_ang_pos = 289
+	set osd_battery_usage_pos = 392
+	set osd_disarmed_pos = 2230
+	set osd_nheading_pos = 311
+	set osd_esc_tmp_pos = 82
+	set osd_esc_rpm_pos = 83
+	set osd_flip_arrow_pos = 2201
+	set osd_stat_bitmask = 172560
+	set osd_displayport_device = MSP
+	set osd_canvas_width = 50
+	set osd_canvas_height = 18
+	
+	set osd_warn_bitmask = 18431
+	
+	set osd_stat_bitmask = 172560
+#$ OPTION END
+
+#$ OPTION GROUP BEGIN: Team Race Quad Number
+
+	#$ OPTION BEGIN (UNCHECKED): Quad #1
+		## Quad #1 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 27 3 1100 2100 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Quad #2
+		## Quad #2 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 27 3 1350 2100 0 0
+		aux 2 27 3 900 1200 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 8 53 1 900 1300 0 0
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Quad #3
+		## Quad #3 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 27 3 1475 2100 0 0
+		aux 2 27 3 900 1350 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Quad #4
+		## Quad #4 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 27 3 1700 2100 0 0
+		aux 2 27 3 900 1525 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Quad #5
+		## Quad #5 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 1 27 3 900 1675 0 0
+		aux 2 27 3 1800 2100 0 0
+		aux 3 13 1 1900 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+	#$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Quad #6
+		## Quad #6 ##
+		# aux
+		aux 0 0 0 1300 2100 0 0
+		aux 2 27 3 900 1925 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+	#$ OPTION END: 
+
+#$ OPTION GROUP END
