@@ -23,9 +23,7 @@
 ## Add new items ??
 
 #$ OPTION BEGIN (UNCHECKED): Mayhem 24 OSD & Power Level Fixes
-	vtx 0 2 0 0 3 900 1800
-	vtx 1 2 0 0 1 1800 2100
-	rxfail 6 s 1050
+
 	set vtx_band = 5
 	set vtx_channel = 4
 	set vtx_freq = 5769
@@ -81,7 +79,44 @@
 	set osd_stat_bitmask = 172560
 #$ OPTION END
 
-#$ OPTION GROUP BEGIN: Team Race Quad Number
+#$ OPTION BEGIN (UNCHECKED): Use HDZ Team Race Model - No Failsafe
+		## Quad #0 ##
+		vtx 0 2 0 0 3 900 1800
+		vtx 1 2 0 0 1 1800 2100
+		rxfail 6 s 1050
+		aux 0 0 0 1300 2100 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+		
+		set extra_100_throttle = CAARL
+		set extra_fc_hot_warning = SHE HOT
+		set extra_low_battery_warning = FRENCH FRIES
+		set extra_armed_warning = FULL BOTATO
+		
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Use Team Race Model - No Failsafe - Analog OK
+		## Quad #0 ##
+
+		rxfail 6 s 1050
+		aux 0 0 0 1300 2100 0 0
+		aux 3 13 1 1700 2100 0 0
+		aux 4 35 2 1650 1800 0 0
+		aux 5 36 1 900 1300 0 0
+		aux 6 49 1 900 1200 0 0
+		aux 7 53 1 900 1300 1 0
+		
+		set extra_100_throttle = CAARL
+		set extra_fc_hot_warning = SHE HOT
+		set extra_low_battery_warning = FRENCH FRIES
+		set extra_armed_warning = FULL BOTATO
+		
+#$ OPTION END
+
+#$ OPTION GROUP BEGIN: Use Team Race Model & Failsafe By Quad Number
 
 	#$ OPTION BEGIN (UNCHECKED): Quad #1
 		## Quad #1 ##
