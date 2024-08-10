@@ -38,6 +38,17 @@ set pitch_expo = 0
 set yaw_expo = 0
 #$ OPTION END
 
+# Remove VBatSagCompensation because RPM Limiting is Enabled
+
+profile 0
+set vbat_sag_compensation = 0
+profile 1
+set vbat_sag_compensation = 0
+profile 2
+set vbat_sag_compensation = 0
+profile 3
+set vbat_sag_compensation = 0
+
 #$ OPTION BEGIN (UNCHECKED): Mayhem 24 OSD & Power Level Fixes
 
 	set vtx_band = 5
