@@ -139,7 +139,8 @@
       "4.2",
       "4.3",
       "4.4",
-      "4.5"
+      "4.5",
+      "4.6"
     ],
     "category": [
       "FILTERS",
@@ -4553,12 +4554,31 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/Llama_Race_QuickFixer.txt",
-      "hash": "bbd321791213a1688dfb5c4b45ac79f56787a6704192116752900203bcd9caab",
-      "title": "Tehllama Woodstopia Quick Fixer",
+      "fullPath": "presets/4.5/other/Llama_Race25_QuickFixer.txt",
+      "hash": "988b8958143af2799826a0aaae931121be6b7b5a6e9717aef6151f887607e739",
+      "title": "Tehllama Mayhem2025 Quick Fixer",
       "firmware_version": [
         "4.4",
-        "4.5"
+        "4.5",
+        "4.6"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Race",
+        "Llama"
+      ],
+      "author": "Daniel Appel / Tehllama",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/Llama_Race_QuickFixer.txt",
+      "hash": "988b8958143af2799826a0aaae931121be6b7b5a6e9717aef6151f887607e739",
+      "title": "Tehllama Mayhem2025 Quick Fixer",
+      "firmware_version": [
+        "4.4",
+        "4.5",
+        "4.6"
       ],
       "category": "OTHER",
       "status": "EXPERIMENTAL",
