@@ -3768,10 +3768,12 @@
     },
     {
       "fullPath": "presets/4.4/modes/Llama_ELRS_Modes.txt",
-      "hash": "ca0bc76b6d85277f87397c2d8fff26534d9262178508fe998ccc624075722af4",
+      "hash": "5ef5e88bb1a321d46545bd0dc16ad013abb230cb65ff8c208e1565b86b51df5e",
       "title": "Tehllama ELRS Modes",
       "firmware_version": [
-        "4.3"
+        "4.3",
+        "4.4",
+        "4.5"
       ],
       "category": "MODES",
       "status": "COMMUNITY",
@@ -4421,7 +4423,7 @@
     },
     {
       "fullPath": "presets/4.5/modes/Llama_ELRS_Modes.txt",
-      "hash": "e989cba737c4a6219368886bc2621f22dd9068192d381e8295c5cf23b1e2512c",
+      "hash": "5ef5e88bb1a321d46545bd0dc16ad013abb230cb65ff8c208e1565b86b51df5e",
       "title": "Tehllama ELRS Modes",
       "firmware_version": [
         "4.3",
@@ -4555,7 +4557,7 @@
     },
     {
       "fullPath": "presets/4.5/other/Llama_Race25_QuickFixer.txt",
-      "hash": "988b8958143af2799826a0aaae931121be6b7b5a6e9717aef6151f887607e739",
+      "hash": "bd98d1f71aea26f7f14d5eab8c84cd13dda3b69901ae7bf8bd7049d3dc0a84c5",
       "title": "Tehllama Mayhem2025 Quick Fixer",
       "firmware_version": [
         "4.4",

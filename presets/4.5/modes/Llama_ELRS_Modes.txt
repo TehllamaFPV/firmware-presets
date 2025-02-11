@@ -14,10 +14,22 @@
 
 # aux switch settings
 
-aux 0 0 0 1300 2100 0 0
-aux 1 13 1 1700 2100 0 0
-aux 2 26 0 1700 2100 0 0
-aux 3 35 2 1200 1350 0 0
-aux 4 36 1 900 1300 0 0
-aux 5 49 1 900 1200 0 0
-aux 6 49 1 1700 2100 0 0
+#$ OPTION BEGIN (CHECKED): MidHi Aux3 Turtle
+	aux 0 0 0 1300 2100 0 0
+	aux 1 13 1 1700 2100 0 0
+	aux 2 26 0 1700 2100 0 0
+	aux 3 35 2 1700 1850 0 0
+	aux 4 36 1 900 1300 0 0
+	aux 5 49 1 900 1200 0 0
+	aux 6 49 1 1700 2100 0 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): MidLo Aux3 Turtle
+	aux 0 0 0 1300 2100 0 0
+	aux 1 13 1 1700 2100 0 0
+	aux 2 26 0 1700 2100 0 0
+	aux 3 35 2 1200 1350 0 0
+	aux 4 36 1 900 1300 0 0
+	aux 5 49 1 900 1200 0 0
+	aux 6 49 1 1700 2100 0 0
+#$ OPTION END

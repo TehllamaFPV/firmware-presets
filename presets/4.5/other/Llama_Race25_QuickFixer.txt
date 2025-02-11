@@ -21,7 +21,12 @@
 	set min_check = 1050
 	set max_check = 1970
 			
-## Add new items ??
+## Add new items 
+
+	set vbat_max_cell_voltage = 438
+	set beeper_dshot_beacon_tone = 4
+	feature -TELEMETRY
+	
 
 #$ OPTION BEGIN (CHECKED): Overwrite Rate Profile 1 with Tehllama Rates
 # Tehllama Rate Bank - Defaul unchecked behavior will retain user rates in the default rateprofile
@@ -50,7 +55,7 @@ set vbat_sag_compensation = 0
 profile 3
 set vbat_sag_compensation = 0
 
-#$ OPTION BEGIN (UNCHECKED): Mayhem 24 OSD & Power Level Fixes
+#$ OPTION BEGIN (CHECKED): Mayhem 25 OSD & Power Level Fixes
 
 	set vtx_band = 5
 	set vtx_channel = 2
@@ -61,16 +66,16 @@ set vbat_sag_compensation = 0
 	set extra_armed_warning = FULL BOTATO
 	set osd_warn_bitmask = 18431
 	set osd_cap_alarm = 1000
-	set osd_vbat_pos = 2561
-	set osd_link_quality_pos = 2049
-	set osd_tim_1_pos = 3627
-	set osd_tim_2_pos = 3595
+	set osd_vbat_pos = 2565
+	set osd_link_quality_pos = 2053
+	set osd_tim_1_pos = 3623
+	set osd_tim_2_pos = 3591
 	set osd_flymode_pos = 173
-	set osd_throttle_pos = 2571
-	set osd_vtx_channel_pos = 3081
+	set osd_throttle_pos = 2572
+	set osd_vtx_channel_pos = 3079
 	set osd_ah_pos = 200
-	set osd_mah_drawn_pos = 3588
-	set osd_wh_drawn_pos = 3533
+	set osd_mah_drawn_pos = 2591
+	set osd_wh_drawn_pos = 3531
 	set osd_craft_name_pos = 395
 	set osd_pilot_name_pos = 2610
 	set osd_gps_speed_pos = 218
@@ -88,7 +93,7 @@ set vbat_sag_compensation = 0
 	set osd_power_pos = 321
 	set osd_pidrate_profile_pos = 345
 	set osd_warnings_pos = 2516
-	set osd_avg_cell_voltage_pos = 2593
+	set osd_avg_cell_voltage_pos = 2597
 	set osd_pit_ang_pos = 257
 	set osd_rol_ang_pos = 289
 	set osd_battery_usage_pos = 392
@@ -105,6 +110,7 @@ set vbat_sag_compensation = 0
 	set osd_warn_bitmask = 18431
 	
 	set osd_stat_bitmask = 172560
+	
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): Use HDZ Team Race Model - No Failsafe
