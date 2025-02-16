@@ -113,6 +113,22 @@ set vbat_sag_compensation = 0
 	
 #$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): Pit Mode AUX 3 (HIGH ONLY TRANSMIT - MID OFF)
+
+	vtx 0 2 0 0 3 900 1675
+	vtx 1 2 0 0 1 1675 2100
+	vtx 2 0 0 0 0 0 0
+	vtx 3 0 0 0 0 0 0 
+	vtx 4 0 0 0 0 0 0
+	rxfail 6 s 1050
+
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Disable Persistent Stats
+	# Remove Persistent Stats
+	set stats_min_armed_time_s = -1
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED): Use HDZ Team Race Model - No Failsafe
 		## Quad #0 ##
 		vtx 0 2 0 0 3 900 1800
